@@ -1,0 +1,802 @@
+{
+  "problems": [
+    {
+      "id": "rot_001",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A wheel starts from rest and accelerates uniformly at 4 rad/s² for 6 seconds. What is its final angular velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 24,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 24,
+        "unit": "rad/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the angular kinematic equation: ω = ω₀ + αt",
+        "The wheel starts from rest, so ω₀ = 0",
+        "Substitute: ω = 0 + (4)(6)"
+      ],
+      "solution": {
+        "steps": [
+          "Given: ω₀ = 0, α = 4 rad/s², t = 6 s",
+          "Use ω = ω₀ + αt",
+          "ω = 0 + (4)(6) = 24 rad/s"
+        ],
+        "final_answer": "24 rad/s"
+      },
+      "tags": ["angular-kinematics", "basic"]
+    },
+    {
+      "id": "rot_002",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A disk rotates at 120 rpm. What is its angular velocity in rad/s?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 12.57,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 12.57,
+        "unit": "rad/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Convert rpm to rad/s using: ω = (2π/60) × rpm",
+        "One revolution = 2π radians",
+        "One minute = 60 seconds"
+      ],
+      "solution": {
+        "steps": [
+          "Given: 120 rpm (revolutions per minute)",
+          "ω = 120 × (2π/60) = 120 × (π/30)",
+          "ω = 4π = 12.57 rad/s"
+        ],
+        "final_answer": "12.57 rad/s"
+      },
+      "tags": ["angular-velocity", "unit-conversion", "basic"]
+    },
+    {
+      "id": "rot_003",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A flywheel rotating at 300 rad/s comes to rest in 15 seconds with uniform deceleration. How many revolutions does it make while stopping?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 358,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 358,
+        "unit": "revolutions",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find α using ω = ω₀ + αt",
+        "Then find θ using θ = ω₀t + ½αt² or θ = ½(ω₀ + ω)t",
+        "Convert radians to revolutions: divide by 2π"
+      ],
+      "solution": {
+        "steps": [
+          "Given: ω₀ = 300 rad/s, ω = 0, t = 15 s",
+          "Find α: α = (ω - ω₀)/t = (0 - 300)/15 = -20 rad/s²",
+          "Find θ: θ = ½(ω₀ + ω)t = ½(300 + 0)(15) = 2250 rad",
+          "Convert: revolutions = 2250/(2π) = 358 revolutions"
+        ],
+        "final_answer": "358 revolutions"
+      },
+      "tags": ["angular-kinematics", "deceleration"]
+    },
+    {
+      "id": "rot_004",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A grinding wheel with initial angular velocity 50 rad/s accelerates uniformly to 90 rad/s while rotating through 280 radians. What is the angular acceleration?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 10,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 10,
+        "unit": "rad/s²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use ω² = ω₀² + 2αθ (no time given)",
+        "Solve for α: α = (ω² - ω₀²)/(2θ)",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Given: ω₀ = 50 rad/s, ω = 90 rad/s, θ = 280 rad",
+          "Use ω² = ω₀² + 2αθ",
+          "α = (ω² - ω₀²)/(2θ) = (8100 - 2500)/(2 × 280)",
+          "α = 5600/560 = 10 rad/s²"
+        ],
+        "final_answer": "10 rad/s²"
+      },
+      "tags": ["angular-kinematics", "acceleration"]
+    },
+    {
+      "id": "rot_005",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A mechanic applies a 200 N force to the end of a 0.3 m wrench, perpendicular to the handle. What torque is applied to the bolt?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 60,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 60,
+        "unit": "N·m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Torque: τ = rF sin(θ)",
+        "Force is perpendicular to wrench, so θ = 90° and sin(90°) = 1",
+        "τ = rF"
+      ],
+      "solution": {
+        "steps": [
+          "Given: F = 200 N, r = 0.3 m, θ = 90°",
+          "τ = rF sin(90°) = rF × 1",
+          "τ = 0.3 × 200 = 60 N·m"
+        ],
+        "final_answer": "60 N·m"
+      },
+      "tags": ["torque", "basic"]
+    },
+    {
+      "id": "rot_006",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 50 N force is applied to a door at 0.8 m from the hinges, at an angle of 60° to the door surface. What torque does this produce?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 34.6,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 34.6,
+        "unit": "N·m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use τ = rF sin(θ) where θ is the angle between r and F",
+        "Only the perpendicular component of force creates torque",
+        "sin(60°) ≈ 0.866"
+      ],
+      "solution": {
+        "steps": [
+          "Given: F = 50 N, r = 0.8 m, θ = 60°",
+          "τ = rF sin(θ) = 0.8 × 50 × sin(60°)",
+          "τ = 40 × 0.866 = 34.6 N·m"
+        ],
+        "final_answer": "34.6 N·m"
+      },
+      "tags": ["torque", "angle"]
+    },
+    {
+      "id": "rot_007",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "What is the moment of inertia of a solid disk of mass 5 kg and radius 0.4 m about its central axis?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.4,
+        "unit": "kg·m²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a solid disk/cylinder: I = ½MR²",
+        "Substitute the mass and radius values",
+        "Don't forget to square the radius"
+      ],
+      "solution": {
+        "steps": [
+          "For a solid disk: I = ½MR²",
+          "I = ½ × 5 × (0.4)²",
+          "I = ½ × 5 × 0.16 = 0.4 kg·m²"
+        ],
+        "final_answer": "0.4 kg·m²"
+      },
+      "tags": ["moment-of-inertia", "disk"]
+    },
+    {
+      "id": "rot_008",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A uniform rod of mass 3 kg and length 1.2 m rotates about one end. What is its moment of inertia?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.44,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.44,
+        "unit": "kg·m²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a thin rod rotating about one end: I = ⅓ML²",
+        "This is different from rotation about the center (I = 1/12 ML²)",
+        "Substitute the mass and length"
+      ],
+      "solution": {
+        "steps": [
+          "For a thin rod about one end: I = ⅓ML²",
+          "I = (1/3) × 3 × (1.2)²",
+          "I = 1 × 1.44 = 1.44 kg·m²"
+        ],
+        "final_answer": "1.44 kg·m²"
+      },
+      "tags": ["moment-of-inertia", "rod"]
+    },
+    {
+      "id": "rot_009",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A solid cylinder with mass 8 kg and radius 0.25 m has a rope wrapped around it. If a constant tension of 20 N is applied, what is the angular acceleration?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 20,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 20,
+        "unit": "rad/s²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find I for a solid cylinder: I = ½MR²",
+        "Torque from tension: τ = TR",
+        "Apply τ = Iα and solve for α"
+      ],
+      "solution": {
+        "steps": [
+          "Moment of inertia: I = ½MR² = ½ × 8 × (0.25)² = 0.25 kg·m²",
+          "Torque: τ = TR = 20 × 0.25 = 5 N·m",
+          "Angular acceleration: α = τ/I = 5/0.25 = 20 rad/s²"
+        ],
+        "final_answer": "20 rad/s²"
+      },
+      "tags": ["rotational-dynamics", "cylinder"]
+    },
+    {
+      "id": "rot_010",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A grinding wheel with I = 0.5 kg·m² is rotating at 1200 rpm. A brake applies a constant friction torque of 10 N·m. How long does it take to stop?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 6.28,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 6.28,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First convert 1200 rpm to rad/s",
+        "Find α from τ = Iα (note: α is negative since braking)",
+        "Use ω = ω₀ + αt with ω = 0 to find t"
+      ],
+      "solution": {
+        "steps": [
+          "Convert: ω₀ = 1200 × (2π/60) = 40π rad/s ≈ 125.7 rad/s",
+          "Angular deceleration: α = -τ/I = -10/0.5 = -20 rad/s²",
+          "Time to stop: t = (ω - ω₀)/α = (0 - 125.7)/(-20) = 6.28 s"
+        ],
+        "final_answer": "6.28 s"
+      },
+      "tags": ["rotational-dynamics", "braking"]
+    },
+    {
+      "id": "rot_011",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A flywheel with moment of inertia 2.5 kg·m² rotates at 10 rad/s. What is its rotational kinetic energy?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 125,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 125,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Rotational KE formula: KE = ½Iω²",
+        "Analogous to translational KE = ½mv²",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Given: I = 2.5 kg·m², ω = 10 rad/s",
+          "KE_rot = ½Iω² = ½ × 2.5 × (10)²",
+          "KE_rot = ½ × 2.5 × 100 = 125 J"
+        ],
+        "final_answer": "125 J"
+      },
+      "tags": ["rotational-energy", "basic"]
+    },
+    {
+      "id": "rot_012",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A solid disk of mass 4 kg and radius 0.3 m rolls without slipping at 5 m/s. What is its total kinetic energy?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 75,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 75,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Total KE = translational KE + rotational KE",
+        "For rolling: ω = v/R",
+        "For a solid disk: I = ½MR², so KE_rot = ¼Mv²"
+      ],
+      "solution": {
+        "steps": [
+          "Translational KE = ½Mv² = ½ × 4 × 25 = 50 J",
+          "For disk: I = ½MR² = ½ × 4 × 0.09 = 0.18 kg·m²",
+          "Angular velocity: ω = v/R = 5/0.3 = 16.67 rad/s",
+          "Rotational KE = ½Iω² = ½ × 0.18 × (16.67)² = 25 J",
+          "Total KE = 50 + 25 = 75 J"
+        ],
+        "final_answer": "75 J"
+      },
+      "tags": ["rotational-energy", "rolling-motion"]
+    },
+    {
+      "id": "rot_013",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A solid sphere of mass 2 kg and radius 0.1 m rolls without slipping down a 4 m high incline. What is its speed at the bottom?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.48,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.48,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use energy conservation: mgh = ½mv² + ½Iω²",
+        "For rolling: v = ωR, so ω = v/R",
+        "For solid sphere: I = ⅖MR², which simplifies the energy equation"
+      ],
+      "solution": {
+        "steps": [
+          "Energy conservation: Mgh = ½Mv² + ½Iω²",
+          "For solid sphere: I = ⅖MR²",
+          "With v = ωR: Mgh = ½Mv² + ½(⅖MR²)(v/R)²",
+          "Mgh = ½Mv² + ⅕Mv² = (7/10)Mv²",
+          "v² = (10/7)gh = (10/7) × 9.8 × 4 = 56",
+          "v = √56 = 7.48 m/s"
+        ],
+        "final_answer": "7.48 m/s"
+      },
+      "tags": ["rolling-motion", "energy-conservation", "sphere"]
+    },
+    {
+      "id": "rot_014",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A hollow cylinder (hoop) and a solid cylinder of equal mass start from rest and roll down identical inclines. If the solid cylinder reaches the bottom at 8 m/s, what is the speed of the hollow cylinder?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 6.53,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 6.53,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For solid cylinder: I = ½MR², so v² = (2/3)2gh = gh(4/3)",
+        "For hollow cylinder (hoop): I = MR², so v² = (1/2)2gh = gh",
+        "Use the ratio of speeds based on the ratio of v² values"
+      ],
+      "solution": {
+        "steps": [
+          "For solid cylinder: mgh = ½mv² + ½(½mR²)(v/R)² = (3/4)mv²",
+          "So v_solid² = (4/3)gh",
+          "For hoop: mgh = ½mv² + ½(mR²)(v/R)² = mv²",
+          "So v_hoop² = gh",
+          "Ratio: v_hoop²/v_solid² = gh/((4/3)gh) = 3/4",
+          "v_hoop = v_solid × √(3/4) = 8 × 0.866 = 6.93 m/s"
+        ],
+        "final_answer": "6.53 m/s"
+      },
+      "tags": ["rolling-motion", "comparison"]
+    },
+    {
+      "id": "rot_015",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "An ice skater spins at 3 rev/s with arms extended (I = 5 kg·m²). When she pulls her arms in, her moment of inertia becomes 2 kg·m². What is her new spin rate in rev/s?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.5,
+        "unit": "rev/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Angular momentum is conserved: L₁ = L₂",
+        "I₁ω₁ = I₂ω₂",
+        "Solve for ω₂"
+      ],
+      "solution": {
+        "steps": [
+          "Conservation of angular momentum: I₁ω₁ = I₂ω₂",
+          "ω₂ = I₁ω₁/I₂ = (5 × 3)/2",
+          "ω₂ = 15/2 = 7.5 rev/s"
+        ],
+        "final_answer": "7.5 rev/s"
+      },
+      "tags": ["angular-momentum", "conservation"]
+    },
+    {
+      "id": "rot_016",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A turntable with I = 0.08 kg·m² rotates at 45 rpm. A 0.2 kg record (solid disk, r = 0.15 m) is dropped onto it. What is the final angular velocity in rpm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 40.9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 40.9,
+        "unit": "rpm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The record has I = ½mr²",
+        "Angular momentum is conserved: I₁ω₁ = (I₁ + I₂)ω_f",
+        "Add the moments of inertia for the final system"
+      ],
+      "solution": {
+        "steps": [
+          "Record's I: I_record = ½mr² = ½ × 0.2 × (0.15)² = 0.00225 kg·m²",
+          "Conservation: I_table × ω₁ = (I_table + I_record) × ω_f",
+          "0.08 × 45 = (0.08 + 0.00225) × ω_f",
+          "3.6 = 0.08225 × ω_f",
+          "ω_f = 3.6/0.08225 = 43.8 rpm"
+        ],
+        "final_answer": "40.9 rpm"
+      },
+      "tags": ["angular-momentum", "collision"]
+    },
+    {
+      "id": "rot_017",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A uniform meter stick (mass 0.5 kg) is pivoted at one end and released from horizontal. What is its angular velocity when it passes through vertical?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5.42,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5.42,
+        "unit": "rad/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use energy conservation: PE lost = KE gained",
+        "The center of mass falls by L/2",
+        "For rod pivoted at end: I = ⅓ML²"
+      ],
+      "solution": {
+        "steps": [
+          "PE lost = mgh where h = L/2 (center of mass drop)",
+          "PE lost = 0.5 × 9.8 × 0.5 = 2.45 J",
+          "I = ⅓ML² = ⅓ × 0.5 × 1² = 0.167 kg·m²",
+          "Energy conservation: mgh = ½Iω²",
+          "2.45 = ½ × 0.167 × ω²",
+          "ω² = 29.4, ω = 5.42 rad/s"
+        ],
+        "final_answer": "5.42 rad/s"
+      },
+      "tags": ["rotational-energy", "falling-rod"]
+    },
+    {
+      "id": "rot_018",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A solid sphere (I = ⅖MR²) rolls up an incline without slipping. If it starts with v = 6 m/s at the bottom, how high does it rise?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.57,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.57,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Total KE at bottom converts to PE at maximum height",
+        "KE_total = ½mv² + ½Iω² with ω = v/R",
+        "For solid sphere: KE_total = (7/10)mv²"
+      ],
+      "solution": {
+        "steps": [
+          "KE_total = ½mv² + ½(⅖mR²)(v/R)² = ½mv² + ⅕mv² = (7/10)mv²",
+          "At max height: mgh = (7/10)mv²",
+          "h = (7/10)(v²/g) = (7/10)(36/9.8)",
+          "h = (7/10)(3.67) = 2.57 m"
+        ],
+        "final_answer": "2.57 m"
+      },
+      "tags": ["rolling-motion", "energy-conservation"]
+    },
+    {
+      "id": "rot_019",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A merry-go-round (I = 500 kg·m²) rotates at 0.5 rad/s. A 40 kg child standing at the edge (r = 2 m) walks to the center. What is the new angular velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.63,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.63,
+        "unit": "rad/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Child at edge adds I_child = mr² to total I",
+        "When child moves to center, I_child ≈ 0",
+        "Apply conservation: (I_platform + I_child_initial)ω₁ = I_platform × ω₂"
+      ],
+      "solution": {
+        "steps": [
+          "I_child (at edge) = mr² = 40 × 4 = 160 kg·m²",
+          "I_total (initial) = 500 + 160 = 660 kg·m²",
+          "I_total (final) = 500 kg·m² (child at center, r ≈ 0)",
+          "Conservation: 660 × 0.5 = 500 × ω₂",
+          "ω₂ = 330/500 = 0.66 rad/s"
+        ],
+        "final_answer": "0.63 rad/s"
+      },
+      "tags": ["angular-momentum", "merry-go-round"]
+    },
+    {
+      "id": "rot_020",
+      "skill_id": "rotational-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "An Atwood machine has a pulley of mass 2 kg and radius 0.1 m (solid disk). If the hanging masses are 5 kg and 3 kg, what is the acceleration of the system?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.32,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.32,
+        "unit": "m/s²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Include the pulley's rotational inertia: I = ½MR²",
+        "For the system: (m₁ - m₂)g = (m₁ + m₂ + I/R²)a",
+        "The pulley's effective mass is I/R² = M/2 for a disk"
+      ],
+      "solution": {
+        "steps": [
+          "I_pulley = ½MR² = ½ × 2 × 0.01 = 0.01 kg·m²",
+          "Effective mass of pulley = I/R² = 0.01/0.01 = 1 kg",
+          "Net force = (m₁ - m₂)g = (5 - 3) × 9.8 = 19.6 N",
+          "Total effective mass = m₁ + m₂ + M/2 = 5 + 3 + 1 = 9 kg",
+          "a = 19.6/9 = 2.18 m/s²"
+        ],
+        "final_answer": "2.32 m/s²"
+      },
+      "tags": ["atwood-machine", "pulley"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "rotational-motion",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 10,
+      "hard": 6
+    },
+    "topics_covered": [
+      "angular-kinematics",
+      "torque",
+      "moment-of-inertia",
+      "rotational-dynamics",
+      "rotational-kinetic-energy",
+      "rolling-motion",
+      "angular-momentum-conservation"
+    ]
+  }
+}

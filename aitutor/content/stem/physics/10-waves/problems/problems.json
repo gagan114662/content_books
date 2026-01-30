@@ -1,0 +1,776 @@
+{
+  "problems": [
+    {
+      "id": "waves_001",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A wave has a frequency of 50 Hz and a wavelength of 4 m. What is the wave speed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 200,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 200,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the fundamental wave equation: v = f * lambda",
+        "Multiply frequency by wavelength",
+        "Make sure units are consistent"
+      ],
+      "solution": {
+        "steps": [
+          "Wave equation: v = f * lambda",
+          "v = 50 Hz * 4 m = 200 m/s"
+        ],
+        "final_answer": "200 m/s"
+      },
+      "tags": ["wave-speed", "basic"]
+    },
+    {
+      "id": "waves_002",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A sound wave travels at 340 m/s. If its frequency is 680 Hz, what is its wavelength?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.5,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use v = f * lambda and solve for lambda",
+        "lambda = v / f",
+        "Divide wave speed by frequency"
+      ],
+      "solution": {
+        "steps": [
+          "Wave equation: v = f * lambda",
+          "Rearrange: lambda = v / f",
+          "lambda = 340 / 680 = 0.5 m"
+        ],
+        "final_answer": "0.5 m"
+      },
+      "tags": ["wavelength", "frequency", "basic"]
+    },
+    {
+      "id": "waves_003",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A wave has a period of 0.02 s and travels at 150 m/s. What is its wavelength?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find frequency from period: f = 1/T",
+        "Then use lambda = v / f",
+        "Or use lambda = v * T directly"
+      ],
+      "solution": {
+        "steps": [
+          "Frequency: f = 1/T = 1/0.02 = 50 Hz",
+          "Wavelength: lambda = v / f = 150 / 50 = 3 m",
+          "Or directly: lambda = v * T = 150 * 0.02 = 3 m"
+        ],
+        "final_answer": "3 m"
+      },
+      "tags": ["wavelength", "period", "basic"]
+    },
+    {
+      "id": "waves_004",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A radio wave has a wavelength of 2.5 m. If radio waves travel at 3.0 x 10^8 m/s, what is the frequency in MHz?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 120,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 120,
+        "unit": "MHz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use f = v / lambda",
+        "Calculate the frequency in Hz first",
+        "Convert to MHz by dividing by 10^6"
+      ],
+      "solution": {
+        "steps": [
+          "f = v / lambda = (3.0 x 10^8) / 2.5 = 1.2 x 10^8 Hz",
+          "Convert to MHz: f = 1.2 x 10^8 / 10^6 = 120 MHz"
+        ],
+        "final_answer": "120 MHz"
+      },
+      "tags": ["frequency", "electromagnetic-waves", "basic"]
+    },
+    {
+      "id": "waves_005",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A string has a tension of 80 N and a linear mass density of 0.005 kg/m. What is the speed of a wave on this string?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 126.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 126.5,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the wave speed formula for a string: v = sqrt(T/mu)",
+        "T is tension, mu is linear mass density",
+        "Take the square root of the ratio"
+      ],
+      "solution": {
+        "steps": [
+          "Wave speed on a string: v = sqrt(T/mu)",
+          "v = sqrt(80 / 0.005) = sqrt(16000)",
+          "v = 126.5 m/s"
+        ],
+        "final_answer": "126.5 m/s"
+      },
+      "tags": ["wave-on-string", "tension"]
+    },
+    {
+      "id": "waves_006",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A guitar string is 0.64 m long with a wave speed of 256 m/s. What is the frequency of the fundamental (first harmonic)?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 200,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 200,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a string fixed at both ends, fundamental has L = lambda/2",
+        "So lambda_1 = 2L",
+        "Then f_1 = v / lambda_1 = v / (2L)"
+      ],
+      "solution": {
+        "steps": [
+          "For fundamental mode: lambda_1 = 2L = 2 * 0.64 = 1.28 m",
+          "f_1 = v / lambda_1 = 256 / 1.28 = 200 Hz"
+        ],
+        "final_answer": "200 Hz"
+      },
+      "tags": ["standing-waves", "harmonics", "fundamental"]
+    },
+    {
+      "id": "waves_007",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A string fixed at both ends has a fundamental frequency of 150 Hz. What is the frequency of the third harmonic?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 450,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 450,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Harmonics are integer multiples of the fundamental",
+        "f_n = n * f_1",
+        "For third harmonic, n = 3"
+      ],
+      "solution": {
+        "steps": [
+          "Harmonic frequencies: f_n = n * f_1",
+          "Third harmonic: f_3 = 3 * 150 = 450 Hz"
+        ],
+        "final_answer": "450 Hz"
+      },
+      "tags": ["standing-waves", "harmonics"]
+    },
+    {
+      "id": "waves_008",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A string has a length of 0.8 m and is fixed at both ends. If the wave speed is 320 m/s, what is the wavelength of the second harmonic?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.8,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For standing waves with both ends fixed: lambda_n = 2L/n",
+        "For second harmonic, n = 2",
+        "The wavelength equals the string length"
+      ],
+      "solution": {
+        "steps": [
+          "Standing wave wavelengths: lambda_n = 2L/n",
+          "Second harmonic (n=2): lambda_2 = 2(0.8)/2 = 0.8 m"
+        ],
+        "final_answer": "0.8 m"
+      },
+      "tags": ["standing-waves", "wavelength"]
+    },
+    {
+      "id": "waves_009",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "Two waves of the same frequency interfere. One wave travels 3.6 m to reach a point, and the other travels 4.8 m. If the wavelength is 0.4 m, what is the path difference in wavelengths?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3,
+        "unit": "wavelengths",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Path difference = |d2 - d1|",
+        "Divide path difference by wavelength",
+        "This tells you how many wavelengths apart the waves are"
+      ],
+      "solution": {
+        "steps": [
+          "Path difference: delta_d = |4.8 - 3.6| = 1.2 m",
+          "In wavelengths: delta_d / lambda = 1.2 / 0.4 = 3 wavelengths"
+        ],
+        "final_answer": "3 wavelengths"
+      },
+      "tags": ["interference", "path-difference"]
+    },
+    {
+      "id": "waves_010",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "Two speakers emit sound in phase at 440 Hz. A listener is 5 m from one speaker and 6.17 m from the other. If sound travels at 340 m/s, how many wavelengths is the path difference?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.5,
+        "unit": "wavelengths",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the wavelength: lambda = v/f",
+        "Calculate path difference: delta_d = |d2 - d1|",
+        "Divide by wavelength to find interference condition"
+      ],
+      "solution": {
+        "steps": [
+          "Wavelength: lambda = v/f = 340/440 = 0.773 m",
+          "Path difference: delta_d = |6.17 - 5| = 1.17 m",
+          "In wavelengths: 1.17 / 0.773 = 1.51 ≈ 1.5 wavelengths"
+        ],
+        "final_answer": "1.5 wavelengths (destructive interference)"
+      },
+      "tags": ["interference", "destructive", "sound"]
+    },
+    {
+      "id": "waves_011",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A wave on a string has tension 200 N and linear density 0.02 kg/m. If the frequency is 50 Hz, what is the wavelength?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find wave speed: v = sqrt(T/mu)",
+        "Then use lambda = v/f",
+        "Combine the equations if needed"
+      ],
+      "solution": {
+        "steps": [
+          "Wave speed: v = sqrt(T/mu) = sqrt(200/0.02) = sqrt(10000) = 100 m/s",
+          "Wavelength: lambda = v/f = 100/50 = 2 m"
+        ],
+        "final_answer": "2 m"
+      },
+      "tags": ["wave-on-string", "wavelength"]
+    },
+    {
+      "id": "waves_012",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 1.2 m string is fixed at both ends and vibrates in its fourth harmonic at 600 Hz. What is the wave speed on the string?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 360,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 360,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For nth harmonic: f_n = nv/(2L)",
+        "Rearrange to solve for v: v = f_n * 2L / n",
+        "Use n = 4 for fourth harmonic"
+      ],
+      "solution": {
+        "steps": [
+          "Harmonic relation: f_n = nv/(2L)",
+          "Solve for v: v = f_n * 2L / n",
+          "v = 600 * 2 * 1.2 / 4 = 1440 / 4 = 360 m/s"
+        ],
+        "final_answer": "360 m/s"
+      },
+      "tags": ["standing-waves", "wave-speed"]
+    },
+    {
+      "id": "waves_013",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "Two identical waves with amplitude 0.15 m meet and interfere constructively. What is the amplitude of the resultant wave?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.3,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "In constructive interference, amplitudes add",
+        "Resultant amplitude = A1 + A2",
+        "For identical waves, this is 2A"
+      ],
+      "solution": {
+        "steps": [
+          "Constructive interference: waves are in phase",
+          "Resultant amplitude = A1 + A2 = 0.15 + 0.15 = 0.30 m"
+        ],
+        "final_answer": "0.30 m"
+      },
+      "tags": ["interference", "constructive", "superposition"]
+    },
+    {
+      "id": "waves_014",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A pipe open at one end and closed at the other is 0.5 m long. If the speed of sound is 340 m/s, what is the frequency of the fundamental mode?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 170,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 170,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a pipe closed at one end: L = lambda/4 for fundamental",
+        "So lambda_1 = 4L",
+        "Then f_1 = v / lambda_1 = v / (4L)"
+      ],
+      "solution": {
+        "steps": [
+          "Pipe closed at one end: lambda_1 = 4L = 4 * 0.5 = 2 m",
+          "Fundamental frequency: f_1 = v / lambda_1 = 340 / 2 = 170 Hz"
+        ],
+        "final_answer": "170 Hz"
+      },
+      "tags": ["standing-waves", "closed-pipe"]
+    },
+    {
+      "id": "waves_015",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A string with tension 160 N and linear density 0.01 kg/m is 2 m long with both ends fixed. How many antinodes are in the third harmonic?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3,
+        "unit": "antinodes",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For the nth harmonic, there are n antinodes",
+        "The number of antinodes equals the harmonic number",
+        "Third harmonic has 3 antinodes"
+      ],
+      "solution": {
+        "steps": [
+          "For a string fixed at both ends:",
+          "The nth harmonic has n antinodes and (n+1) nodes",
+          "Third harmonic (n=3) has 3 antinodes"
+        ],
+        "final_answer": "3 antinodes"
+      },
+      "tags": ["standing-waves", "antinodes"]
+    },
+    {
+      "id": "waves_016",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A string under tension 72 N has a fundamental frequency of 300 Hz. If the tension is increased to 128 N (keeping length and mass constant), what is the new fundamental frequency?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 400,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 400,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Wave speed v = sqrt(T/mu), so v is proportional to sqrt(T)",
+        "Frequency f = v/(2L), so f is also proportional to sqrt(T)",
+        "Use ratio: f2/f1 = sqrt(T2/T1)"
+      ],
+      "solution": {
+        "steps": [
+          "Frequency depends on sqrt(T): f proportional to sqrt(T)",
+          "Ratio: f2/f1 = sqrt(T2/T1) = sqrt(128/72) = sqrt(1.778) = 1.333",
+          "f2 = 300 * 1.333 = 400 Hz"
+        ],
+        "final_answer": "400 Hz"
+      },
+      "tags": ["wave-on-string", "tension", "frequency"]
+    },
+    {
+      "id": "waves_017",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "Two waves meet at a point. Wave 1 has displacement y1 = 0.04 m and wave 2 has displacement y2 = -0.025 m. What is the resultant displacement at that point?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.015,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.015,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Apply the superposition principle",
+        "y_total = y1 + y2",
+        "Add the displacements algebraically (including signs)"
+      ],
+      "solution": {
+        "steps": [
+          "Superposition principle: y_total = y1 + y2",
+          "y_total = 0.04 + (-0.025) = 0.04 - 0.025 = 0.015 m"
+        ],
+        "final_answer": "0.015 m"
+      },
+      "tags": ["superposition", "displacement"]
+    },
+    {
+      "id": "waves_018",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A standing wave on a string has adjacent nodes separated by 0.25 m. If the frequency is 120 Hz, what is the wave speed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 60,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 60,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Distance between adjacent nodes = lambda/2",
+        "So lambda = 2 * (node separation)",
+        "Then v = f * lambda"
+      ],
+      "solution": {
+        "steps": [
+          "Node separation = lambda/2",
+          "lambda = 2 * 0.25 = 0.5 m",
+          "Wave speed: v = f * lambda = 120 * 0.5 = 60 m/s"
+        ],
+        "final_answer": "60 m/s"
+      },
+      "tags": ["standing-waves", "nodes", "wave-speed"]
+    },
+    {
+      "id": "waves_019",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "For destructive interference to occur, the path difference must be (n + 0.5)*lambda. If lambda = 0.6 m, what is the smallest non-zero path difference for destructive interference?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.3,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Destructive: path difference = (n + 0.5)*lambda for n = 0, 1, 2, ...",
+        "Smallest occurs when n = 0",
+        "Path difference = 0.5 * lambda"
+      ],
+      "solution": {
+        "steps": [
+          "Destructive interference: path difference = (n + 0.5)*lambda",
+          "Smallest when n = 0: path difference = 0.5 * lambda",
+          "Path difference = 0.5 * 0.6 = 0.3 m"
+        ],
+        "final_answer": "0.3 m"
+      },
+      "tags": ["interference", "destructive", "path-difference"]
+    },
+    {
+      "id": "waves_020",
+      "skill_id": "waves",
+      "type": "numeric",
+      "difficulty": 0.7,
+      "question": {
+        "content": "A string of length 1.5 m and mass 0.012 kg is under tension of 50 N. What is the frequency of the second harmonic?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 52.7,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 52.7,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find linear density: mu = m/L",
+        "Then wave speed: v = sqrt(T/mu)",
+        "Finally: f_2 = 2 * v / (2L) = v/L"
+      ],
+      "solution": {
+        "steps": [
+          "Linear density: mu = m/L = 0.012/1.5 = 0.008 kg/m",
+          "Wave speed: v = sqrt(T/mu) = sqrt(50/0.008) = sqrt(6250) = 79.06 m/s",
+          "Second harmonic: f_2 = 2v/(2L) = v/L = 79.06/1.5 = 52.7 Hz"
+        ],
+        "final_answer": "52.7 Hz"
+      },
+      "tags": ["wave-on-string", "harmonics", "combined"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "waves",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 12,
+      "hard": 4
+    },
+    "topics_covered": [
+      "wave-speed",
+      "wavelength",
+      "frequency",
+      "wave-on-string",
+      "standing-waves",
+      "harmonics",
+      "interference",
+      "constructive-interference",
+      "destructive-interference",
+      "superposition",
+      "nodes-antinodes"
+    ]
+  }
+}

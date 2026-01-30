@@ -1,0 +1,780 @@
+{
+  "problems": [
+    {
+      "id": "circuits_001",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 9 V battery is connected to a 3 Ω resistor. What current flows through the circuit?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3,
+        "unit": "A",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use Ohm's law: V = IR",
+        "Solve for current: I = V/R",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Ohm's law: V = IR",
+          "Solve for I: I = V/R",
+          "I = 9/3 = 3 A"
+        ],
+        "final_answer": "3 A"
+      },
+      "tags": ["ohms-law", "basic"]
+    },
+    {
+      "id": "circuits_002",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A current of 2 A flows through a resistor with a voltage drop of 10 V. What is the resistance?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5,
+        "unit": "Ω",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use Ohm's law: V = IR",
+        "Solve for resistance: R = V/I",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Ohm's law: V = IR",
+          "Solve for R: R = V/I",
+          "R = 10/2 = 5 Ω"
+        ],
+        "final_answer": "5 Ω"
+      },
+      "tags": ["ohms-law", "basic"]
+    },
+    {
+      "id": "circuits_003",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "If 15 coulombs of charge pass through a wire in 5 seconds, what is the current?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3,
+        "unit": "A",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Current is defined as charge per unit time",
+        "I = Q/t",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Current definition: I = Q/t",
+          "I = 15/5 = 3 A"
+        ],
+        "final_answer": "3 A"
+      },
+      "tags": ["current", "basic"]
+    },
+    {
+      "id": "circuits_004",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "Three resistors of 4 Ω, 6 Ω, and 10 Ω are connected in series. What is the equivalent resistance?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 20,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 20,
+        "unit": "Ω",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "In series, resistances add directly",
+        "R_eq = R_1 + R_2 + R_3",
+        "Add all three resistor values"
+      ],
+      "solution": {
+        "steps": [
+          "For series resistors: R_eq = R_1 + R_2 + R_3",
+          "R_eq = 4 + 6 + 10 = 20 Ω"
+        ],
+        "final_answer": "20 Ω"
+      },
+      "tags": ["series-circuit", "equivalent-resistance"]
+    },
+    {
+      "id": "circuits_005",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "Two resistors of 6 Ω and 12 Ω are connected in parallel. What is the equivalent resistance?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4,
+        "unit": "Ω",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For parallel resistors: 1/R_eq = 1/R_1 + 1/R_2",
+        "Or use the product-over-sum formula: R_eq = (R_1 × R_2)/(R_1 + R_2)",
+        "Parallel resistance is always less than the smallest resistor"
+      ],
+      "solution": {
+        "steps": [
+          "For two parallel resistors: R_eq = (R_1 × R_2)/(R_1 + R_2)",
+          "R_eq = (6 × 12)/(6 + 12) = 72/18 = 4 Ω"
+        ],
+        "final_answer": "4 Ω"
+      },
+      "tags": ["parallel-circuit", "equivalent-resistance"]
+    },
+    {
+      "id": "circuits_006",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 12 V battery powers a circuit with two resistors (3 Ω and 6 Ω) in series. What is the current in the circuit?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.33,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.33,
+        "unit": "A",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the equivalent resistance",
+        "In series: R_eq = R_1 + R_2",
+        "Then use Ohm's law: I = V/R_eq"
+      ],
+      "solution": {
+        "steps": [
+          "Equivalent resistance: R_eq = 3 + 6 = 9 Ω",
+          "Current: I = V/R_eq = 12/9 = 1.33 A"
+        ],
+        "final_answer": "1.33 A"
+      },
+      "tags": ["series-circuit", "ohms-law"]
+    },
+    {
+      "id": "circuits_007",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 100 W light bulb operates at 120 V. What is the resistance of the bulb?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 144,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 144,
+        "unit": "Ω",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the power formula that relates power, voltage, and resistance",
+        "P = V²/R, so R = V²/P",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Power formula: P = V²/R",
+          "Solve for R: R = V²/P",
+          "R = (120)²/100 = 14400/100 = 144 Ω"
+        ],
+        "final_answer": "144 Ω"
+      },
+      "tags": ["power", "ohms-law"]
+    },
+    {
+      "id": "circuits_008",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 4 A current flows through a 5 Ω resistor. What power is dissipated by the resistor?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 80,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 80,
+        "unit": "W",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the power formula with current and resistance",
+        "P = I²R",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Power formula: P = I²R",
+          "P = (4)² × 5 = 16 × 5 = 80 W"
+        ],
+        "final_answer": "80 W"
+      },
+      "tags": ["power", "basic"]
+    },
+    {
+      "id": "circuits_009",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "In a series circuit with a 24 V battery and resistors of 2 Ω and 4 Ω, what is the voltage across the 4 Ω resistor?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 16,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 16,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the total current using I = V_total/R_total",
+        "In series, current is the same through all resistors",
+        "Then find voltage across the 4 Ω resistor: V = IR"
+      ],
+      "solution": {
+        "steps": [
+          "Total resistance: R_total = 2 + 4 = 6 Ω",
+          "Total current: I = V/R = 24/6 = 4 A",
+          "Voltage across 4 Ω resistor: V = IR = 4 × 4 = 16 V"
+        ],
+        "final_answer": "16 V"
+      },
+      "tags": ["series-circuit", "voltage-divider"]
+    },
+    {
+      "id": "circuits_010",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "Two resistors of 10 Ω and 15 Ω are connected in parallel to a 30 V source. What is the total current from the source?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5,
+        "unit": "A",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "In parallel, each resistor has the full voltage across it",
+        "Find current through each: I_1 = V/R_1, I_2 = V/R_2",
+        "Total current = I_1 + I_2"
+      ],
+      "solution": {
+        "steps": [
+          "Current through 10 Ω: I_1 = 30/10 = 3 A",
+          "Current through 15 Ω: I_2 = 30/15 = 2 A",
+          "Total current: I_total = 3 + 2 = 5 A"
+        ],
+        "final_answer": "5 A"
+      },
+      "tags": ["parallel-circuit", "current-divider"]
+    },
+    {
+      "id": "circuits_011",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "Three 12 Ω resistors are connected in parallel. What is the equivalent resistance?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4,
+        "unit": "Ω",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For identical resistors in parallel: R_eq = R/n",
+        "Where n is the number of resistors",
+        "Or use 1/R_eq = 1/R_1 + 1/R_2 + 1/R_3"
+      ],
+      "solution": {
+        "steps": [
+          "For three identical resistors in parallel:",
+          "1/R_eq = 1/12 + 1/12 + 1/12 = 3/12 = 1/4",
+          "R_eq = 4 Ω",
+          "Or directly: R_eq = R/n = 12/3 = 4 Ω"
+        ],
+        "final_answer": "4 Ω"
+      },
+      "tags": ["parallel-circuit", "equivalent-resistance"]
+    },
+    {
+      "id": "circuits_012",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A circuit has a 6 Ω resistor in series with a parallel combination of 4 Ω and 12 Ω. What is the total equivalent resistance?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 9,
+        "unit": "Ω",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the equivalent resistance of the parallel combination",
+        "R_parallel = (R_1 × R_2)/(R_1 + R_2)",
+        "Then add the series resistor: R_total = R_series + R_parallel"
+      ],
+      "solution": {
+        "steps": [
+          "Parallel combination: R_p = (4 × 12)/(4 + 12) = 48/16 = 3 Ω",
+          "Total resistance: R_total = 6 + 3 = 9 Ω"
+        ],
+        "final_answer": "9 Ω"
+      },
+      "tags": ["combined-circuit", "equivalent-resistance"]
+    },
+    {
+      "id": "circuits_013",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 1500 W heater operates for 2 hours at 120 V. How much electrical energy is consumed in kWh?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3,
+        "unit": "kWh",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Energy = Power × time",
+        "Convert power to kW: 1500 W = 1.5 kW",
+        "E = P × t in kWh"
+      ],
+      "solution": {
+        "steps": [
+          "Power in kW: 1500 W = 1.5 kW",
+          "Energy: E = P × t = 1.5 × 2 = 3 kWh"
+        ],
+        "final_answer": "3 kWh"
+      },
+      "tags": ["power", "energy"]
+    },
+    {
+      "id": "circuits_014",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "In a circuit, a 12 V battery has an internal resistance of 0.5 Ω. When connected to an external 5.5 Ω resistor, what current flows?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2,
+        "unit": "A",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The internal resistance is in series with the external resistance",
+        "Total resistance = internal + external",
+        "Use Ohm's law: I = EMF / R_total"
+      ],
+      "solution": {
+        "steps": [
+          "Total resistance: R_total = r + R = 0.5 + 5.5 = 6 Ω",
+          "Current: I = EMF/R_total = 12/6 = 2 A"
+        ],
+        "final_answer": "2 A"
+      },
+      "tags": ["internal-resistance", "ohms-law"]
+    },
+    {
+      "id": "circuits_015",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "Using Kirchhoff's voltage law: A loop contains a 15 V battery and two resistors with voltage drops of 6 V and V_2. What is V_2?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 9,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Kirchhoff's voltage law: sum of voltages around a loop = 0",
+        "EMF - V_1 - V_2 = 0",
+        "Solve for V_2"
+      ],
+      "solution": {
+        "steps": [
+          "Kirchhoff's voltage law: ΣV = 0",
+          "Going around the loop: +15 - 6 - V_2 = 0",
+          "V_2 = 15 - 6 = 9 V"
+        ],
+        "final_answer": "9 V"
+      },
+      "tags": ["kirchhoffs-law", "KVL"]
+    },
+    {
+      "id": "circuits_016",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "At a junction, currents of 3 A and 5 A flow in, and one current flows out. Using Kirchhoff's current law, what is the outgoing current?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 8,
+        "unit": "A",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Kirchhoff's current law: current in = current out",
+        "ΣI_in = ΣI_out",
+        "Add the incoming currents"
+      ],
+      "solution": {
+        "steps": [
+          "Kirchhoff's current law: ΣI_in = ΣI_out",
+          "3 + 5 = I_out",
+          "I_out = 8 A"
+        ],
+        "final_answer": "8 A"
+      },
+      "tags": ["kirchhoffs-law", "KCL"]
+    },
+    {
+      "id": "circuits_017",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 20 V source powers a circuit with R_1 = 4 Ω in series with a parallel combination of R_2 = 6 Ω and R_3 = 3 Ω. What is the current through R_1?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3.33,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3.33,
+        "unit": "A",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the equivalent resistance of the parallel combination",
+        "Then find total resistance: R_total = R_1 + R_parallel",
+        "Current through R_1 equals total current: I = V/R_total"
+      ],
+      "solution": {
+        "steps": [
+          "Parallel combination: R_p = (6 × 3)/(6 + 3) = 18/9 = 2 Ω",
+          "Total resistance: R_total = 4 + 2 = 6 Ω",
+          "Current through R_1: I = V/R_total = 20/6 = 3.33 A"
+        ],
+        "final_answer": "3.33 A"
+      },
+      "tags": ["combined-circuit", "current"]
+    },
+    {
+      "id": "circuits_018",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 50 Ω resistor and a 100 Ω resistor are in parallel, and this combination is in series with a 30 Ω resistor. If the total current is 2 A, what is the source voltage?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 126.67,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 126.67,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Find the parallel equivalent of 50 Ω and 100 Ω",
+        "Add the series 30 Ω to get total resistance",
+        "Use V = I × R_total"
+      ],
+      "solution": {
+        "steps": [
+          "Parallel: R_p = (50 × 100)/(50 + 100) = 5000/150 = 33.33 Ω",
+          "Total: R_total = 30 + 33.33 = 63.33 Ω",
+          "Source voltage: V = IR = 2 × 63.33 = 126.67 V"
+        ],
+        "final_answer": "126.67 V"
+      },
+      "tags": ["combined-circuit", "voltage"]
+    },
+    {
+      "id": "circuits_019",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "What is the time constant of an RC circuit with a 500 kΩ resistor and a 10 μF capacitor?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The RC time constant formula: τ = RC",
+        "Convert units: 500 kΩ = 500,000 Ω, 10 μF = 10 × 10^-6 F",
+        "Multiply R and C"
+      ],
+      "solution": {
+        "steps": [
+          "Time constant: τ = RC",
+          "R = 500 kΩ = 500,000 Ω = 5 × 10^5 Ω",
+          "C = 10 μF = 10 × 10^-6 F = 10^-5 F",
+          "τ = (5 × 10^5) × (10^-5) = 5 s"
+        ],
+        "final_answer": "5 s"
+      },
+      "tags": ["RC-circuit", "time-constant"]
+    },
+    {
+      "id": "circuits_020",
+      "skill_id": "circuits",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "Two 60 W light bulbs are connected in series to a 120 V source. What is the total power consumed by the circuit?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 30,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 30,
+        "unit": "W",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the resistance of each bulb from its rated values",
+        "R = V²/P where V = 120 V and P = 60 W (rated)",
+        "In series, total resistance doubles, but voltage is shared"
+      ],
+      "solution": {
+        "steps": [
+          "Each bulb's resistance: R = V²/P = (120)²/60 = 240 Ω",
+          "Total resistance in series: R_total = 240 + 240 = 480 Ω",
+          "Current: I = V/R = 120/480 = 0.25 A",
+          "Total power: P = I²R_total = (0.25)² × 480 = 30 W",
+          "Or: P = V²/R_total = (120)²/480 = 30 W"
+        ],
+        "final_answer": "30 W"
+      },
+      "tags": ["series-circuit", "power"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "circuits",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 3,
+      "medium": 10,
+      "hard": 7
+    },
+    "topics_covered": [
+      "ohms-law",
+      "current",
+      "series-circuits",
+      "parallel-circuits",
+      "combined-circuits",
+      "equivalent-resistance",
+      "power",
+      "kirchhoffs-laws",
+      "RC-circuits"
+    ]
+  }
+}

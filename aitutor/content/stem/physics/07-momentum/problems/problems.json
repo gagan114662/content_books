@@ -1,0 +1,803 @@
+{
+  "problems": [
+    {
+      "id": "momentum_001",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "What is the momentum of a 5 kg ball moving at 8 m/s?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 40,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 40,
+        "unit": "kg*m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Momentum is the product of mass and velocity",
+        "Use the formula: p = mv",
+        "Substitute the given values directly"
+      ],
+      "solution": {
+        "steps": [
+          "Identify the formula: p = mv",
+          "Substitute values: p = 5 kg x 8 m/s",
+          "p = 40 kg*m/s"
+        ],
+        "final_answer": "40 kg*m/s"
+      },
+      "tags": ["momentum", "basic", "p=mv"]
+    },
+    {
+      "id": "momentum_002",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 1200 kg car is traveling at 15 m/s. What is its momentum?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 18000,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 18000,
+        "unit": "kg*m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Momentum formula: p = mv",
+        "Mass is in kg, velocity is in m/s",
+        "Multiply mass by velocity"
+      ],
+      "solution": {
+        "steps": [
+          "p = mv",
+          "p = 1200 kg x 15 m/s",
+          "p = 18000 kg*m/s"
+        ],
+        "final_answer": "18000 kg*m/s"
+      },
+      "tags": ["momentum", "basic", "p=mv"]
+    },
+    {
+      "id": "momentum_003",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 0.145 kg baseball is thrown at 40 m/s. What is its momentum?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5.8,
+        "unit": "kg*m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use p = mv",
+        "Make sure mass is in kilograms",
+        "Multiply the decimal mass by velocity"
+      ],
+      "solution": {
+        "steps": [
+          "p = mv",
+          "p = 0.145 kg x 40 m/s",
+          "p = 5.8 kg*m/s"
+        ],
+        "final_answer": "5.8 kg*m/s"
+      },
+      "tags": ["momentum", "basic", "p=mv"]
+    },
+    {
+      "id": "momentum_004",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 60 N force acts on a 3 kg object for 4 seconds. What is the impulse delivered to the object?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 240,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 240,
+        "unit": "N*s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Impulse is force multiplied by the time interval",
+        "Use J = F * delta_t",
+        "The mass is not needed for this calculation"
+      ],
+      "solution": {
+        "steps": [
+          "Impulse formula: J = F * delta_t",
+          "J = 60 N x 4 s",
+          "J = 240 N*s"
+        ],
+        "final_answer": "240 N*s"
+      },
+      "tags": ["impulse", "J=Ft"]
+    },
+    {
+      "id": "momentum_005",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 2 kg ball initially at rest is hit by a bat, giving it a velocity of 25 m/s. What impulse was delivered to the ball?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 50,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 50,
+        "unit": "N*s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Impulse equals change in momentum: J = delta_p",
+        "delta_p = m(v_f - v_i)",
+        "The ball starts at rest, so v_i = 0"
+      ],
+      "solution": {
+        "steps": [
+          "J = delta_p = m(v_f - v_i)",
+          "J = 2 kg x (25 - 0) m/s",
+          "J = 50 N*s"
+        ],
+        "final_answer": "50 N*s"
+      },
+      "tags": ["impulse", "change-in-momentum"]
+    },
+    {
+      "id": "momentum_006",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 0.5 kg ball moving at 10 m/s bounces off a wall and returns at 8 m/s in the opposite direction. What is the magnitude of the impulse on the ball?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 9,
+        "unit": "N*s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Define positive direction as toward the wall",
+        "Initial velocity is +10 m/s, final velocity is -8 m/s",
+        "J = m(v_f - v_i) and take the magnitude"
+      ],
+      "solution": {
+        "steps": [
+          "Let positive be toward the wall: v_i = +10 m/s, v_f = -8 m/s",
+          "J = m(v_f - v_i) = 0.5 kg x (-8 - 10) m/s",
+          "J = 0.5 x (-18) = -9 N*s",
+          "Magnitude = |J| = 9 N*s"
+        ],
+        "final_answer": "9 N*s"
+      },
+      "tags": ["impulse", "bounce", "direction-change"]
+    },
+    {
+      "id": "momentum_007",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 1500 kg car moving at 20 m/s collides with a 1000 kg car at rest. If they stick together after the collision, what is their common velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 12,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 12,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "This is a perfectly inelastic collision - objects stick together",
+        "Use conservation of momentum: m1*v1 + m2*v2 = (m1 + m2)*v_f",
+        "The second car is at rest, so v2 = 0"
+      ],
+      "solution": {
+        "steps": [
+          "Conservation of momentum: m1*v1 + m2*v2 = (m1 + m2)*v_f",
+          "1500 x 20 + 1000 x 0 = (1500 + 1000) x v_f",
+          "30000 = 2500 x v_f",
+          "v_f = 30000/2500 = 12 m/s"
+        ],
+        "final_answer": "12 m/s"
+      },
+      "tags": ["inelastic-collision", "conservation-of-momentum"]
+    },
+    {
+      "id": "momentum_008",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 5 kg ball moving at 6 m/s collides head-on with a 3 kg ball moving at 4 m/s in the opposite direction. If they stick together, what is the magnitude of their final velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.25,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.25,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Choose a positive direction (e.g., direction of the 5 kg ball)",
+        "The 3 kg ball has negative velocity in this reference",
+        "Apply m1*v1 + m2*v2 = (m1 + m2)*v_f"
+      ],
+      "solution": {
+        "steps": [
+          "Let positive be the direction of the 5 kg ball",
+          "m1 = 5 kg, v1 = +6 m/s; m2 = 3 kg, v2 = -4 m/s",
+          "Conservation: 5(6) + 3(-4) = (5 + 3)v_f",
+          "30 - 12 = 8v_f",
+          "v_f = 18/8 = 2.25 m/s"
+        ],
+        "final_answer": "2.25 m/s"
+      },
+      "tags": ["inelastic-collision", "opposite-directions"]
+    },
+    {
+      "id": "momentum_009",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 70 kg astronaut floating at rest in space throws a 2 kg tool at 10 m/s. What is the astronaut's recoil velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.286,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.286,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Initial total momentum is zero (both at rest)",
+        "Final momentum must also be zero: m_a*v_a + m_t*v_t = 0",
+        "Solve for the astronaut's velocity (magnitude)"
+      ],
+      "solution": {
+        "steps": [
+          "Initial momentum = 0 (system at rest)",
+          "Final momentum: m_a*v_a + m_t*v_t = 0",
+          "70*v_a + 2*(10) = 0",
+          "70*v_a = -20",
+          "v_a = -0.286 m/s (magnitude = 0.286 m/s)"
+        ],
+        "final_answer": "0.286 m/s"
+      },
+      "tags": ["recoil", "explosion", "conservation-of-momentum"]
+    },
+    {
+      "id": "momentum_010",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 50 kg cannon fires a 2 kg cannonball at 200 m/s. What is the recoil speed of the cannon?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 8,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Before firing, total momentum = 0",
+        "After firing: m_cannon*v_cannon + m_ball*v_ball = 0",
+        "The cannon moves opposite to the ball"
+      ],
+      "solution": {
+        "steps": [
+          "Initial momentum = 0",
+          "m_c*v_c + m_b*v_b = 0",
+          "50*v_c + 2*200 = 0",
+          "50*v_c = -400",
+          "v_c = -8 m/s (recoil speed = 8 m/s)"
+        ],
+        "final_answer": "8 m/s"
+      },
+      "tags": ["recoil", "explosion"]
+    },
+    {
+      "id": "momentum_011",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 4 kg ball moving at 8 m/s collides elastically with a 4 kg ball at rest. What is the velocity of the first ball after collision?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0,
+              "tolerance": 0.1,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0,
+        "unit": "m/s",
+        "tolerance": 0.1
+      },
+      "hints": [
+        "In an elastic collision between equal masses, the balls exchange velocities",
+        "The moving ball stops, the stationary ball moves",
+        "This can be derived from conservation of both momentum and kinetic energy"
+      ],
+      "solution": {
+        "steps": [
+          "For elastic collision with equal masses where one is at rest:",
+          "The moving ball transfers all its momentum to the stationary ball",
+          "v1_f = 0 m/s, v2_f = v1_i = 8 m/s",
+          "First ball's final velocity = 0 m/s"
+        ],
+        "final_answer": "0 m/s"
+      },
+      "tags": ["elastic-collision", "equal-masses"]
+    },
+    {
+      "id": "momentum_012",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 2 kg ball moving at 10 m/s collides elastically with a 6 kg ball at rest. What is the velocity of the 2 kg ball after the collision?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": -5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": -5,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use elastic collision formula: v1_f = ((m1-m2)/(m1+m2))*v1_i",
+        "When m1 < m2, the first ball bounces back (negative velocity)",
+        "Substitute the masses and initial velocity"
+      ],
+      "solution": {
+        "steps": [
+          "For elastic collision with second ball at rest:",
+          "v1_f = ((m1 - m2)/(m1 + m2)) * v1_i",
+          "v1_f = ((2 - 6)/(2 + 6)) * 10",
+          "v1_f = (-4/8) * 10 = -5 m/s"
+        ],
+        "final_answer": "-5 m/s"
+      },
+      "tags": ["elastic-collision", "unequal-masses"]
+    },
+    {
+      "id": "momentum_013",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 6 kg ball moving at 12 m/s collides elastically with a 2 kg ball at rest. What is the velocity of the 2 kg ball after collision?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 18,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 18,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use elastic collision formula: v2_f = (2*m1/(m1+m2))*v1_i",
+        "This gives the velocity of the initially stationary ball",
+        "When m1 > m2, the lighter ball moves faster than the original"
+      ],
+      "solution": {
+        "steps": [
+          "For elastic collision with second ball at rest:",
+          "v2_f = (2*m1/(m1 + m2)) * v1_i",
+          "v2_f = (2*6/(6 + 2)) * 12",
+          "v2_f = (12/8) * 12 = 1.5 * 12 = 18 m/s"
+        ],
+        "final_answer": "18 m/s"
+      },
+      "tags": ["elastic-collision", "unequal-masses"]
+    },
+    {
+      "id": "momentum_014",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 10 kg object at rest explodes into two pieces. One piece (4 kg) moves at 15 m/s. What is the speed of the other piece?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 10,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 10,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The second piece has mass = 10 - 4 = 6 kg",
+        "Initial momentum is zero, so final momentum must be zero",
+        "m1*v1 + m2*v2 = 0"
+      ],
+      "solution": {
+        "steps": [
+          "Second piece mass: m2 = 10 - 4 = 6 kg",
+          "Conservation: p_initial = p_final = 0",
+          "4*15 + 6*v2 = 0",
+          "60 + 6*v2 = 0",
+          "v2 = -10 m/s (speed = 10 m/s, opposite direction)"
+        ],
+        "final_answer": "10 m/s"
+      },
+      "tags": ["explosion", "recoil"]
+    },
+    {
+      "id": "momentum_015",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 0.02 kg bullet traveling at 400 m/s embeds in a 2 kg wooden block at rest. What is the final velocity of the bullet-block system?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3.96,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3.96,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "This is a perfectly inelastic collision (bullet embeds)",
+        "Use m1*v1 + m2*v2 = (m1 + m2)*v_f",
+        "The block is initially at rest"
+      ],
+      "solution": {
+        "steps": [
+          "Inelastic collision: m_b*v_b + m_w*0 = (m_b + m_w)*v_f",
+          "0.02*400 = (0.02 + 2)*v_f",
+          "8 = 2.02*v_f",
+          "v_f = 8/2.02 = 3.96 m/s"
+        ],
+        "final_answer": "3.96 m/s"
+      },
+      "tags": ["inelastic-collision", "bullet-block"]
+    },
+    {
+      "id": "momentum_016",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "In a perfectly inelastic collision, a 3 kg object moving at 10 m/s collides with a 2 kg object moving at 5 m/s in the same direction. How much kinetic energy is lost in the collision?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.5,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the final velocity using conservation of momentum",
+        "Calculate initial KE = 0.5*m1*v1^2 + 0.5*m2*v2^2",
+        "Calculate final KE = 0.5*(m1+m2)*vf^2, then find the difference"
+      ],
+      "solution": {
+        "steps": [
+          "Final velocity: (3*10 + 2*5) = 5*v_f => v_f = 40/5 = 8 m/s",
+          "Initial KE = 0.5*3*100 + 0.5*2*25 = 150 + 25 = 175 J",
+          "Final KE = 0.5*5*64 = 160 J",
+          "KE lost = 175 - 160 = 15 J"
+        ],
+        "final_answer": "7.5 J"
+      },
+      "tags": ["inelastic-collision", "energy-loss"]
+    },
+    {
+      "id": "momentum_017",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.7,
+      "question": {
+        "content": "A 3 kg ball moving east at 4 m/s collides with a 2 kg ball moving north at 6 m/s. If they stick together, what is the magnitude of their final velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3.39,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3.39,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Momentum is conserved in each direction separately",
+        "Find p_x and p_y components of final momentum",
+        "Use Pythagorean theorem: v_f = sqrt(v_x^2 + v_y^2)"
+      ],
+      "solution": {
+        "steps": [
+          "x-component: p_x = 3*4 = 12 kg*m/s",
+          "y-component: p_y = 2*6 = 12 kg*m/s",
+          "Total mass = 5 kg",
+          "v_x = 12/5 = 2.4 m/s, v_y = 12/5 = 2.4 m/s",
+          "v_f = sqrt(2.4^2 + 2.4^2) = sqrt(11.52) = 3.39 m/s"
+        ],
+        "final_answer": "3.39 m/s"
+      },
+      "tags": ["2D-collision", "inelastic", "vector"]
+    },
+    {
+      "id": "momentum_018",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.7,
+      "question": {
+        "content": "A 5 kg ball moving at 10 m/s collides with a 3 kg ball at rest. After collision, the 5 kg ball moves at 6 m/s at 30 degrees above its original direction. What is the speed of the 3 kg ball after collision?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 8.82,
+              "tolerance": 0.03,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 8.82,
+        "unit": "m/s",
+        "tolerance": 0.03
+      },
+      "hints": [
+        "Apply conservation of momentum in x and y directions separately",
+        "x: m1*v1_i = m1*v1_f*cos(30) + m2*v2_x",
+        "y: 0 = m1*v1_f*sin(30) - m2*v2_y (assuming ball 2 goes below x-axis)"
+      ],
+      "solution": {
+        "steps": [
+          "x-momentum: 5*10 = 5*6*cos(30) + 3*v2_x",
+          "50 = 25.98 + 3*v2_x => v2_x = 8.01 m/s",
+          "y-momentum: 0 = 5*6*sin(30) - 3*v2_y",
+          "0 = 15 - 3*v2_y => v2_y = 5 m/s",
+          "v2 = sqrt(8.01^2 + 5^2) = sqrt(64.16 + 25) = sqrt(89.16) = 9.44 m/s"
+        ],
+        "final_answer": "8.82 m/s"
+      },
+      "tags": ["2D-collision", "vector", "elastic"]
+    },
+    {
+      "id": "momentum_019",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.7,
+      "question": {
+        "content": "A 4 kg ball moving east at 5 m/s collides with a 4 kg ball moving at 5 m/s at 60 degrees south of east. If they stick together, what is the magnitude of their final velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.33,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.33,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Break the second ball's velocity into x and y components",
+        "v2_x = 5*cos(60) = 2.5 m/s, v2_y = -5*sin(60) = -4.33 m/s",
+        "Sum momenta in each direction, then find magnitude"
+      ],
+      "solution": {
+        "steps": [
+          "Ball 1: p1_x = 4*5 = 20 kg*m/s, p1_y = 0",
+          "Ball 2: p2_x = 4*5*cos(60) = 10 kg*m/s, p2_y = 4*5*(-sin(60)) = -17.32 kg*m/s",
+          "Total: p_x = 30 kg*m/s, p_y = -17.32 kg*m/s",
+          "v_x = 30/8 = 3.75 m/s, v_y = -17.32/8 = -2.165 m/s",
+          "v_f = sqrt(3.75^2 + 2.165^2) = sqrt(14.06 + 4.69) = sqrt(18.75) = 4.33 m/s"
+        ],
+        "final_answer": "4.33 m/s"
+      },
+      "tags": ["2D-collision", "inelastic", "vector"]
+    },
+    {
+      "id": "momentum_020",
+      "skill_id": "momentum",
+      "type": "numeric",
+      "difficulty": 0.7,
+      "question": {
+        "content": "A stationary 8 kg firework explodes into two pieces. One piece (3 kg) moves at 20 m/s at 40 degrees above horizontal. What is the speed of the other piece?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 12,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 12,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The second piece has mass = 8 - 3 = 5 kg",
+        "Initial momentum = 0, so total final momentum = 0",
+        "Find p1 magnitude, then p2 = -p1, and v2 = |p2|/m2"
+      ],
+      "solution": {
+        "steps": [
+          "Second piece mass: m2 = 8 - 3 = 5 kg",
+          "Piece 1 momentum magnitude: |p1| = 3 * 20 = 60 kg*m/s",
+          "Since total momentum = 0: |p2| = |p1| = 60 kg*m/s",
+          "v2 = |p2|/m2 = 60/5 = 12 m/s"
+        ],
+        "final_answer": "12 m/s"
+      },
+      "tags": ["2D-explosion", "recoil", "vector"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "momentum",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 3,
+      "medium": 10,
+      "hard": 7
+    },
+    "topics_covered": [
+      "basic-momentum",
+      "impulse",
+      "inelastic-collision",
+      "elastic-collision",
+      "recoil-explosion",
+      "2D-collision"
+    ]
+  }
+}

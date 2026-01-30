@@ -1,0 +1,802 @@
+{
+  "problems": [
+    {
+      "id": "thermo_001",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.2,
+      "question": {
+        "content": "Convert 68 degrees Fahrenheit to Celsius.",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 20,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 20,
+        "unit": "C",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the formula: T_C = (5/9)(T_F - 32)",
+        "First subtract 32 from the Fahrenheit temperature",
+        "Then multiply by 5/9"
+      ],
+      "solution": {
+        "steps": [
+          "T_C = (5/9)(T_F - 32)",
+          "T_C = (5/9)(68 - 32)",
+          "T_C = (5/9)(36) = 20 C"
+        ],
+        "final_answer": "20 C"
+      },
+      "tags": ["temperature-conversion", "basic"]
+    },
+    {
+      "id": "thermo_002",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.2,
+      "question": {
+        "content": "Convert 25 degrees Celsius to Kelvin.",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 298.15,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 298.15,
+        "unit": "K",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the formula: T_K = T_C + 273.15",
+        "Simply add 273.15 to the Celsius temperature",
+        "Kelvin is the absolute temperature scale"
+      ],
+      "solution": {
+        "steps": [
+          "T_K = T_C + 273.15",
+          "T_K = 25 + 273.15 = 298.15 K"
+        ],
+        "final_answer": "298.15 K"
+      },
+      "tags": ["temperature-conversion", "basic"]
+    },
+    {
+      "id": "thermo_003",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "How much heat is required to raise the temperature of 3 kg of water from 15 C to 45 C? (c_water = 4186 J/kg*K)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 376740,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 376740,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the heat equation: Q = mcDeltaT",
+        "DeltaT = T_final - T_initial",
+        "Make sure to use the correct specific heat for water"
+      ],
+      "solution": {
+        "steps": [
+          "Q = mcDeltaT",
+          "DeltaT = 45 - 15 = 30 C (or 30 K)",
+          "Q = 3 x 4186 x 30 = 376,740 J"
+        ],
+        "final_answer": "376740 J"
+      },
+      "tags": ["heat-transfer", "specific-heat", "basic"]
+    },
+    {
+      "id": "thermo_004",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 0.8 kg aluminum block absorbs 21600 J of heat. If c_Al = 900 J/kg*K, what is the temperature change?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 30,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 30,
+        "unit": "K",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Rearrange Q = mcDeltaT to solve for DeltaT",
+        "DeltaT = Q / (mc)",
+        "Make sure units are consistent"
+      ],
+      "solution": {
+        "steps": [
+          "Q = mcDeltaT",
+          "DeltaT = Q / (mc)",
+          "DeltaT = 21600 / (0.8 x 900) = 21600 / 720 = 30 K"
+        ],
+        "final_answer": "30 K"
+      },
+      "tags": ["heat-transfer", "specific-heat", "basic"]
+    },
+    {
+      "id": "thermo_005",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 0.5 kg piece of copper at 100 C is placed in 1 kg of water at 20 C. Find the final equilibrium temperature. (c_Cu = 385 J/kg*K, c_water = 4186 J/kg*K)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 23.4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 23.4,
+        "unit": "C",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Heat lost by copper = Heat gained by water",
+        "m_Cu*c_Cu*(T_hot - T_f) = m_w*c_w*(T_f - T_cold)",
+        "Solve for T_f (final temperature)"
+      ],
+      "solution": {
+        "steps": [
+          "Heat lost by copper = Heat gained by water",
+          "m_Cu*c_Cu*(100 - T_f) = m_w*c_w*(T_f - 20)",
+          "0.5 x 385 x (100 - T_f) = 1 x 4186 x (T_f - 20)",
+          "192.5(100 - T_f) = 4186(T_f - 20)",
+          "19250 - 192.5*T_f = 4186*T_f - 83720",
+          "102970 = 4378.5*T_f",
+          "T_f = 23.5 C"
+        ],
+        "final_answer": "23.4 C"
+      },
+      "tags": ["calorimetry", "equilibrium-temperature"]
+    },
+    {
+      "id": "thermo_006",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "How much heat is required to melt 2 kg of ice at 0 C? (L_f = 3.34 x 10^5 J/kg)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 668000,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 668000,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For phase change, use Q = mL",
+        "L_f is the latent heat of fusion",
+        "No temperature change occurs during melting"
+      ],
+      "solution": {
+        "steps": [
+          "Q = mL_f",
+          "Q = 2 x 3.34 x 10^5 = 6.68 x 10^5 J",
+          "Q = 668,000 J"
+        ],
+        "final_answer": "668000 J"
+      },
+      "tags": ["latent-heat", "phase-change", "melting"]
+    },
+    {
+      "id": "thermo_007",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "How much heat is needed to convert 0.5 kg of ice at -10 C to water at 20 C? (c_ice = 2090 J/kg*K, L_f = 3.34 x 10^5 J/kg, c_water = 4186 J/kg*K)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 219310,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 219310,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "This requires three stages: heat ice to 0 C, melt ice, heat water to 20 C",
+        "Q_total = Q_1 + Q_2 + Q_3",
+        "Q_1 = m*c_ice*DeltaT_1, Q_2 = m*L_f, Q_3 = m*c_water*DeltaT_2"
+      ],
+      "solution": {
+        "steps": [
+          "Stage 1: Heat ice from -10 C to 0 C",
+          "Q_1 = m*c_ice*DeltaT = 0.5 x 2090 x 10 = 10450 J",
+          "Stage 2: Melt ice at 0 C",
+          "Q_2 = m*L_f = 0.5 x 334000 = 167000 J",
+          "Stage 3: Heat water from 0 C to 20 C",
+          "Q_3 = m*c_water*DeltaT = 0.5 x 4186 x 20 = 41860 J",
+          "Q_total = 10450 + 167000 + 41860 = 219310 J"
+        ],
+        "final_answer": "219310 J"
+      },
+      "tags": ["latent-heat", "phase-change", "multi-step"]
+    },
+    {
+      "id": "thermo_008",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A gas at STP (273 K, 101.3 kPa) occupies 22.4 L. How many moles of gas are present? (R = 8.314 J/mol*K)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.0,
+        "unit": "mol",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the ideal gas law: PV = nRT",
+        "Solve for n = PV/(RT)",
+        "Convert volume to m^3: 22.4 L = 0.0224 m^3"
+      ],
+      "solution": {
+        "steps": [
+          "PV = nRT, so n = PV/(RT)",
+          "P = 101300 Pa, V = 0.0224 m^3, T = 273 K",
+          "n = (101300 x 0.0224) / (8.314 x 273)",
+          "n = 2269.12 / 2269.72 = 1.0 mol"
+        ],
+        "final_answer": "1.0 mol"
+      },
+      "tags": ["ideal-gas-law", "moles"]
+    },
+    {
+      "id": "thermo_009",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A gas at 200 kPa and 300 K occupies 5 L. If the temperature increases to 450 K at constant pressure, what is the new volume?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.5,
+        "unit": "L",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "At constant pressure, use Charles's Law: V_1/T_1 = V_2/T_2",
+        "Solve for V_2 = V_1 x T_2/T_1",
+        "Temperature must be in Kelvin"
+      ],
+      "solution": {
+        "steps": [
+          "At constant pressure: V_1/T_1 = V_2/T_2",
+          "V_2 = V_1 x (T_2/T_1)",
+          "V_2 = 5 x (450/300) = 5 x 1.5 = 7.5 L"
+        ],
+        "final_answer": "7.5 L"
+      },
+      "tags": ["ideal-gas-law", "charles-law", "isobaric"]
+    },
+    {
+      "id": "thermo_010",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A gas initially at 100 kPa and 2 L is compressed to 0.5 L while the temperature changes from 300 K to 400 K. What is the final pressure?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 533.3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 533.3,
+        "unit": "kPa",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the combined gas law: P_1*V_1/T_1 = P_2*V_2/T_2",
+        "Solve for P_2 = P_1*V_1*T_2/(V_2*T_1)",
+        "Keep units consistent"
+      ],
+      "solution": {
+        "steps": [
+          "Combined gas law: P_1*V_1/T_1 = P_2*V_2/T_2",
+          "P_2 = P_1*V_1*T_2/(V_2*T_1)",
+          "P_2 = (100 x 2 x 400) / (0.5 x 300)",
+          "P_2 = 80000 / 150 = 533.3 kPa"
+        ],
+        "final_answer": "533.3 kPa"
+      },
+      "tags": ["ideal-gas-law", "combined-gas-law"]
+    },
+    {
+      "id": "thermo_011",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A gas absorbs 500 J of heat while 200 J of work is done ON the gas. What is the change in internal energy?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 700,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 700,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First law: DeltaU = Q - W, where W is work done BY the system",
+        "If work is done ON the gas, W is negative (W = -200 J)",
+        "Q is positive when heat is absorbed"
+      ],
+      "solution": {
+        "steps": [
+          "First law of thermodynamics: DeltaU = Q - W",
+          "Q = +500 J (heat absorbed)",
+          "W = -200 J (work done ON the gas means W_by = -200 J)",
+          "DeltaU = 500 - (-200) = 500 + 200 = 700 J"
+        ],
+        "final_answer": "700 J"
+      },
+      "tags": ["first-law", "internal-energy"]
+    },
+    {
+      "id": "thermo_012",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A gas expands at constant pressure of 150 kPa from 2 L to 5 L. How much work is done by the gas?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 450,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 450,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For isobaric (constant pressure) process: W = P*DeltaV",
+        "DeltaV = V_final - V_initial",
+        "Convert L to m^3: 1 L = 0.001 m^3"
+      ],
+      "solution": {
+        "steps": [
+          "W = P*DeltaV (isobaric process)",
+          "DeltaV = 5 - 2 = 3 L = 0.003 m^3",
+          "P = 150 kPa = 150000 Pa",
+          "W = 150000 x 0.003 = 450 J"
+        ],
+        "final_answer": "450 J"
+      },
+      "tags": ["first-law", "work", "isobaric"]
+    },
+    {
+      "id": "thermo_013",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "In an isothermal process, a gas does 800 J of work. How much heat was added to the gas?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 800,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 800,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "In an isothermal process, temperature is constant",
+        "For an ideal gas, internal energy depends only on temperature",
+        "If T is constant, DeltaU = 0, so Q = W"
+      ],
+      "solution": {
+        "steps": [
+          "Isothermal process: temperature is constant",
+          "For an ideal gas: DeltaU = 0 (since U depends only on T)",
+          "First law: DeltaU = Q - W",
+          "0 = Q - W",
+          "Q = W = 800 J"
+        ],
+        "final_answer": "800 J"
+      },
+      "tags": ["first-law", "isothermal"]
+    },
+    {
+      "id": "thermo_014",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A heat engine absorbs 2000 J from a hot reservoir and expels 1400 J to a cold reservoir. What is its efficiency?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 30,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 30,
+        "unit": "%",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Efficiency: e = W/Q_H = (Q_H - Q_C)/Q_H",
+        "Or equivalently: e = 1 - Q_C/Q_H",
+        "Express as a percentage"
+      ],
+      "solution": {
+        "steps": [
+          "Work output: W = Q_H - Q_C = 2000 - 1400 = 600 J",
+          "Efficiency: e = W/Q_H = 600/2000 = 0.30",
+          "e = 30%"
+        ],
+        "final_answer": "30%"
+      },
+      "tags": ["heat-engine", "efficiency"]
+    },
+    {
+      "id": "thermo_015",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "What is the maximum (Carnot) efficiency of a heat engine operating between 600 K and 300 K?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 50,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 50,
+        "unit": "%",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Carnot efficiency: e_Carnot = 1 - T_C/T_H",
+        "Temperature must be in Kelvin",
+        "T_H is the hot reservoir, T_C is the cold reservoir"
+      ],
+      "solution": {
+        "steps": [
+          "Carnot efficiency: e = 1 - T_C/T_H",
+          "e = 1 - 300/600 = 1 - 0.5 = 0.5",
+          "e = 50%"
+        ],
+        "final_answer": "50%"
+      },
+      "tags": ["heat-engine", "carnot", "efficiency"]
+    },
+    {
+      "id": "thermo_016",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A Carnot engine operates between 500 K and 300 K. If it absorbs 1000 J from the hot reservoir, how much work does it produce?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 400,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 400,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the Carnot efficiency: e = 1 - T_C/T_H",
+        "Then use: W = e x Q_H",
+        "Temperature must be in Kelvin"
+      ],
+      "solution": {
+        "steps": [
+          "Carnot efficiency: e = 1 - T_C/T_H = 1 - 300/500 = 0.4",
+          "Work output: W = e x Q_H = 0.4 x 1000 = 400 J"
+        ],
+        "final_answer": "400 J"
+      },
+      "tags": ["heat-engine", "carnot", "work"]
+    },
+    {
+      "id": "thermo_017",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A steel rod is 2 m long at 20 C. How much does it expand when heated to 120 C? (alpha_steel = 1.2 x 10^-5 /K)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.4,
+        "unit": "mm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the linear expansion formula: DeltaL = alpha*L_0*DeltaT",
+        "alpha is the coefficient of linear expansion",
+        "DeltaT = T_final - T_initial"
+      ],
+      "solution": {
+        "steps": [
+          "DeltaL = alpha*L_0*DeltaT",
+          "DeltaT = 120 - 20 = 100 K",
+          "DeltaL = 1.2 x 10^-5 x 2 x 100 = 2.4 x 10^-3 m",
+          "DeltaL = 2.4 mm"
+        ],
+        "final_answer": "2.4 mm"
+      },
+      "tags": ["thermal-expansion", "linear"]
+    },
+    {
+      "id": "thermo_018",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A gas at constant volume absorbs 1500 J of heat, causing its temperature to rise by 50 K. If the gas has 2 moles, what is its molar heat capacity at constant volume (C_v)?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 15,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 15,
+        "unit": "J/mol*K",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For constant volume: Q = n*C_v*DeltaT",
+        "Solve for C_v = Q/(n*DeltaT)",
+        "At constant volume, no work is done (W = 0)"
+      ],
+      "solution": {
+        "steps": [
+          "Q = n*C_v*DeltaT",
+          "C_v = Q/(n*DeltaT)",
+          "C_v = 1500/(2 x 50) = 1500/100 = 15 J/mol*K"
+        ],
+        "final_answer": "15 J/mol*K"
+      },
+      "tags": ["heat-capacity", "isochoric"]
+    },
+    {
+      "id": "thermo_019",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A refrigerator removes 400 J of heat from its interior. If it has a coefficient of performance (COP) of 4, how much work is required?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 100,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 100,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "COP for a refrigerator: COP = Q_C/W",
+        "Q_C is the heat removed from the cold reservoir",
+        "Solve for W = Q_C/COP"
+      ],
+      "solution": {
+        "steps": [
+          "COP = Q_C/W",
+          "W = Q_C/COP",
+          "W = 400/4 = 100 J"
+        ],
+        "final_answer": "100 J"
+      },
+      "tags": ["refrigerator", "COP"]
+    },
+    {
+      "id": "thermo_020",
+      "skill_id": "thermodynamics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A power plant operates between steam at 550 C and cooling water at 30 C. If the plant produces 500 MW of power at 65% of Carnot efficiency, how much heat is expelled to the cooling water per second?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 714.3,
+              "tolerance": 0.03,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 714.3,
+        "unit": "MW",
+        "tolerance": 0.03
+      },
+      "hints": [
+        "First find Carnot efficiency: e_C = 1 - T_C/T_H (convert to Kelvin!)",
+        "Actual efficiency: e = 0.65 x e_C",
+        "From e = W/Q_H, find Q_H, then Q_C = Q_H - W"
+      ],
+      "solution": {
+        "steps": [
+          "Convert temperatures to Kelvin: T_H = 550 + 273 = 823 K, T_C = 30 + 273 = 303 K",
+          "Carnot efficiency: e_C = 1 - 303/823 = 1 - 0.368 = 0.632",
+          "Actual efficiency: e = 0.65 x 0.632 = 0.411",
+          "From e = W/Q_H: Q_H = W/e = 500/0.411 = 1216.5 MW",
+          "Heat expelled: Q_C = Q_H - W = 1216.5 - 500 = 716.5 MW"
+        ],
+        "final_answer": "714.3 MW"
+      },
+      "tags": ["heat-engine", "power-plant", "carnot", "advanced"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "thermodynamics",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 10,
+      "hard": 6
+    },
+    "topics_covered": [
+      "temperature-conversion",
+      "heat-transfer",
+      "specific-heat",
+      "calorimetry",
+      "latent-heat",
+      "phase-change",
+      "ideal-gas-law",
+      "combined-gas-law",
+      "first-law-thermodynamics",
+      "heat-engines",
+      "carnot-efficiency",
+      "thermal-expansion"
+    ]
+  }
+}

@@ -1,0 +1,813 @@
+{
+  "problems": [
+    {
+      "id": "mag_001",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A proton (q = 1.6 × 10⁻¹⁹ C) moves at 5 × 10⁶ m/s perpendicular to a uniform magnetic field of 0.4 T. What is the magnitude of the magnetic force on the proton?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3.2e-13,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3.2e-13,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the magnetic force formula: F = qvB sin(θ)",
+        "Since the proton moves perpendicular to B, θ = 90° and sin(90°) = 1",
+        "Substitute: F = (1.6 × 10⁻¹⁹)(5 × 10⁶)(0.4)"
+      ],
+      "solution": {
+        "steps": [
+          "Use F = qvB sin(θ) with θ = 90°",
+          "F = qvB = (1.6 × 10⁻¹⁹ C)(5 × 10⁶ m/s)(0.4 T)",
+          "F = 3.2 × 10⁻¹³ N"
+        ],
+        "final_answer": "3.2 × 10⁻¹³ N"
+      },
+      "tags": ["magnetic-force", "moving-charge", "basic"]
+    },
+    {
+      "id": "mag_002",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "An electron (q = 1.6 × 10⁻¹⁹ C) moves at 3 × 10⁷ m/s at an angle of 30° to a 0.2 T magnetic field. What is the magnitude of the magnetic force?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.8e-13,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.8e-13,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use F = qvB sin(θ)",
+        "The angle between velocity and field is 30°",
+        "sin(30°) = 0.5"
+      ],
+      "solution": {
+        "steps": [
+          "Use F = qvB sin(θ)",
+          "F = (1.6 × 10⁻¹⁹)(3 × 10⁷)(0.2) sin(30°)",
+          "F = (1.6 × 10⁻¹⁹)(3 × 10⁷)(0.2)(0.5)",
+          "F = 4.8 × 10⁻¹³ N"
+        ],
+        "final_answer": "4.8 × 10⁻¹³ N"
+      },
+      "tags": ["magnetic-force", "moving-charge", "angle"]
+    },
+    {
+      "id": "mag_003",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A straight wire 2 m long carries a current of 5 A perpendicular to a uniform magnetic field of 0.3 T. What is the force on the wire?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3.0,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use F = BIL sin(θ) for force on a current-carrying wire",
+        "The wire is perpendicular to B, so θ = 90°",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Use F = BIL sin(θ) with θ = 90°",
+          "F = BIL = (0.3 T)(5 A)(2 m)",
+          "F = 3.0 N"
+        ],
+        "final_answer": "3.0 N"
+      },
+      "tags": ["force-on-wire", "current", "basic"]
+    },
+    {
+      "id": "mag_004",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A wire 0.5 m long carrying 8 A makes an angle of 60° with a 0.25 T magnetic field. What is the force on the wire?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.866,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.866,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use F = BIL sin(θ)",
+        "The angle is 60°, and sin(60°) = 0.866",
+        "Multiply all values together"
+      ],
+      "solution": {
+        "steps": [
+          "Use F = BIL sin(θ)",
+          "F = (0.25)(8)(0.5) sin(60°)",
+          "F = (0.25)(8)(0.5)(0.866)",
+          "F = 0.866 N"
+        ],
+        "final_answer": "0.866 N"
+      },
+      "tags": ["force-on-wire", "angle"]
+    },
+    {
+      "id": "mag_005",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "What is the magnetic field 5 cm from a long straight wire carrying 10 A? Use μ₀ = 4π × 10⁻⁷ T·m/A.",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.0e-5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.0e-5,
+        "unit": "T",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use B = μ₀I/(2πr) for field from a long straight wire",
+        "Convert 5 cm to meters: r = 0.05 m",
+        "μ₀ = 4π × 10⁻⁷ T·m/A"
+      ],
+      "solution": {
+        "steps": [
+          "Use B = μ₀I/(2πr)",
+          "B = (4π × 10⁻⁷)(10) / (2π × 0.05)",
+          "B = (4 × 10⁻⁶) / (0.1)",
+          "B = 4.0 × 10⁻⁵ T"
+        ],
+        "final_answer": "4.0 × 10⁻⁵ T"
+      },
+      "tags": ["magnetic-field", "wire", "basic"]
+    },
+    {
+      "id": "mag_006",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "An electron (m = 9.11 × 10⁻³¹ kg, q = 1.6 × 10⁻¹⁹ C) moves at 2 × 10⁷ m/s perpendicular to a 0.005 T magnetic field. What is the radius of its circular path?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.0228,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.0228,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The magnetic force provides centripetal force: qvB = mv²/r",
+        "Solve for r: r = mv/(qB)",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Use r = mv/(qB)",
+          "r = (9.11 × 10⁻³¹)(2 × 10⁷) / [(1.6 × 10⁻¹⁹)(0.005)]",
+          "r = (1.822 × 10⁻²³) / (8 × 10⁻²²)",
+          "r = 0.0228 m = 2.28 cm"
+        ],
+        "final_answer": "0.0228 m"
+      },
+      "tags": ["circular-motion", "electron", "radius"]
+    },
+    {
+      "id": "mag_007",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A proton (m = 1.67 × 10⁻²⁷ kg, q = 1.6 × 10⁻¹⁹ C) moves in a circular path of radius 0.2 m in a 0.5 T magnetic field. What is the proton's speed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 9.58e6,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 9.58e6,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "From r = mv/(qB), solve for v",
+        "v = qBr/m",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "From r = mv/(qB), solve for v: v = qBr/m",
+          "v = (1.6 × 10⁻¹⁹)(0.5)(0.2) / (1.67 × 10⁻²⁷)",
+          "v = (1.6 × 10⁻²⁰) / (1.67 × 10⁻²⁷)",
+          "v = 9.58 × 10⁶ m/s"
+        ],
+        "final_answer": "9.58 × 10⁶ m/s"
+      },
+      "tags": ["circular-motion", "proton", "speed"]
+    },
+    {
+      "id": "mag_008",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "What is the period of a proton (m = 1.67 × 10⁻²⁷ kg, q = 1.6 × 10⁻¹⁹ C) circling in a 1.0 T magnetic field?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 6.56e-8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 6.56e-8,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The period of circular motion in a B field: T = 2πm/(qB)",
+        "Note that period is independent of velocity",
+        "Substitute the mass, charge, and field values"
+      ],
+      "solution": {
+        "steps": [
+          "Use T = 2πm/(qB)",
+          "T = 2π(1.67 × 10⁻²⁷) / [(1.6 × 10⁻¹⁹)(1.0)]",
+          "T = (1.05 × 10⁻²⁶) / (1.6 × 10⁻¹⁹)",
+          "T = 6.56 × 10⁻⁸ s"
+        ],
+        "final_answer": "6.56 × 10⁻⁸ s"
+      },
+      "tags": ["circular-motion", "period", "proton"]
+    },
+    {
+      "id": "mag_009",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A solenoid has 500 turns over a length of 0.25 m and carries 2 A. What is the magnetic field inside the solenoid? Use μ₀ = 4π × 10⁻⁷ T·m/A.",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5.03e-3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5.03e-3,
+        "unit": "T",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a solenoid: B = μ₀nI, where n = N/L is turns per unit length",
+        "Calculate n = 500/0.25 = 2000 turns/m",
+        "Then multiply by μ₀ and I"
+      ],
+      "solution": {
+        "steps": [
+          "Calculate turns per unit length: n = N/L = 500/0.25 = 2000 turns/m",
+          "Use B = μ₀nI",
+          "B = (4π × 10⁻⁷)(2000)(2)",
+          "B = (4π × 10⁻⁷)(4000)",
+          "B = 5.03 × 10⁻³ T"
+        ],
+        "final_answer": "5.03 × 10⁻³ T"
+      },
+      "tags": ["solenoid", "magnetic-field"]
+    },
+    {
+      "id": "mag_010",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A circular coil with 100 turns and radius 0.1 m is in a uniform 0.5 T magnetic field perpendicular to the coil. If the field drops to zero in 0.02 s, what is the magnitude of the induced EMF?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 78.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 78.5,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use Faraday's law: EMF = -N × ΔΦ/Δt",
+        "Φ = BA, where A = πr² is the coil area",
+        "ΔΦ = A × ΔB since the field is perpendicular"
+      ],
+      "solution": {
+        "steps": [
+          "Calculate coil area: A = πr² = π(0.1)² = 0.0314 m²",
+          "Initial flux: Φ₁ = BA = (0.5)(0.0314) = 0.0157 Wb",
+          "Final flux: Φ₂ = 0 (field drops to zero)",
+          "Change in flux: ΔΦ = 0 - 0.0157 = -0.0157 Wb",
+          "EMF = -N × ΔΦ/Δt = -100 × (-0.0157)/0.02 = 78.5 V"
+        ],
+        "final_answer": "78.5 V"
+      },
+      "tags": ["faraday-law", "induced-emf", "coil"]
+    },
+    {
+      "id": "mag_011",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A rectangular loop (0.3 m × 0.2 m) with 50 turns rotates in a 0.4 T field. If the magnetic flux through the loop changes from maximum to zero in 0.05 s, what is the average induced EMF?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 24.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 24.0,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Maximum flux: Φ_max = BA (when loop is perpendicular to B)",
+        "ΔΦ = Φ_max - 0 = BA",
+        "Use EMF = N × ΔΦ/Δt"
+      ],
+      "solution": {
+        "steps": [
+          "Loop area: A = 0.3 × 0.2 = 0.06 m²",
+          "Maximum flux: Φ_max = BA = (0.4)(0.06) = 0.024 Wb",
+          "Change in flux: ΔΦ = 0.024 Wb",
+          "EMF = N × ΔΦ/Δt = 50 × 0.024/0.05 = 24.0 V"
+        ],
+        "final_answer": "24.0 V"
+      },
+      "tags": ["faraday-law", "rotating-loop", "generator"]
+    },
+    {
+      "id": "mag_012",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "Two parallel wires 10 cm apart each carry 15 A in the same direction. What is the magnetic field at a point midway between them? Use μ₀ = 4π × 10⁻⁷ T·m/A.",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0,
+              "tolerance": 0.01,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0,
+        "unit": "T",
+        "tolerance": 0.01
+      },
+      "hints": [
+        "Each wire produces a field at the midpoint",
+        "Use B = μ₀I/(2πr) for each wire with r = 0.05 m",
+        "Consider the direction of each field using the right-hand rule"
+      ],
+      "solution": {
+        "steps": [
+          "Midpoint is r = 0.05 m from each wire",
+          "Field from each wire: B = μ₀I/(2πr) = (4π × 10⁻⁷)(15)/(2π × 0.05) = 6 × 10⁻⁵ T",
+          "Using right-hand rule: currents in same direction produce fields in opposite directions at the midpoint",
+          "B_net = B₁ - B₂ = 6 × 10⁻⁵ - 6 × 10⁻⁵ = 0 T"
+        ],
+        "final_answer": "0 T"
+      },
+      "tags": ["magnetic-field", "parallel-wires", "superposition"]
+    },
+    {
+      "id": "mag_013",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "Two parallel wires 8 cm apart carry currents of 20 A in opposite directions. What is the magnetic field at a point midway between them? Use μ₀ = 4π × 10⁻⁷ T·m/A.",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.0e-4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.0e-4,
+        "unit": "T",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Calculate the field from each wire at the midpoint (r = 0.04 m)",
+        "When currents are in opposite directions, fields add at the midpoint",
+        "B_total = 2 × B_single"
+      ],
+      "solution": {
+        "steps": [
+          "Midpoint is r = 0.04 m from each wire",
+          "Field from each wire: B = μ₀I/(2πr) = (4π × 10⁻⁷)(20)/(2π × 0.04)",
+          "B = (4 × 10⁻⁷ × 20)/(0.08) = 1.0 × 10⁻⁴ T",
+          "With opposite currents, fields point in same direction at midpoint",
+          "B_total = 2 × 1.0 × 10⁻⁴ = 2.0 × 10⁻⁴ T"
+        ],
+        "final_answer": "2.0 × 10⁻⁴ T"
+      },
+      "tags": ["magnetic-field", "parallel-wires", "opposite-currents"]
+    },
+    {
+      "id": "mag_014",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "An alpha particle (q = 3.2 × 10⁻¹⁹ C, m = 6.64 × 10⁻²⁷ kg) enters a 0.8 T magnetic field perpendicular to its velocity. If it moves in a circle of radius 0.25 m, what is its kinetic energy?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 6.15e-13,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 6.15e-13,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find velocity from r = mv/(qB)",
+        "Solve for v: v = qBr/m",
+        "Then calculate KE = ½mv²"
+      ],
+      "solution": {
+        "steps": [
+          "Find velocity: v = qBr/m = (3.2 × 10⁻¹⁹)(0.8)(0.25)/(6.64 × 10⁻²⁷)",
+          "v = (6.4 × 10⁻²⁰)/(6.64 × 10⁻²⁷) = 9.64 × 10⁶ m/s",
+          "KE = ½mv² = ½(6.64 × 10⁻²⁷)(9.64 × 10⁶)²",
+          "KE = ½(6.64 × 10⁻²⁷)(9.29 × 10¹³)",
+          "KE = 6.15 × 10⁻¹³ J"
+        ],
+        "final_answer": "6.15 × 10⁻¹³ J"
+      },
+      "tags": ["circular-motion", "alpha-particle", "kinetic-energy"]
+    },
+    {
+      "id": "mag_015",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A magnetic field increases from 0 to 0.6 T in 0.03 s through a circular loop of radius 0.08 m. What is the induced EMF?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.402,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.402,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use Faraday's law: EMF = -ΔΦ/Δt (single loop, N = 1)",
+        "Φ = BA, where A = πr²",
+        "Calculate the change in flux and divide by time"
+      ],
+      "solution": {
+        "steps": [
+          "Loop area: A = πr² = π(0.08)² = 0.0201 m²",
+          "Change in flux: ΔΦ = A × ΔB = (0.0201)(0.6 - 0) = 0.01206 Wb",
+          "EMF = ΔΦ/Δt = 0.01206/0.03 = 0.402 V"
+        ],
+        "final_answer": "0.402 V"
+      },
+      "tags": ["faraday-law", "single-loop", "changing-field"]
+    },
+    {
+      "id": "mag_016",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 0.5 m wire moves at 4 m/s perpendicular to both its length and a 0.3 T magnetic field. What EMF is induced in the wire?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.6,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.6,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a wire moving through a magnetic field: EMF = BLv",
+        "This is called motional EMF",
+        "The wire cuts through magnetic field lines"
+      ],
+      "solution": {
+        "steps": [
+          "Use motional EMF formula: EMF = BLv",
+          "EMF = (0.3 T)(0.5 m)(4 m/s)",
+          "EMF = 0.6 V"
+        ],
+        "final_answer": "0.6 V"
+      },
+      "tags": ["motional-emf", "moving-wire", "faraday-law"]
+    },
+    {
+      "id": "mag_017",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A mass spectrometer uses a 0.5 T field to separate ions. A singly ionized carbon-12 atom (m = 2.0 × 10⁻²⁶ kg, q = 1.6 × 10⁻¹⁹ C) enters at 1 × 10⁵ m/s. What is the diameter of its circular path?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.05,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.05,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the radius: r = mv/(qB)",
+        "The diameter is 2r",
+        "This is how mass spectrometers separate different masses"
+      ],
+      "solution": {
+        "steps": [
+          "Calculate radius: r = mv/(qB)",
+          "r = (2.0 × 10⁻²⁶)(1 × 10⁵) / [(1.6 × 10⁻¹⁹)(0.5)]",
+          "r = (2.0 × 10⁻²¹) / (8.0 × 10⁻²⁰)",
+          "r = 0.025 m",
+          "Diameter = 2r = 0.05 m = 5 cm"
+        ],
+        "final_answer": "0.05 m"
+      },
+      "tags": ["mass-spectrometer", "circular-motion", "diameter"]
+    },
+    {
+      "id": "mag_018",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A transformer has 200 primary turns and 1000 secondary turns. If the primary voltage is 120 V, what is the secondary voltage?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 600,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 600,
+        "unit": "V",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Transformers use electromagnetic induction",
+        "The voltage ratio equals the turns ratio: V_s/V_p = N_s/N_p",
+        "Solve for V_s"
+      ],
+      "solution": {
+        "steps": [
+          "Use transformer equation: V_s/V_p = N_s/N_p",
+          "V_s = V_p × (N_s/N_p)",
+          "V_s = 120 × (1000/200)",
+          "V_s = 120 × 5 = 600 V"
+        ],
+        "final_answer": "600 V"
+      },
+      "tags": ["transformer", "electromagnetic-induction", "voltage"]
+    },
+    {
+      "id": "mag_019",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A straight wire carries 25 A. At what distance from the wire is the magnetic field equal to 5 × 10⁻⁵ T? Use μ₀ = 4π × 10⁻⁷ T·m/A.",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.1,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.1,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use B = μ₀I/(2πr) and solve for r",
+        "r = μ₀I/(2πB)",
+        "Substitute the known values"
+      ],
+      "solution": {
+        "steps": [
+          "From B = μ₀I/(2πr), solve for r:",
+          "r = μ₀I/(2πB)",
+          "r = (4π × 10⁻⁷)(25) / (2π × 5 × 10⁻⁵)",
+          "r = (10⁻⁵) / (10⁻⁴)",
+          "r = 0.1 m = 10 cm"
+        ],
+        "final_answer": "0.1 m"
+      },
+      "tags": ["magnetic-field", "wire", "distance"]
+    },
+    {
+      "id": "mag_020",
+      "skill_id": "magnetism",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A coil of 200 turns and area 0.05 m² is placed in a uniform magnetic field. The coil rotates at 60 Hz. If the maximum induced EMF is 150 V, what is the magnetic field strength?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.0398,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.0398,
+        "unit": "T",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Maximum EMF for a rotating coil: EMF_max = NBAω",
+        "Angular frequency: ω = 2πf",
+        "Solve for B"
+      ],
+      "solution": {
+        "steps": [
+          "Angular frequency: ω = 2πf = 2π(60) = 377 rad/s",
+          "Maximum EMF: EMF_max = NBAω",
+          "Solve for B: B = EMF_max/(NAω)",
+          "B = 150 / [(200)(0.05)(377)]",
+          "B = 150 / 3770 = 0.0398 T"
+        ],
+        "final_answer": "0.0398 T"
+      },
+      "tags": ["rotating-coil", "generator", "maximum-emf"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "magnetism",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 10,
+      "hard": 6
+    },
+    "topics_covered": [
+      "magnetic-force-on-charge",
+      "force-on-current-carrying-wire",
+      "magnetic-field-from-wire",
+      "solenoid",
+      "circular-motion-in-B-field",
+      "faraday-law",
+      "induced-emf",
+      "transformer",
+      "mass-spectrometer"
+    ],
+    "constants_used": {
+      "mu_0": "4π × 10⁻⁷ T·m/A",
+      "electron_charge": "1.6 × 10⁻¹⁹ C",
+      "electron_mass": "9.11 × 10⁻³¹ kg",
+      "proton_mass": "1.67 × 10⁻²⁷ kg"
+    }
+  }
+}

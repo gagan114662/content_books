@@ -1,0 +1,785 @@
+{
+  "problems": [
+    {
+      "id": "sound_001",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "What is the speed of sound in air at 25°C?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 346,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 346,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the temperature formula: v = 331 + 0.6T",
+        "T is the temperature in Celsius",
+        "Substitute T = 25"
+      ],
+      "solution": {
+        "steps": [
+          "Use the formula v = 331 + 0.6T",
+          "v = 331 + 0.6(25) = 331 + 15 = 346 m/s"
+        ],
+        "final_answer": "346 m/s"
+      },
+      "tags": ["speed-of-sound", "temperature", "basic"]
+    },
+    {
+      "id": "sound_002",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "At what temperature does the speed of sound in air equal 350 m/s?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 31.7,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 31.7,
+        "unit": "°C",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use v = 331 + 0.6T and solve for T",
+        "Rearrange: T = (v - 331)/0.6",
+        "Substitute v = 350 m/s"
+      ],
+      "solution": {
+        "steps": [
+          "v = 331 + 0.6T",
+          "350 = 331 + 0.6T",
+          "0.6T = 19",
+          "T = 19/0.6 = 31.7°C"
+        ],
+        "final_answer": "31.7°C"
+      },
+      "tags": ["speed-of-sound", "temperature", "basic"]
+    },
+    {
+      "id": "sound_003",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A sound wave in air at 20°C has a frequency of 440 Hz. What is its wavelength?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.78,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.78,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The wave equation: v = f × λ",
+        "Speed of sound at 20°C is 343 m/s",
+        "Solve for wavelength: λ = v/f"
+      ],
+      "solution": {
+        "steps": [
+          "At 20°C, v = 343 m/s",
+          "λ = v/f = 343/440 = 0.78 m"
+        ],
+        "final_answer": "0.78 m"
+      },
+      "tags": ["wavelength", "frequency", "basic"]
+    },
+    {
+      "id": "sound_004",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A sound has an intensity of 1.0 × 10⁻⁸ W/m². What is its sound level in decibels?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 40,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 40,
+        "unit": "dB",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the decibel formula: β = 10 log₁₀(I/I₀)",
+        "The reference intensity I₀ = 10⁻¹² W/m²",
+        "Calculate the ratio I/I₀ first"
+      ],
+      "solution": {
+        "steps": [
+          "β = 10 log₁₀(I/I₀)",
+          "β = 10 log₁₀(10⁻⁸/10⁻¹²)",
+          "β = 10 log₁₀(10⁴) = 10 × 4 = 40 dB"
+        ],
+        "final_answer": "40 dB"
+      },
+      "tags": ["decibels", "intensity", "logarithm"]
+    },
+    {
+      "id": "sound_005",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "What is the intensity of a 70 dB sound?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1e-5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1e-5,
+        "unit": "W/m²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Rearrange the decibel formula to solve for I",
+        "β = 10 log₁₀(I/I₀) → I = I₀ × 10^(β/10)",
+        "I₀ = 10⁻¹² W/m²"
+      ],
+      "solution": {
+        "steps": [
+          "From β = 10 log₁₀(I/I₀), we get I = I₀ × 10^(β/10)",
+          "I = 10⁻¹² × 10^(70/10)",
+          "I = 10⁻¹² × 10⁷ = 10⁻⁵ W/m²"
+        ],
+        "final_answer": "1.0 × 10⁻⁵ W/m²"
+      },
+      "tags": ["decibels", "intensity", "logarithm"]
+    },
+    {
+      "id": "sound_006",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A speaker produces 85 dB at 2 m from the source. What is the sound level at 8 m?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 73,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 73,
+        "unit": "dB",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Intensity follows the inverse square law: I ∝ 1/r²",
+        "The ratio of distances is 8/2 = 4",
+        "Change in dB = 10 log₁₀(I₂/I₁) = 10 log₁₀(r₁²/r₂²)"
+      ],
+      "solution": {
+        "steps": [
+          "Intensity ratio: I₂/I₁ = (r₁/r₂)² = (2/8)² = 1/16",
+          "Change in dB: Δβ = 10 log₁₀(1/16) = 10 × (-1.204) = -12.04 dB",
+          "β₂ = 85 - 12 = 73 dB"
+        ],
+        "final_answer": "73 dB"
+      },
+      "tags": ["decibels", "inverse-square-law", "distance"]
+    },
+    {
+      "id": "sound_007",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "An ambulance siren emits a 700 Hz sound. If the ambulance approaches a stationary observer at 25 m/s, what frequency does the observer hear? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 755,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 755,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Source approaching, observer stationary: use f' = f × v/(v - vₛ)",
+        "The source velocity goes in the denominator with a minus sign",
+        "When source approaches, the observed frequency increases"
+      ],
+      "solution": {
+        "steps": [
+          "Source approaching: f' = f × v/(v - vₛ)",
+          "f' = 700 × 343/(343 - 25)",
+          "f' = 700 × 343/318 = 755 Hz"
+        ],
+        "final_answer": "755 Hz"
+      },
+      "tags": ["doppler-effect", "moving-source"]
+    },
+    {
+      "id": "sound_008",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A fire truck siren produces 800 Hz. After passing a stationary observer, the frequency heard is 720 Hz. How fast is the truck moving? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 38.1,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 38.1,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Source receding: f' = f × v/(v + vₛ)",
+        "The observed frequency is lower when source moves away",
+        "Solve for vₛ"
+      ],
+      "solution": {
+        "steps": [
+          "Source receding: f' = f × v/(v + vₛ)",
+          "720 = 800 × 343/(343 + vₛ)",
+          "720(343 + vₛ) = 800 × 343",
+          "343 + vₛ = 274400/720 = 381.1",
+          "vₛ = 381.1 - 343 = 38.1 m/s"
+        ],
+        "final_answer": "38.1 m/s"
+      },
+      "tags": ["doppler-effect", "moving-source"]
+    },
+    {
+      "id": "sound_009",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A stationary whistle emits 500 Hz. An observer runs toward the whistle at 15 m/s. What frequency does the observer hear? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 521.9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 521.9,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Observer approaching, source stationary: f' = f × (v + vₒ)/v",
+        "The observer velocity adds to the wave speed in the numerator",
+        "Higher observed frequency when approaching"
+      ],
+      "solution": {
+        "steps": [
+          "Observer approaching: f' = f × (v + vₒ)/v",
+          "f' = 500 × (343 + 15)/343",
+          "f' = 500 × 358/343 = 521.9 Hz"
+        ],
+        "final_answer": "521.9 Hz"
+      },
+      "tags": ["doppler-effect", "moving-observer"]
+    },
+    {
+      "id": "sound_010",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A train moving at 30 m/s sounds a 600 Hz horn. A car drives toward the train at 20 m/s. What frequency does the car driver hear? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 696,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 696,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Both source and observer are moving toward each other",
+        "Use the full Doppler formula: f' = f × (v + vₒ)/(v - vₛ)",
+        "Observer approaching adds to numerator; source approaching subtracts from denominator"
+      ],
+      "solution": {
+        "steps": [
+          "Both approaching: f' = f × (v + vₒ)/(v - vₛ)",
+          "f' = 600 × (343 + 20)/(343 - 30)",
+          "f' = 600 × 363/313 = 696 Hz"
+        ],
+        "final_answer": "696 Hz"
+      },
+      "tags": ["doppler-effect", "both-moving"]
+    },
+    {
+      "id": "sound_011",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "Two tuning forks produce frequencies of 440 Hz and 443 Hz. What is the beat frequency?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 3,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Beat frequency is the absolute difference of the two frequencies",
+        "f_beat = |f₁ - f₂|",
+        "Beats are heard as periodic variations in loudness"
+      ],
+      "solution": {
+        "steps": [
+          "f_beat = |f₁ - f₂|",
+          "f_beat = |440 - 443| = 3 Hz"
+        ],
+        "final_answer": "3 Hz"
+      },
+      "tags": ["beats", "frequency", "basic"]
+    },
+    {
+      "id": "sound_012",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 512 Hz tuning fork produces 4 beats per second with an unknown fork. If the unknown fork has a higher frequency, what is it?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 516,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 516,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Beat frequency: f_beat = |f₁ - f₂|",
+        "The unknown frequency is either 512 + 4 or 512 - 4",
+        "The problem states the unknown has higher frequency"
+      ],
+      "solution": {
+        "steps": [
+          "f_beat = |f₁ - f₂| = 4 Hz",
+          "f₂ = 512 ± 4 Hz",
+          "Since f₂ > f₁, f₂ = 512 + 4 = 516 Hz"
+        ],
+        "final_answer": "516 Hz"
+      },
+      "tags": ["beats", "frequency"]
+    },
+    {
+      "id": "sound_013",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "What is the fundamental frequency of an open pipe that is 0.8 m long? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 214.4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 214.4,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Open pipe: antinodes at both ends",
+        "Fundamental (n=1): f₁ = v/(2L)",
+        "The wavelength of the fundamental equals 2L"
+      ],
+      "solution": {
+        "steps": [
+          "Open pipe fundamental: f₁ = v/(2L)",
+          "f₁ = 343/(2 × 0.8) = 343/1.6 = 214.4 Hz"
+        ],
+        "final_answer": "214.4 Hz"
+      },
+      "tags": ["standing-waves", "open-pipe", "resonance"]
+    },
+    {
+      "id": "sound_014",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "What is the fundamental frequency of a closed pipe (closed at one end) that is 0.5 m long? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 171.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 171.5,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Closed pipe: node at closed end, antinode at open end",
+        "Fundamental (n=1): f₁ = v/(4L)",
+        "Only odd harmonics are present in closed pipes"
+      ],
+      "solution": {
+        "steps": [
+          "Closed pipe fundamental: f₁ = v/(4L)",
+          "f₁ = 343/(4 × 0.5) = 343/2 = 171.5 Hz"
+        ],
+        "final_answer": "171.5 Hz"
+      },
+      "tags": ["standing-waves", "closed-pipe", "resonance"]
+    },
+    {
+      "id": "sound_015",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "An open organ pipe has a fundamental frequency of 262 Hz. What is the frequency of its third harmonic? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 786,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 786,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Open pipes have all harmonics: f_n = n × f₁",
+        "The third harmonic has n = 3",
+        "Simply multiply the fundamental by 3"
+      ],
+      "solution": {
+        "steps": [
+          "Open pipe: f_n = n × f₁",
+          "Third harmonic: f₃ = 3 × 262 = 786 Hz"
+        ],
+        "final_answer": "786 Hz"
+      },
+      "tags": ["standing-waves", "open-pipe", "harmonics"]
+    },
+    {
+      "id": "sound_016",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A closed pipe has a fundamental frequency of 150 Hz. What is the frequency of its first overtone?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 450,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 450,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Closed pipes only have odd harmonics (n = 1, 3, 5, ...)",
+        "The first overtone is the third harmonic (n = 3)",
+        "f₃ = 3 × f₁"
+      ],
+      "solution": {
+        "steps": [
+          "Closed pipe: only odd harmonics exist",
+          "First overtone = third harmonic: f₃ = 3 × f₁",
+          "f₃ = 3 × 150 = 450 Hz"
+        ],
+        "final_answer": "450 Hz"
+      },
+      "tags": ["standing-waves", "closed-pipe", "overtones"]
+    },
+    {
+      "id": "sound_017",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "What length of closed pipe is needed to produce a fundamental frequency of 256 Hz? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.335,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.335,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Closed pipe: f₁ = v/(4L)",
+        "Solve for L: L = v/(4f₁)",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Closed pipe fundamental: f₁ = v/(4L)",
+          "L = v/(4f₁) = 343/(4 × 256)",
+          "L = 343/1024 = 0.335 m"
+        ],
+        "final_answer": "0.335 m"
+      },
+      "tags": ["standing-waves", "closed-pipe", "pipe-length"]
+    },
+    {
+      "id": "sound_018",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A sound source produces 50 W of acoustic power uniformly in all directions. What is the sound intensity level at 10 m from the source?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 109,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 109,
+        "unit": "dB",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find intensity: I = P/(4πr²) for a point source",
+        "Then convert to decibels: β = 10 log₁₀(I/I₀)",
+        "Remember I₀ = 10⁻¹² W/m²"
+      ],
+      "solution": {
+        "steps": [
+          "Intensity: I = P/(4πr²) = 50/(4π × 10²)",
+          "I = 50/(4π × 100) = 50/(1256.6) = 0.0398 W/m²",
+          "β = 10 log₁₀(0.0398/10⁻¹²)",
+          "β = 10 log₁₀(3.98 × 10¹⁰) = 10 × 10.6 = 106 dB"
+        ],
+        "final_answer": "109 dB"
+      },
+      "tags": ["intensity", "decibels", "point-source"]
+    },
+    {
+      "id": "sound_019",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "Two identical loudspeakers each produce 80 dB when measured separately. What is the combined sound level when both play together?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 83,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 83,
+        "unit": "dB",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Decibels don't add directly; intensities add",
+        "First convert dB to intensity, add, then convert back",
+        "Doubling intensity adds about 3 dB"
+      ],
+      "solution": {
+        "steps": [
+          "Each speaker: I = I₀ × 10^(80/10) = I₀ × 10⁸",
+          "Combined intensity: I_total = 2I = 2 × I₀ × 10⁸",
+          "β_total = 10 log₁₀(2 × 10⁸) = 10 log₁₀(2) + 80",
+          "β_total = 3 + 80 = 83 dB"
+        ],
+        "final_answer": "83 dB"
+      },
+      "tags": ["decibels", "intensity", "addition"]
+    },
+    {
+      "id": "sound_020",
+      "skill_id": "sound",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A police car with a 900 Hz siren passes a stationary observer at 35 m/s. What is the change in frequency heard by the observer as the car passes? (v = 343 m/s)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 186,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 186,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Calculate frequency when approaching and when receding",
+        "Approaching: f' = f × v/(v - vₛ)",
+        "Receding: f' = f × v/(v + vₛ)"
+      ],
+      "solution": {
+        "steps": [
+          "Approaching: f_approach = 900 × 343/(343 - 35) = 900 × 343/308 = 1002 Hz",
+          "Receding: f_recede = 900 × 343/(343 + 35) = 900 × 343/378 = 816 Hz",
+          "Δf = 1002 - 816 = 186 Hz"
+        ],
+        "final_answer": "186 Hz"
+      },
+      "tags": ["doppler-effect", "frequency-change"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "sound",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 5,
+      "medium": 10,
+      "hard": 5
+    },
+    "topics_covered": [
+      "speed-of-sound",
+      "wavelength",
+      "decibels",
+      "intensity",
+      "doppler-effect",
+      "beats",
+      "standing-waves",
+      "open-pipe",
+      "closed-pipe",
+      "resonance",
+      "harmonics"
+    ]
+  }
+}

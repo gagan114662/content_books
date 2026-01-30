@@ -1,0 +1,787 @@
+{
+  "problems": [
+    {
+      "id": "osc_001",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A mass oscillates with a period of 0.5 s. What is the frequency of oscillation?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.0,
+        "unit": "Hz",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Frequency and period are inversely related",
+        "f = 1/T",
+        "Substitute T = 0.5 s"
+      ],
+      "solution": {
+        "steps": [
+          "Use the relationship: f = 1/T",
+          "f = 1/0.5 = 2.0 Hz"
+        ],
+        "final_answer": "2.0 Hz"
+      },
+      "tags": ["frequency", "period", "basic"]
+    },
+    {
+      "id": "osc_002",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "An oscillator has a frequency of 4 Hz. What is its angular frequency?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 25.1,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 25.1,
+        "unit": "rad/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Angular frequency is related to frequency by omega = 2*pi*f",
+        "Substitute f = 4 Hz",
+        "Remember to use radians"
+      ],
+      "solution": {
+        "steps": [
+          "Use omega = 2*pi*f",
+          "omega = 2*pi*4 = 8*pi = 25.1 rad/s"
+        ],
+        "final_answer": "25.1 rad/s"
+      },
+      "tags": ["angular-frequency", "basic"]
+    },
+    {
+      "id": "osc_003",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 0.4 kg mass is attached to a spring with spring constant k = 100 N/m. What is the period of oscillation?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.397,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.397,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the mass-spring period formula: T = 2*pi*sqrt(m/k)",
+        "Substitute m = 0.4 kg and k = 100 N/m",
+        "Calculate the square root first"
+      ],
+      "solution": {
+        "steps": [
+          "T = 2*pi*sqrt(m/k)",
+          "T = 2*pi*sqrt(0.4/100) = 2*pi*sqrt(0.004)",
+          "T = 2*pi*0.0632 = 0.397 s"
+        ],
+        "final_answer": "0.397 s"
+      },
+      "tags": ["mass-spring", "period", "basic"]
+    },
+    {
+      "id": "osc_004",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A simple pendulum has a length of 1.0 m. What is its period on Earth (g = 9.8 m/s^2)?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.01,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.01,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the pendulum period formula: T = 2*pi*sqrt(L/g)",
+        "Substitute L = 1.0 m and g = 9.8 m/s^2",
+        "This is approximately 2 seconds"
+      ],
+      "solution": {
+        "steps": [
+          "T = 2*pi*sqrt(L/g)",
+          "T = 2*pi*sqrt(1.0/9.8) = 2*pi*sqrt(0.102)",
+          "T = 2*pi*0.319 = 2.01 s"
+        ],
+        "final_answer": "2.01 s"
+      },
+      "tags": ["pendulum", "period", "basic"]
+    },
+    {
+      "id": "osc_005",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A mass-spring system oscillates with amplitude 0.15 m and angular frequency 8 rad/s. What is the maximum velocity?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.2,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.2,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Maximum velocity in SHM: v_max = A*omega",
+        "Substitute A = 0.15 m and omega = 8 rad/s",
+        "This occurs at the equilibrium position"
+      ],
+      "solution": {
+        "steps": [
+          "v_max = A*omega",
+          "v_max = 0.15 * 8 = 1.2 m/s"
+        ],
+        "final_answer": "1.2 m/s"
+      },
+      "tags": ["velocity", "amplitude", "angular-frequency"]
+    },
+    {
+      "id": "osc_006",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A spring-mass system has amplitude 0.08 m and angular frequency 10 rad/s. What is the maximum acceleration?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 8.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 8.0,
+        "unit": "m/s^2",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Maximum acceleration in SHM: a_max = A*omega^2",
+        "Substitute A = 0.08 m and omega = 10 rad/s",
+        "This occurs at the maximum displacement"
+      ],
+      "solution": {
+        "steps": [
+          "a_max = A*omega^2",
+          "a_max = 0.08 * (10)^2 = 0.08 * 100 = 8.0 m/s^2"
+        ],
+        "final_answer": "8.0 m/s^2"
+      },
+      "tags": ["acceleration", "amplitude", "angular-frequency"]
+    },
+    {
+      "id": "osc_007",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "What is the spring constant of a spring if a 2 kg mass attached to it oscillates with a period of 1.0 s?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 78.96,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 78.96,
+        "unit": "N/m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Start with T = 2*pi*sqrt(m/k)",
+        "Solve for k: k = 4*pi^2*m/T^2",
+        "Substitute m = 2 kg and T = 1.0 s"
+      ],
+      "solution": {
+        "steps": [
+          "From T = 2*pi*sqrt(m/k), square both sides:",
+          "T^2 = 4*pi^2*m/k",
+          "k = 4*pi^2*m/T^2 = 4*pi^2*2/(1.0)^2",
+          "k = 8*pi^2 = 78.96 N/m"
+        ],
+        "final_answer": "78.96 N/m"
+      },
+      "tags": ["mass-spring", "spring-constant"]
+    },
+    {
+      "id": "osc_008",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A pendulum on the Moon (g = 1.62 m/s^2) has a period of 5.0 s. What is its length?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.02,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.02,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Start with T = 2*pi*sqrt(L/g)",
+        "Solve for L: L = g*T^2/(4*pi^2)",
+        "Use g = 1.62 m/s^2 for the Moon"
+      ],
+      "solution": {
+        "steps": [
+          "From T = 2*pi*sqrt(L/g), square both sides:",
+          "T^2 = 4*pi^2*L/g",
+          "L = g*T^2/(4*pi^2) = 1.62*(5.0)^2/(4*pi^2)",
+          "L = 1.62*25/39.48 = 40.5/39.48 = 1.02 m"
+        ],
+        "final_answer": "1.02 m"
+      },
+      "tags": ["pendulum", "length", "moon"]
+    },
+    {
+      "id": "osc_009",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 0.5 kg mass on a spring (k = 200 N/m) oscillates with amplitude 0.1 m. What is the total mechanical energy of the system?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.0,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Total energy in SHM: E = (1/2)*k*A^2",
+        "This equals the maximum potential energy (at endpoints)",
+        "Substitute k = 200 N/m and A = 0.1 m"
+      ],
+      "solution": {
+        "steps": [
+          "E = (1/2)*k*A^2",
+          "E = (1/2)*200*(0.1)^2 = 100*0.01 = 1.0 J"
+        ],
+        "final_answer": "1.0 J"
+      },
+      "tags": ["energy", "amplitude", "spring"]
+    },
+    {
+      "id": "osc_010",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A mass-spring system has total energy 2 J and spring constant 50 N/m. What is the amplitude of oscillation?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.283,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.283,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Total energy: E = (1/2)*k*A^2",
+        "Solve for A: A = sqrt(2E/k)",
+        "Substitute E = 2 J and k = 50 N/m"
+      ],
+      "solution": {
+        "steps": [
+          "E = (1/2)*k*A^2",
+          "A^2 = 2E/k = 2*2/50 = 4/50 = 0.08",
+          "A = sqrt(0.08) = 0.283 m"
+        ],
+        "final_answer": "0.283 m"
+      },
+      "tags": ["energy", "amplitude"]
+    },
+    {
+      "id": "osc_011",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 3 kg mass on a spring (k = 75 N/m) oscillates with amplitude 0.2 m. What is the speed when the displacement is 0.1 m from equilibrium?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.866,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.866,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use energy conservation: (1/2)*k*A^2 = (1/2)*m*v^2 + (1/2)*k*x^2",
+        "Solve for v: v = sqrt((k/m)*(A^2 - x^2))",
+        "Substitute the given values"
+      ],
+      "solution": {
+        "steps": [
+          "Energy conservation: (1/2)*k*A^2 = (1/2)*m*v^2 + (1/2)*k*x^2",
+          "(1/2)*m*v^2 = (1/2)*k*(A^2 - x^2)",
+          "v = sqrt((k/m)*(A^2 - x^2))",
+          "v = sqrt((75/3)*((0.2)^2 - (0.1)^2))",
+          "v = sqrt(25*(0.04 - 0.01)) = sqrt(25*0.03) = sqrt(0.75) = 0.866 m/s"
+        ],
+        "final_answer": "0.866 m/s"
+      },
+      "tags": ["energy", "velocity", "position"]
+    },
+    {
+      "id": "osc_012",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 0.25 kg mass oscillates on a spring with maximum speed 2 m/s. If the spring constant is 100 N/m, what is the amplitude?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.1,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.1,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "At equilibrium, all energy is kinetic: E = (1/2)*m*v_max^2",
+        "Total energy also equals: E = (1/2)*k*A^2",
+        "Set them equal and solve for A"
+      ],
+      "solution": {
+        "steps": [
+          "(1/2)*m*v_max^2 = (1/2)*k*A^2",
+          "A^2 = m*v_max^2/k = 0.25*(2)^2/100 = 1/100 = 0.01",
+          "A = sqrt(0.01) = 0.1 m"
+        ],
+        "final_answer": "0.1 m"
+      },
+      "tags": ["energy", "amplitude", "maximum-velocity"]
+    },
+    {
+      "id": "osc_013",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "An oscillator with omega = 5 rad/s and A = 0.3 m starts at x = A at t = 0. What is the position at t = 0.4 s?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": -0.121,
+              "tolerance": 0.03,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": -0.121,
+        "unit": "m",
+        "tolerance": 0.03
+      },
+      "hints": [
+        "Starting at x = A means x(t) = A*cos(omega*t)",
+        "Substitute omega = 5 rad/s, A = 0.3 m, t = 0.4 s",
+        "Make sure your calculator is in radians"
+      ],
+      "solution": {
+        "steps": [
+          "x(t) = A*cos(omega*t)",
+          "x(0.4) = 0.3*cos(5*0.4) = 0.3*cos(2.0)",
+          "cos(2.0 rad) = -0.416",
+          "x = 0.3*(-0.416) = -0.125 m"
+        ],
+        "final_answer": "-0.121 m"
+      },
+      "tags": ["position", "cosine", "kinematics"]
+    },
+    {
+      "id": "osc_014",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "If a mass on a spring is doubled, by what factor does the period change? (Give the multiplicative factor)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.414,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.414,
+        "unit": "",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "T = 2*pi*sqrt(m/k)",
+        "If mass doubles: T_new = 2*pi*sqrt(2m/k)",
+        "Find the ratio T_new/T_old"
+      ],
+      "solution": {
+        "steps": [
+          "T_old = 2*pi*sqrt(m/k)",
+          "T_new = 2*pi*sqrt(2m/k) = 2*pi*sqrt(2)*sqrt(m/k)",
+          "T_new/T_old = sqrt(2) = 1.414",
+          "The period increases by a factor of sqrt(2)"
+        ],
+        "final_answer": "1.414"
+      },
+      "tags": ["mass-spring", "period", "proportionality"]
+    },
+    {
+      "id": "osc_015",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A pendulum clock runs perfectly on Earth. If taken to a planet where g = 4.9 m/s^2, by what factor is the period multiplied?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.414,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.414,
+        "unit": "",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "T = 2*pi*sqrt(L/g)",
+        "New gravity is half of Earth's gravity",
+        "Find the ratio T_new/T_Earth"
+      ],
+      "solution": {
+        "steps": [
+          "T_Earth = 2*pi*sqrt(L/9.8)",
+          "T_new = 2*pi*sqrt(L/4.9) = 2*pi*sqrt(L/(9.8/2)) = 2*pi*sqrt(2L/9.8)",
+          "T_new/T_Earth = sqrt(9.8/4.9) = sqrt(2) = 1.414",
+          "The period is multiplied by sqrt(2) (clock runs slow)"
+        ],
+        "final_answer": "1.414"
+      },
+      "tags": ["pendulum", "gravity", "period"]
+    },
+    {
+      "id": "osc_016",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 2 kg mass on a spring (k = 128 N/m) is pulled 0.25 m from equilibrium and released. What is the kinetic energy when the displacement is 0.15 m?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.56,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.56,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Total energy: E = (1/2)*k*A^2",
+        "At displacement x: PE = (1/2)*k*x^2",
+        "KE = E - PE"
+      ],
+      "solution": {
+        "steps": [
+          "Total energy: E = (1/2)*k*A^2 = (1/2)*128*(0.25)^2 = 64*0.0625 = 4 J",
+          "PE at x = 0.15 m: PE = (1/2)*128*(0.15)^2 = 64*0.0225 = 1.44 J",
+          "KE = E - PE = 4 - 1.44 = 2.56 J"
+        ],
+        "final_answer": "2.56 J"
+      },
+      "tags": ["energy", "kinetic-energy", "potential-energy"]
+    },
+    {
+      "id": "osc_017",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A simple pendulum has a period of 1.5 s on Earth. What would be its period on Mars where g = 3.7 m/s^2?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.44,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.44,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "T is proportional to 1/sqrt(g)",
+        "T_Mars/T_Earth = sqrt(g_Earth/g_Mars)",
+        "Solve for T_Mars"
+      ],
+      "solution": {
+        "steps": [
+          "T = 2*pi*sqrt(L/g), so T is proportional to 1/sqrt(g)",
+          "T_Mars/T_Earth = sqrt(g_Earth/g_Mars) = sqrt(9.8/3.7)",
+          "T_Mars = 1.5*sqrt(9.8/3.7) = 1.5*sqrt(2.65) = 1.5*1.628 = 2.44 s"
+        ],
+        "final_answer": "2.44 s"
+      },
+      "tags": ["pendulum", "mars", "period"]
+    },
+    {
+      "id": "osc_018",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "Two springs with k1 = 100 N/m and k2 = 150 N/m are connected in parallel to a 0.5 kg mass. What is the period of oscillation?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.281,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.281,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For springs in parallel: k_eff = k1 + k2",
+        "Use T = 2*pi*sqrt(m/k_eff)",
+        "Add the spring constants first"
+      ],
+      "solution": {
+        "steps": [
+          "Springs in parallel: k_eff = k1 + k2 = 100 + 150 = 250 N/m",
+          "T = 2*pi*sqrt(m/k_eff) = 2*pi*sqrt(0.5/250)",
+          "T = 2*pi*sqrt(0.002) = 2*pi*0.0447 = 0.281 s"
+        ],
+        "final_answer": "0.281 s"
+      },
+      "tags": ["springs-in-parallel", "period"]
+    },
+    {
+      "id": "osc_019",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A damped oscillator starts with amplitude 0.5 m. After 10 oscillations, the amplitude has decreased to 0.3 m. What is the amplitude after 20 total oscillations?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.18,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.18,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Amplitude decay is exponential: A(n) = A_0 * r^n",
+        "Find the decay ratio per 10 oscillations: r = 0.3/0.5",
+        "Apply this ratio again for the next 10 oscillations"
+      ],
+      "solution": {
+        "steps": [
+          "After 10 oscillations: A_10 = 0.3 m",
+          "Decay factor for 10 oscillations: r = 0.3/0.5 = 0.6",
+          "After 20 oscillations: A_20 = A_10 * r = 0.3 * 0.6 = 0.18 m",
+          "Or: A_20 = 0.5 * (0.6)^2 = 0.5 * 0.36 = 0.18 m"
+        ],
+        "final_answer": "0.18 m"
+      },
+      "tags": ["damped-oscillation", "amplitude-decay"]
+    },
+    {
+      "id": "osc_020",
+      "skill_id": "oscillations",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A vertical spring stretches 0.1 m when a 2 kg mass is hung from it. What is the period of oscillation if the mass is pulled down and released?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.635,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.635,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find k from the static stretch: mg = k*x_stretch",
+        "Then use T = 2*pi*sqrt(m/k)",
+        "The equilibrium stretch gives you k = mg/x"
+      ],
+      "solution": {
+        "steps": [
+          "At equilibrium: mg = k*x_stretch",
+          "k = mg/x = (2)(9.8)/(0.1) = 196 N/m",
+          "T = 2*pi*sqrt(m/k) = 2*pi*sqrt(2/196)",
+          "T = 2*pi*sqrt(0.0102) = 2*pi*0.101 = 0.635 s"
+        ],
+        "final_answer": "0.635 s"
+      },
+      "tags": ["vertical-spring", "equilibrium", "period"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "oscillations",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 10,
+      "hard": 6
+    },
+    "topics_covered": [
+      "period-frequency",
+      "angular-frequency",
+      "mass-spring-systems",
+      "simple-pendulum",
+      "energy-in-shm",
+      "position-velocity-acceleration",
+      "damped-oscillations",
+      "springs-in-parallel"
+    ]
+  }
+}

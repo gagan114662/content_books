@@ -1,0 +1,812 @@
+{
+  "problems": [
+    {
+      "id": "optics_001",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "Light travels from air (n=1.00) into water (n=1.33) at an angle of 45 degrees from the normal. What is the angle of refraction in degrees?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 32.1,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 32.1,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use Snell's law: n1*sin(theta1) = n2*sin(theta2)",
+        "Solve for sin(theta2) = (n1/n2)*sin(theta1)",
+        "Take the inverse sine to find theta2"
+      ],
+      "solution": {
+        "steps": [
+          "Snell's law: n1*sin(theta1) = n2*sin(theta2)",
+          "1.00 * sin(45) = 1.33 * sin(theta2)",
+          "sin(theta2) = 0.707 / 1.33 = 0.532",
+          "theta2 = arcsin(0.532) = 32.1 degrees"
+        ],
+        "final_answer": "32.1 degrees"
+      },
+      "tags": ["snells-law", "refraction", "basic"]
+    },
+    {
+      "id": "optics_002",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "Light passes from glass (n=1.50) into air (n=1.00). What is the critical angle for total internal reflection in degrees?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 41.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 41.8,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the critical angle formula: sin(theta_c) = n2/n1",
+        "n1 is the higher index (glass), n2 is the lower index (air)",
+        "Take the inverse sine to find the critical angle"
+      ],
+      "solution": {
+        "steps": [
+          "Critical angle formula: sin(theta_c) = n2/n1",
+          "sin(theta_c) = 1.00 / 1.50 = 0.667",
+          "theta_c = arcsin(0.667) = 41.8 degrees"
+        ],
+        "final_answer": "41.8 degrees"
+      },
+      "tags": ["critical-angle", "total-internal-reflection", "basic"]
+    },
+    {
+      "id": "optics_003",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "An object is placed 40 cm from a concave mirror with a focal length of 20 cm. What is the image distance in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 40,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 40,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the mirror equation: 1/f = 1/do + 1/di",
+        "Rearrange to solve for di: 1/di = 1/f - 1/do",
+        "A positive di means a real image in front of the mirror"
+      ],
+      "solution": {
+        "steps": [
+          "Mirror equation: 1/f = 1/do + 1/di",
+          "1/20 = 1/40 + 1/di",
+          "1/di = 1/20 - 1/40 = 2/40 - 1/40 = 1/40",
+          "di = 40 cm"
+        ],
+        "final_answer": "40 cm"
+      },
+      "tags": ["concave-mirror", "mirror-equation", "basic"]
+    },
+    {
+      "id": "optics_004",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A converging lens has a focal length of 25 cm. An object is placed 50 cm from the lens. What is the image distance in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 50,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 50,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the lens equation: 1/f = 1/do + 1/di",
+        "For a converging lens, f is positive",
+        "Solve for di"
+      ],
+      "solution": {
+        "steps": [
+          "Lens equation: 1/f = 1/do + 1/di",
+          "1/25 = 1/50 + 1/di",
+          "1/di = 1/25 - 1/50 = 2/50 - 1/50 = 1/50",
+          "di = 50 cm"
+        ],
+        "final_answer": "50 cm"
+      },
+      "tags": ["converging-lens", "lens-equation", "basic"]
+    },
+    {
+      "id": "optics_005",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "Light enters a diamond (n=2.42) from air at an angle of 30 degrees. What is the angle of refraction in degrees?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 11.9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 11.9,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Apply Snell's law: n1*sin(theta1) = n2*sin(theta2)",
+        "Light bends toward the normal when entering a denser medium",
+        "The refracted angle should be smaller than the incident angle"
+      ],
+      "solution": {
+        "steps": [
+          "Snell's law: n1*sin(theta1) = n2*sin(theta2)",
+          "1.00 * sin(30) = 2.42 * sin(theta2)",
+          "sin(theta2) = 0.50 / 2.42 = 0.207",
+          "theta2 = arcsin(0.207) = 11.9 degrees"
+        ],
+        "final_answer": "11.9 degrees"
+      },
+      "tags": ["snells-law", "refraction", "diamond"]
+    },
+    {
+      "id": "optics_006",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "What is the critical angle for light traveling from diamond (n=2.42) to water (n=1.33) in degrees?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 33.3,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 33.3,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use sin(theta_c) = n2/n1 where n1 > n2",
+        "Diamond has the higher refractive index",
+        "TIR occurs when going from higher to lower n"
+      ],
+      "solution": {
+        "steps": [
+          "Critical angle: sin(theta_c) = n2/n1",
+          "sin(theta_c) = 1.33 / 2.42 = 0.550",
+          "theta_c = arcsin(0.550) = 33.3 degrees"
+        ],
+        "final_answer": "33.3 degrees"
+      },
+      "tags": ["critical-angle", "total-internal-reflection"]
+    },
+    {
+      "id": "optics_007",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "An object is placed 15 cm from a concave mirror with focal length 20 cm. What is the image distance in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": -60,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": -60,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "When object is inside the focal point, the image is virtual",
+        "Use 1/f = 1/do + 1/di",
+        "A negative di indicates a virtual image behind the mirror"
+      ],
+      "solution": {
+        "steps": [
+          "Mirror equation: 1/f = 1/do + 1/di",
+          "1/20 = 1/15 + 1/di",
+          "1/di = 1/20 - 1/15 = 3/60 - 4/60 = -1/60",
+          "di = -60 cm (virtual image behind mirror)"
+        ],
+        "final_answer": "-60 cm"
+      },
+      "tags": ["concave-mirror", "virtual-image"]
+    },
+    {
+      "id": "optics_008",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A concave mirror has a radius of curvature of 40 cm. An object is placed 30 cm from the mirror. What is the magnification?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": -2,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": -2,
+        "unit": "",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find focal length: f = R/2",
+        "Use mirror equation to find di",
+        "Then calculate m = -di/do"
+      ],
+      "solution": {
+        "steps": [
+          "Focal length: f = R/2 = 40/2 = 20 cm",
+          "Mirror equation: 1/20 = 1/30 + 1/di",
+          "1/di = 1/20 - 1/30 = 3/60 - 2/60 = 1/60",
+          "di = 60 cm",
+          "Magnification: m = -di/do = -60/30 = -2"
+        ],
+        "final_answer": "-2"
+      },
+      "tags": ["concave-mirror", "magnification"]
+    },
+    {
+      "id": "optics_009",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "An object 3 cm tall is placed 20 cm from a converging lens. The image forms at 30 cm on the opposite side. What is the image height in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": -4.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": -4.5,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Calculate magnification: m = -di/do",
+        "Then use m = hi/ho to find image height",
+        "Negative height means inverted image"
+      ],
+      "solution": {
+        "steps": [
+          "Magnification: m = -di/do = -30/20 = -1.5",
+          "Image height: hi = m * ho = -1.5 * 3 = -4.5 cm",
+          "The image is 4.5 cm tall and inverted"
+        ],
+        "final_answer": "-4.5 cm"
+      },
+      "tags": ["converging-lens", "magnification", "image-height"]
+    },
+    {
+      "id": "optics_010",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A convex (diverging) mirror has a focal length of -15 cm. An object is placed 30 cm from the mirror. What is the image distance in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": -10,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": -10,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a convex mirror, focal length is negative",
+        "Use 1/f = 1/do + 1/di",
+        "Image will always be virtual (negative di) for convex mirrors"
+      ],
+      "solution": {
+        "steps": [
+          "Mirror equation: 1/f = 1/do + 1/di",
+          "1/(-15) = 1/30 + 1/di",
+          "1/di = -1/15 - 1/30 = -2/30 - 1/30 = -3/30 = -1/10",
+          "di = -10 cm (virtual image)"
+        ],
+        "final_answer": "-10 cm"
+      },
+      "tags": ["convex-mirror", "virtual-image"]
+    },
+    {
+      "id": "optics_011",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A diverging lens has a focal length of -20 cm. An object is placed 40 cm from the lens. What is the magnification?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.33,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 0.33,
+        "unit": "",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For a diverging lens, f is negative",
+        "First find di using lens equation",
+        "Then calculate m = -di/do"
+      ],
+      "solution": {
+        "steps": [
+          "Lens equation: 1/f = 1/do + 1/di",
+          "1/(-20) = 1/40 + 1/di",
+          "1/di = -1/20 - 1/40 = -2/40 - 1/40 = -3/40",
+          "di = -40/3 = -13.33 cm",
+          "Magnification: m = -di/do = -(-13.33)/40 = 0.33"
+        ],
+        "final_answer": "0.33"
+      },
+      "tags": ["diverging-lens", "magnification"]
+    },
+    {
+      "id": "optics_012",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "Light travels through water (n=1.33) and hits a glass surface (n=1.50) at 40 degrees. What is the angle of refraction in degrees?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 34.7,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 34.7,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Apply Snell's law with both media having n > 1",
+        "n1*sin(theta1) = n2*sin(theta2)",
+        "Light bends toward normal when entering denser medium"
+      ],
+      "solution": {
+        "steps": [
+          "Snell's law: n1*sin(theta1) = n2*sin(theta2)",
+          "1.33 * sin(40) = 1.50 * sin(theta2)",
+          "1.33 * 0.643 = 1.50 * sin(theta2)",
+          "sin(theta2) = 0.855 / 1.50 = 0.570",
+          "theta2 = arcsin(0.570) = 34.7 degrees"
+        ],
+        "final_answer": "34.7 degrees"
+      },
+      "tags": ["snells-law", "refraction"]
+    },
+    {
+      "id": "optics_013",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A fiber optic cable uses glass with n=1.62 surrounded by cladding with n=1.52. What is the critical angle at the core-cladding interface in degrees?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 69.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 69.8,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Light travels from core (higher n) to cladding (lower n)",
+        "Use sin(theta_c) = n_cladding / n_core",
+        "This angle determines the acceptance cone of the fiber"
+      ],
+      "solution": {
+        "steps": [
+          "Critical angle: sin(theta_c) = n2/n1 = n_cladding/n_core",
+          "sin(theta_c) = 1.52 / 1.62 = 0.938",
+          "theta_c = arcsin(0.938) = 69.8 degrees"
+        ],
+        "final_answer": "69.8 degrees"
+      },
+      "tags": ["critical-angle", "fiber-optics"]
+    },
+    {
+      "id": "optics_014",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "An object is placed 12 cm from a converging lens with f = 8 cm. What is the image distance in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 24,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 24,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the thin lens equation: 1/f = 1/do + 1/di",
+        "Object is outside focal point, so image is real",
+        "Solve for di"
+      ],
+      "solution": {
+        "steps": [
+          "Lens equation: 1/f = 1/do + 1/di",
+          "1/8 = 1/12 + 1/di",
+          "1/di = 1/8 - 1/12 = 3/24 - 2/24 = 1/24",
+          "di = 24 cm"
+        ],
+        "final_answer": "24 cm"
+      },
+      "tags": ["converging-lens", "lens-equation"]
+    },
+    {
+      "id": "optics_015",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A converging lens produces an image that is 3 times the size of the object. If the object is 10 cm from the lens, what is the focal length in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.5,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use magnification to find di: m = -di/do, so di = -m*do",
+        "For a real image with m = -3 (inverted and magnified), di = 30 cm",
+        "Then use lens equation to find f"
+      ],
+      "solution": {
+        "steps": [
+          "For a real, magnified, inverted image: m = -3",
+          "di = -m * do = -(-3) * 10 = 30 cm",
+          "Lens equation: 1/f = 1/do + 1/di = 1/10 + 1/30",
+          "1/f = 3/30 + 1/30 = 4/30 = 2/15",
+          "f = 15/2 = 7.5 cm"
+        ],
+        "final_answer": "7.5 cm"
+      },
+      "tags": ["converging-lens", "magnification", "focal-length"]
+    },
+    {
+      "id": "optics_016",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A concave mirror produces a virtual image 3 times the size of the object. If the focal length is 15 cm, how far is the object from the mirror in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 10,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 10,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Virtual image from concave mirror means m = +3 (upright)",
+        "Use m = -di/do to relate di and do",
+        "Substitute into mirror equation and solve for do"
+      ],
+      "solution": {
+        "steps": [
+          "For virtual, upright image: m = +3",
+          "m = -di/do, so di = -3*do",
+          "Mirror equation: 1/f = 1/do + 1/di",
+          "1/15 = 1/do + 1/(-3*do) = 1/do - 1/(3*do) = 2/(3*do)",
+          "3*do = 30, so do = 10 cm"
+        ],
+        "final_answer": "10 cm"
+      },
+      "tags": ["concave-mirror", "virtual-image", "object-distance"]
+    },
+    {
+      "id": "optics_017",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "Light travels from air into an unknown medium. The angle of incidence is 50 degrees and the angle of refraction is 30 degrees. What is the refractive index of the unknown medium?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.53,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.53,
+        "unit": "",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use Snell's law: n1*sin(theta1) = n2*sin(theta2)",
+        "n1 = 1.00 for air",
+        "Solve for n2"
+      ],
+      "solution": {
+        "steps": [
+          "Snell's law: n1*sin(theta1) = n2*sin(theta2)",
+          "1.00 * sin(50) = n2 * sin(30)",
+          "0.766 = n2 * 0.50",
+          "n2 = 0.766 / 0.50 = 1.53"
+        ],
+        "final_answer": "1.53"
+      },
+      "tags": ["snells-law", "refractive-index"]
+    },
+    {
+      "id": "optics_018",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A convex mirror with f = -12 cm forms an image of an object. If the magnification is 0.4, what is the object distance in cm?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 18,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 18,
+        "unit": "cm",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "For convex mirrors, images are always virtual and upright (m > 0)",
+        "Use m = -di/do to express di in terms of do",
+        "Substitute into mirror equation"
+      ],
+      "solution": {
+        "steps": [
+          "m = 0.4 = -di/do, so di = -0.4*do",
+          "Mirror equation: 1/f = 1/do + 1/di",
+          "1/(-12) = 1/do + 1/(-0.4*do)",
+          "-1/12 = 1/do - 2.5/do = -1.5/do",
+          "do = (-1.5)/(-1/12) = 1.5 * 12 = 18 cm"
+        ],
+        "final_answer": "18 cm"
+      },
+      "tags": ["convex-mirror", "magnification", "object-distance"]
+    },
+    {
+      "id": "optics_019",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.7,
+      "question": {
+        "content": "Light enters a 45-45-90 prism made of glass (n=1.50) perpendicular to one face. At what minimum angle (in degrees) from the normal must it hit the hypotenuse face to undergo total internal reflection?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 41.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 41.8,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "First find the critical angle for glass-air interface",
+        "sin(theta_c) = n_air / n_glass",
+        "TIR occurs for angles greater than or equal to critical angle"
+      ],
+      "solution": {
+        "steps": [
+          "Critical angle: sin(theta_c) = n2/n1 = 1.00/1.50 = 0.667",
+          "theta_c = arcsin(0.667) = 41.8 degrees",
+          "Light must hit hypotenuse at 41.8 degrees or more for TIR"
+        ],
+        "final_answer": "41.8 degrees"
+      },
+      "tags": ["total-internal-reflection", "prism", "critical-angle"]
+    },
+    {
+      "id": "optics_020",
+      "skill_id": "optics",
+      "type": "numeric",
+      "difficulty": 0.7,
+      "question": {
+        "content": "A magnifying glass (converging lens) with f = 10 cm is used to view an object placed 8 cm from the lens. What is the magnification of the virtual image formed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5,
+        "unit": "",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Object is inside focal point (do < f), creating a virtual image",
+        "Use lens equation to find di (will be negative)",
+        "Calculate m = -di/do"
+      ],
+      "solution": {
+        "steps": [
+          "Lens equation: 1/f = 1/do + 1/di",
+          "1/10 = 1/8 + 1/di",
+          "1/di = 1/10 - 1/8 = 4/40 - 5/40 = -1/40",
+          "di = -40 cm (virtual image)",
+          "Magnification: m = -di/do = -(-40)/8 = 5"
+        ],
+        "final_answer": "5"
+      },
+      "tags": ["converging-lens", "magnifying-glass", "virtual-image", "magnification"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "optics",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 12,
+      "hard": 4
+    },
+    "topics_covered": [
+      "snells-law",
+      "refraction",
+      "critical-angle",
+      "total-internal-reflection",
+      "concave-mirror",
+      "convex-mirror",
+      "converging-lens",
+      "diverging-lens",
+      "mirror-equation",
+      "lens-equation",
+      "magnification",
+      "image-characteristics",
+      "focal-length",
+      "virtual-image",
+      "real-image"
+    ]
+  }
+}
