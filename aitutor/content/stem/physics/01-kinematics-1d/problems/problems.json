@@ -1,0 +1,1948 @@
+{
+  "meta": {
+    "skill_id": "kinematics-1d",
+    "subject": "physics",
+    "unit_id": "x6d90cb99physics01",
+    "course_id": "xphysics_hs_2024",
+    "version": "1.0.0",
+    "total_questions": 20
+  },
+  "questions": [
+    {
+      "question_id": "xkin1d001a7f8c2e1",
+      "sha": "a1b2c3d4e5f6789012345678901234567890abcd",
+      "exercise_id": "xkin1d_velocity_basic",
+      "lesson_id": "xlesson_kinematics_intro",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.2,
+      "tags": ["velocity", "displacement", "basic"],
+      "objective": "Apply average velocity formula",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d001a7f8c2e1",
+              "problemType": "Average velocity calculation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Remember to convert units to SI (meters, seconds).\n\n**Conversions needed:**\n- 150 km → meters: multiply by 1000\n- 2.5 hours → seconds: multiply by 3600",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Average velocity = total displacement / total time\n\n$v_{avg} = \\frac{\\Delta x}{\\Delta t}$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$\\Delta x = 150 \\times 1000 = 150000 \\text{ m}$\n\n$\\Delta t = 2.5 \\times 3600 = 9000 \\text{ s}$\n\n$v_{avg} = \\frac{150000}{9000} = 16.67 \\text{ m/s}$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A car travels $150$ km in $2.5$ hours.\n\n**What is its average velocity in m/s?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.1,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 16.67
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m/s",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "m/s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_velocity_basic"],
+      "order_in_exercise": 1,
+      "source": "OpenStax 2.2"
+    },
+    {
+      "question_id": "xkin1d002b8e9d3f2",
+      "sha": "b2c3d4e5f678901234567890123456789012bcde",
+      "exercise_id": "xkin1d_kinematic_eq",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.3,
+      "tags": ["acceleration", "kinematic-equations", "basic"],
+      "objective": "Use kinematic equation [2] to find displacement",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d002b8e9d3f2",
+              "problemType": "Kinematic equation application",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Starting from rest means the initial velocity $v_0 = 0$.\n\nIdentify your knowns:\n- $v_0 = 0$ m/s\n- $a = 3.0$ m/s²\n- $t = 8.0$ s",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Which kinematic equation doesn't require final velocity?\n\nUse equation [2]: $x = x_0 + v_0 t + \\frac{1}{2}at^2$\n\nSince $x_0 = 0$ and $v_0 = 0$, this simplifies to: $x = \\frac{1}{2}at^2$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$x = \\frac{1}{2}(3.0)(8.0)^2$\n\n$x = \\frac{1}{2}(3.0)(64)$\n\n$x = 96$ m",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A car accelerates from rest at $3.0$ m/s² for $8.0$ seconds.\n\n**How far does it travel?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 96
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m",
+              "size": "normal",
+              "answerForms": ["integer", "decimal"],
+              "unit": "m"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_kinematic_eq"],
+      "order_in_exercise": 1,
+      "source": "OpenStax 2.5"
+    },
+    {
+      "question_id": "xkin1d003c9f0e4a3",
+      "sha": "c3d4e5f6789012345678901234567890123cdef",
+      "exercise_id": "xkin1d_freefall",
+      "lesson_id": "xlesson_free_fall",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.4,
+      "tags": ["free-fall", "time"],
+      "objective": "Solve free-fall problem for time",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d003c9f0e4a3",
+              "problemType": "Free fall time calculation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Set up a coordinate system: let the ground be $y = 0$.\n\n**Knowns:**\n- $y_0 = 45$ m (initial height)\n- $y = 0$ m (final height)\n- $v_0 = 0$ m/s (dropped, not thrown)\n- $a = -9.8$ m/s² (downward)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "The ball is dropped, not thrown, so $v_0 = 0$.\n\nUse equation [2]: $y = y_0 + v_0 t + \\frac{1}{2}at^2$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$0 = 45 + (0)t + \\frac{1}{2}(-9.8)t^2$\n\n$-45 = -4.9t^2$\n\n$t^2 = \\frac{45}{4.9} = 9.18$\n\n$t = \\sqrt{9.18} = 3.03$ s",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A ball is dropped from a height of $45$ m.\n\n**How long does it take to hit the ground?**\n\n*(Use $g = 9.8$ m/s²)*\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.05,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 3.03
+                },
+                {
+                  "maxError": 0.05,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 3.0
+                }
+              ],
+              "coefficient": false,
+              "labelText": "s",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_freefall"],
+      "order_in_exercise": 1,
+      "source": "OpenStax 2.7"
+    },
+    {
+      "question_id": "xkin1d004d0a1f5b4",
+      "sha": "d4e5f67890123456789012345678901234defab",
+      "exercise_id": "xkin1d_kinematic_eq",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.4,
+      "tags": ["kinematic-equations", "final-velocity"],
+      "objective": "Use kinematic equation [1] to find final velocity",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d004d0a1f5b4",
+              "problemType": "Final velocity calculation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "**Watch out!** Time is given in minutes, not seconds.\n\nConvert: $2$ min $\\times$ $60$ = $120$ s",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Use equation [1]: $v = v_0 + at$\n\nThis equation is perfect when you know $v_0$, $a$, and $t$.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$v = v_0 + at$\n\n$v = 0 + (0.5)(120)$\n\n$v = 60$ m/s",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A train starts from rest and accelerates at $0.5$ m/s² for $2$ minutes.\n\n**What is its final velocity?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 60
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m/s",
+              "size": "normal",
+              "answerForms": ["integer", "decimal"],
+              "unit": "m/s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_kinematic_eq"],
+      "order_in_exercise": 2,
+      "source": "OpenStax 2.4"
+    },
+    {
+      "question_id": "xkin1d005e1b2a6c5",
+      "sha": "e5f678901234567890123456789012345efabc0",
+      "exercise_id": "xkin1d_kinematic_eq",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.5,
+      "tags": ["kinematic-equations", "initial-velocity", "braking"],
+      "objective": "Use kinematic equation [3] to find initial velocity",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d005e1b2a6c5",
+              "problemType": "Initial velocity from braking",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Deceleration is **negative** acceleration.\n\nIf the car is braking (slowing down while moving forward), then $a = -5.0$ m/s².",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Use equation [3] when you don't have time:\n\n$v^2 = v_0^2 + 2a\\Delta x$\n\nThe car stops, so $v = 0$.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$v^2 = v_0^2 + 2a\\Delta x$\n\n$0^2 = v_0^2 + 2(-5.0)(40)$\n\n$0 = v_0^2 - 400$\n\n$v_0^2 = 400$\n\n$v_0 = 20$ m/s",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A car brakes with deceleration $5.0$ m/s² and stops after traveling $40$ m.\n\n**What was its initial speed?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 20
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m/s",
+              "size": "normal",
+              "answerForms": ["integer", "decimal"],
+              "unit": "m/s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_kinematic_eq"],
+      "order_in_exercise": 3,
+      "source": "OpenStax 2.5"
+    },
+    {
+      "question_id": "xkin1d006f2c3b7d6",
+      "sha": "f6789012345678901234567890123456fabcd12",
+      "exercise_id": "xkin1d_freefall",
+      "lesson_id": "xlesson_free_fall",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.5,
+      "tags": ["free-fall", "maximum-height"],
+      "objective": "Find maximum height for object thrown upward",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d006f2c3b7d6",
+              "problemType": "Maximum height calculation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "At the **maximum height**, the ball momentarily stops.\n\nThis means $v = 0$ at the peak.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Use equation [3] since we don't need time:\n\n$v^2 = v_0^2 + 2a\\Delta y$\n\nWith $v = 0$ at the peak and $a = -9.8$ m/s².",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$0 = (25)^2 + 2(-9.8)\\Delta y$\n\n$0 = 625 - 19.6\\Delta y$\n\n$19.6\\Delta y = 625$\n\n$\\Delta y = \\frac{625}{19.6} = 31.9$ m",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A ball is thrown straight up with an initial velocity of $25$ m/s.\n\n**What maximum height does it reach?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 31.9
+                },
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 32
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "m"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_freefall"],
+      "order_in_exercise": 2,
+      "source": "OpenStax 2.7"
+    },
+    {
+      "question_id": "xkin1d007a3d4c8e7",
+      "sha": "a789012345678901234567890123456789abcde",
+      "exercise_id": "xkin1d_freefall",
+      "lesson_id": "xlesson_free_fall",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.5,
+      "tags": ["free-fall", "velocity"],
+      "objective": "Find velocity after falling a certain distance",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d007a3d4c8e7",
+              "problemType": "Final velocity in free fall",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Be careful with signs! If down is negative:\n- $\\Delta y = -80$ m (falling down)\n- $a = -9.8$ m/s² (gravity points down)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Speed** is the magnitude of velocity.\n\nEven if velocity is negative (downward), speed is positive.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$v^2 = v_0^2 + 2a\\Delta y$\n\n$v^2 = 0^2 + 2(-9.8)(-80)$\n\n$v^2 = 1568$\n\n$v = -39.6$ m/s (downward)\n\n**Speed** $= |v| = 39.6$ m/s",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A stone is dropped from a bridge $80$ m above a river.\n\n**What is its speed just before hitting the water?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 39.6
+                },
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 40
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m/s",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "m/s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_freefall"],
+      "order_in_exercise": 3,
+      "source": "OpenStax 2.7"
+    },
+    {
+      "question_id": "xkin1d008b4e5d9f8",
+      "sha": "b890123456789012345678901234567890bcdef",
+      "exercise_id": "xkin1d_kinematic_eq",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.6,
+      "tags": ["acceleration", "calculate"],
+      "objective": "Calculate acceleration from velocity change",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d008b4e5d9f8",
+              "problemType": "Acceleration calculation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Use equation [3] rearranged to solve for acceleration:\n\n$a = \\frac{v^2 - v_0^2}{2\\Delta x}$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "No need to find time for this problem!\n\nYou have $v_0$, $v$, and $\\Delta x$.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$a = \\frac{v^2 - v_0^2}{2\\Delta x}$\n\n$a = \\frac{(35)^2 - (15)^2}{2(100)}$\n\n$a = \\frac{1225 - 225}{200}$\n\n$a = \\frac{1000}{200} = 5.0$ m/s²",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A car speeds up from $15$ m/s to $35$ m/s over a distance of $100$ m.\n\n**What is its acceleration?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.1,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 5.0
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m/s²",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "m/s^2"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_kinematic_eq"],
+      "order_in_exercise": 4,
+      "source": "OpenStax 2.5"
+    },
+    {
+      "question_id": "xkin1d009c5f6e0a9",
+      "sha": "c901234567890123456789012345678901cdef0",
+      "exercise_id": "xkin1d_freefall",
+      "lesson_id": "xlesson_free_fall",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.6,
+      "tags": ["free-fall", "total-time"],
+      "objective": "Calculate total time for ball thrown upward",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d009c5f6e0a9",
+              "problemType": "Total flight time",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "The ball returns to its **starting point**, so the displacement $\\Delta y = 0$.\n\n(It goes up, then comes back down to the same height.)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Use equation [2]: $\\Delta y = v_0 t + \\frac{1}{2}at^2$\n\nWith $\\Delta y = 0$, you'll get two solutions.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$0 = 20t + \\frac{1}{2}(-9.8)t^2$\n\n$0 = t(20 - 4.9t)$\n\nSolutions: $t = 0$ (start) or $t = \\frac{20}{4.9} = 4.08$ s\n\nThe ball returns at $t = 4.08$ s.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A ball is thrown straight up with an initial velocity of $20$ m/s.\n\n**How long is it in the air before returning to the starting point?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.05,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 4.08
+                },
+                {
+                  "maxError": 0.05,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 4.1
+                }
+              ],
+              "coefficient": false,
+              "labelText": "s",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_freefall"],
+      "order_in_exercise": 4,
+      "source": "OpenStax 2.7"
+    },
+    {
+      "question_id": "xkin1d010d6a7f1ba",
+      "sha": "d012345678901234567890123456789012def01",
+      "exercise_id": "xkin1d_concepts",
+      "lesson_id": "xlesson_kinematics_intro",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "radio",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.3,
+      "tags": ["conceptual", "misconception"],
+      "objective": "Understand relationship between velocity and acceleration",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d010d6a7f1ba",
+              "problemType": "Conceptual understanding",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": false,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Think about what happens at the **very top** of the ball's path.\n\nAt that instant, is the ball moving? What force is acting on it?",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "At the peak:\n- The ball momentarily **stops** (velocity = 0)\n- Gravity **still acts** on it (that's why it starts falling!)\n\nSo acceleration = $g$ = 9.8 m/s² downward, even when $v = 0$.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Correct Answer: Velocity is zero, acceleration is 9.8 m/s² downward.**\n\nThis is a common misconception! Zero velocity does NOT mean zero acceleration. The ball is changing from going up to going down—that's acceleration.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A ball is thrown straight up.\n\n**At its highest point, what is true about its velocity and acceleration?**\n\n[[\u2603 radio 1]]",
+        "images": {},
+        "widgets": {
+          "radio 1": {
+            "graded": true,
+            "options": {
+              "choices": [
+                {
+                  "content": "Both velocity and acceleration are zero",
+                  "correct": false
+                },
+                {
+                  "content": "Velocity is zero, acceleration is 9.8 m/s² downward",
+                  "correct": true
+                },
+                {
+                  "content": "Velocity is maximum, acceleration is zero",
+                  "correct": false
+                },
+                {
+                  "content": "Both velocity and acceleration are maximum",
+                  "correct": false
+                }
+              ],
+              "countChoices": false,
+              "deselectEnabled": false,
+              "displayCount": null,
+              "hasNoneOfTheAbove": false,
+              "multipleSelect": false,
+              "numCorrect": 1,
+              "randomize": false
+            },
+            "type": "radio",
+            "version": {
+              "major": 2,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_concepts"],
+      "order_in_exercise": 1,
+      "source": "OpenStax 2.7",
+      "misconception_addressed": "Zero velocity means zero acceleration"
+    },
+    {
+      "question_id": "xkin1d011e7b8a2cb",
+      "sha": "e123456789012345678901234567890123ef012",
+      "exercise_id": "xkin1d_concepts",
+      "lesson_id": "xlesson_graphs",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "radio",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.3,
+      "tags": ["conceptual", "graphs"],
+      "objective": "Interpret position-time graphs",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d011e7b8a2cb",
+              "problemType": "Graph interpretation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": false,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "On a position-time graph:\n- The **slope** represents velocity\n- A **straight line** means constant slope (constant velocity)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "- **Positive slope** = moving in positive direction\n- **Negative slope** = moving in negative direction\n- **Zero slope** (horizontal) = at rest\n- **Curved line** = changing velocity (acceleration)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Correct Answer: Object moving at constant positive velocity.**\n\nA straight line with positive slope means the object's position increases at a constant rate—that's constant positive velocity!",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "On a **position-time graph**, what does a straight line with positive slope represent?\n\n[[\u2603 radio 1]]",
+        "images": {},
+        "widgets": {
+          "radio 1": {
+            "graded": true,
+            "options": {
+              "choices": [
+                {
+                  "content": "Object at rest",
+                  "correct": false
+                },
+                {
+                  "content": "Object moving at constant positive velocity",
+                  "correct": true
+                },
+                {
+                  "content": "Object accelerating",
+                  "correct": false
+                },
+                {
+                  "content": "Object moving at constant negative velocity",
+                  "correct": false
+                }
+              ],
+              "countChoices": false,
+              "deselectEnabled": false,
+              "displayCount": null,
+              "hasNoneOfTheAbove": false,
+              "multipleSelect": false,
+              "numCorrect": 1,
+              "randomize": false
+            },
+            "type": "radio",
+            "version": {
+              "major": 2,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_concepts"],
+      "order_in_exercise": 2,
+      "source": "OpenStax 2.3",
+      "misconception_addressed": "Confusing position graphs with velocity graphs"
+    },
+    {
+      "question_id": "xkin1d012f8c9b3dc",
+      "sha": "f234567890123456789012345678901234f0123",
+      "exercise_id": "xkin1d_concepts",
+      "lesson_id": "xlesson_graphs",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "radio",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.4,
+      "tags": ["conceptual", "graphs", "acceleration"],
+      "objective": "Interpret velocity-time graphs",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d012f8c9b3dc",
+              "problemType": "Graph interpretation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": false,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "On a velocity-time (v-t) graph:\n- The **slope** represents acceleration\n- The **area under the curve** represents... what?",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Think about units:\n- Area = height × width = (m/s) × (s) = **meters**\n- That's a unit of distance/displacement!",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Correct Answer: Displacement.**\n\nThe area under a v-t curve equals displacement because:\n$\\text{displacement} = \\text{velocity} \\times \\text{time}$\n\nThis is exactly what area represents on the graph!",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "On a **velocity-time graph**, what does the area under the curve represent?\n\n[[\u2603 radio 1]]",
+        "images": {},
+        "widgets": {
+          "radio 1": {
+            "graded": true,
+            "options": {
+              "choices": [
+                {
+                  "content": "Acceleration",
+                  "correct": false
+                },
+                {
+                  "content": "Displacement",
+                  "correct": true
+                },
+                {
+                  "content": "Average velocity",
+                  "correct": false
+                },
+                {
+                  "content": "Final velocity",
+                  "correct": false
+                }
+              ],
+              "countChoices": false,
+              "deselectEnabled": false,
+              "displayCount": null,
+              "hasNoneOfTheAbove": false,
+              "multipleSelect": false,
+              "numCorrect": 1,
+              "randomize": false
+            },
+            "type": "radio",
+            "version": {
+              "major": 2,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_concepts"],
+      "order_in_exercise": 3,
+      "source": "OpenStax 2.4",
+      "misconception_addressed": "Not understanding relationship between v-t graphs and displacement"
+    },
+    {
+      "question_id": "xkin1d013a9d0c4ed",
+      "sha": "a345678901234567890123456789012345a1234",
+      "exercise_id": "xkin1d_advanced",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.6,
+      "tags": ["two-objects", "meeting"],
+      "objective": "Solve for when two objects meet",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d013a9d0c4ed",
+              "problemType": "Two-object problem",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Write position equations for **both** cars.\n\nCar A (accelerating from rest):\n$x_A = \\frac{1}{2}(2.0)t^2 = t^2$\n\nCar B (constant velocity, starting 50 m ahead):\n$x_B = 50 + 10t$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Set the positions equal to find when they meet:\n\n$x_A = x_B$\n\n$t^2 = 50 + 10t$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$t^2 - 10t - 50 = 0$\n\nUsing quadratic formula: $t = \\frac{10 \\pm \\sqrt{100 + 200}}{2}$\n\n$t = \\frac{10 + 17.3}{2} \\approx 13.7$ s\n\n*(We take the positive root since time must be positive)*",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "Car A starts from rest and accelerates at $2.0$ m/s². Car B, $50$ m ahead, moves at a constant $10$ m/s.\n\n**When does Car A catch up to Car B?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 13.7
+                },
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 14
+                }
+              ],
+              "coefficient": false,
+              "labelText": "s",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_advanced"],
+      "order_in_exercise": 1,
+      "source": "OpenStax 2.5"
+    },
+    {
+      "question_id": "xkin1d014b0e1d5fe",
+      "sha": "b456789012345678901234567890123456b2345",
+      "exercise_id": "xkin1d_velocity_basic",
+      "lesson_id": "xlesson_kinematics_intro",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.5,
+      "tags": ["average-velocity"],
+      "objective": "Calculate average velocity for trip with different speeds",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d014b0e1d5fe",
+              "problemType": "Average velocity calculation",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "**Common mistake:** Average velocity is NOT the average of the speeds!\n\n$v_{avg} \\neq \\frac{50 + 100}{2}$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Find the **total distance** and **total time** separately.\n\n- Time for first leg: $t_1 = \\frac{100}{50} = 2$ hours\n- Time for second leg: $t_2 = \\frac{100}{100} = 1$ hour",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\nTotal distance = $100 + 100 = 200$ km\n\nTotal time = $2 + 1 = 3$ hours\n\n$v_{avg} = \\frac{200}{3} = 66.7$ km/h",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A car travels $100$ km at $50$ km/h, then another $100$ km at $100$ km/h.\n\n**What is its average velocity for the entire trip?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 66.7
+                },
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 66.67
+                }
+              ],
+              "coefficient": false,
+              "labelText": "km/h",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "km/h"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_velocity_basic"],
+      "order_in_exercise": 2,
+      "source": "OpenStax 2.3"
+    },
+    {
+      "question_id": "xkin1d015c1f2e6af",
+      "sha": "c567890123456789012345678901234567c3456",
+      "exercise_id": "xkin1d_freefall",
+      "lesson_id": "xlesson_free_fall",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.7,
+      "tags": ["free-fall", "thrown-down"],
+      "objective": "Solve for object thrown downward",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d015c1f2e6af",
+              "problemType": "Thrown downward problem",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Since the rock is **thrown down**, it already has initial velocity.\n\nIf up is positive:\n- $v_0 = -5$ m/s (downward)\n- $a = -9.8$ m/s² (gravity)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Set up coordinates with up as positive:\n- $y_0 = 100$ m (starting height)\n- $y = 0$ (ground level)\n\nUse equation [2]: $y = y_0 + v_0 t + \\frac{1}{2}at^2$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$0 = 100 + (-5)t + \\frac{1}{2}(-9.8)t^2$\n\n$4.9t^2 + 5t - 100 = 0$\n\nUsing quadratic formula:\n$t = \\frac{-5 + \\sqrt{25 + 1960}}{9.8} = \\frac{-5 + 44.6}{9.8} = 4.04$ s",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A rock is thrown **downward** from a $100$ m cliff with initial velocity $5$ m/s.\n\n**How long does it take to hit the ground?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.05,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 4.04
+                },
+                {
+                  "maxError": 0.05,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 4.0
+                }
+              ],
+              "coefficient": false,
+              "labelText": "s",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "s"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_freefall"],
+      "order_in_exercise": 5,
+      "source": "OpenStax 2.7"
+    },
+    {
+      "question_id": "xkin1d016d2a3f7b0",
+      "sha": "d678901234567890123456789012345678d4567",
+      "exercise_id": "xkin1d_kinematic_eq",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.4,
+      "tags": ["stopping-distance"],
+      "objective": "Calculate stopping distance",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d016d2a3f7b0",
+              "problemType": "Stopping distance",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "You have $v_0$, $v$, and $t$. Which equation uses exactly these variables?\n\nEquation [4]: $x = \\frac{1}{2}(v_0 + v)t$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "This equation is equivalent to:\n\n$x = v_{avg} \\times t$\n\nwhere $v_{avg} = \\frac{v_0 + v}{2}$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$x = \\frac{1}{2}(v_0 + v)t$\n\n$x = \\frac{1}{2}(30 + 0)(5)$\n\n$x = \\frac{1}{2}(30)(5) = 75$ m",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A car traveling at $30$ m/s brakes with constant deceleration and stops in $5$ seconds.\n\n**What distance does it travel while braking?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 75
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m",
+              "size": "normal",
+              "answerForms": ["integer", "decimal"],
+              "unit": "m"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_kinematic_eq"],
+      "order_in_exercise": 5,
+      "source": "OpenStax 2.5"
+    },
+    {
+      "question_id": "xkin1d017e3b4a8c1",
+      "sha": "e789012345678901234567890123456789e5678",
+      "exercise_id": "xkin1d_advanced",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.7,
+      "tags": ["reaction-time", "two-phase"],
+      "objective": "Solve problem with reaction time + braking",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d017e3b4a8c1",
+              "problemType": "Two-phase stopping",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "Split this into **two phases**:\n\n1. **Reaction phase**: Driver sees sign but hasn't started braking yet (constant velocity)\n2. **Braking phase**: Driver applies brakes (deceleration)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Phase 1 (Reaction):**\n$d_1 = v \\times t = 25 \\times 0.5 = 12.5$ m\n\n**Phase 2 (Braking):**\nUse $v^2 = v_0^2 + 2a\\Delta x$ with $v = 0$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n**Braking distance:**\n$0 = 25^2 + 2(-6.0)d_2$\n$d_2 = \\frac{625}{12} = 52.1$ m\n\n**Total:** $12.5 + 52.1 = 64.6$ m",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A driver moving at $25$ m/s sees a stop sign. After a $0.5$ s reaction time, they brake at $6.0$ m/s².\n\n**What is the total stopping distance?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 64.6
+                },
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 65
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "m"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_advanced"],
+      "order_in_exercise": 2,
+      "source": "OpenStax 2.5"
+    },
+    {
+      "question_id": "xkin1d018f4c5b9d2",
+      "sha": "f890123456789012345678901234567890f6789",
+      "exercise_id": "xkin1d_concepts",
+      "lesson_id": "xlesson_kinematics_intro",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "radio",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.4,
+      "tags": ["conceptual", "distance-displacement"],
+      "objective": "Distinguish distance from displacement",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d018f4c5b9d2",
+              "problemType": "Distance vs displacement",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": false,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "**Displacement** is the change in position from start to finish.\n\n**Distance** is the total path length traveled.\n\nThese are NOT the same!",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Where does the runner start? Where do they finish?\n\nAfter one complete lap, the runner returns to the **starting point**.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Correct Answer: 0 m**\n\nThe runner ends up exactly where they started. Since displacement = final position - initial position:\n\n$\\Delta x = x_f - x_i = 0$\n\n(Even though they traveled 400 m of **distance**!)",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A runner completes one lap around a $400$ m track.\n\n**What is their displacement?**\n\n[[\u2603 radio 1]]",
+        "images": {},
+        "widgets": {
+          "radio 1": {
+            "graded": true,
+            "options": {
+              "choices": [
+                {
+                  "content": "400 m",
+                  "correct": false
+                },
+                {
+                  "content": "200 m",
+                  "correct": false
+                },
+                {
+                  "content": "0 m",
+                  "correct": true
+                },
+                {
+                  "content": "-400 m",
+                  "correct": false
+                }
+              ],
+              "countChoices": false,
+              "deselectEnabled": false,
+              "displayCount": null,
+              "hasNoneOfTheAbove": false,
+              "multipleSelect": false,
+              "numCorrect": 1,
+              "randomize": false
+            },
+            "type": "radio",
+            "version": {
+              "major": 2,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_concepts"],
+      "order_in_exercise": 4,
+      "source": "OpenStax 2.1",
+      "misconception_addressed": "Distance and displacement are the same"
+    },
+    {
+      "question_id": "xkin1d019a5d6c0e3",
+      "sha": "a901234567890123456789012345678901a7890",
+      "exercise_id": "xkin1d_advanced",
+      "lesson_id": "xlesson_free_fall",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.5,
+      "tags": ["free-fall", "catch", "relative-motion"],
+      "objective": "Calculate when dropped object reaches a moving observer",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d019a5d6c0e3",
+              "problemType": "Relative motion in elevator",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "When you release the ball in a moving elevator, the ball **initially has the same velocity as the elevator** (3 m/s upward).\n\nThen gravity takes over.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "Find positions of **both** the ball and you after 2 seconds:\n\n**Ball:** $y_{ball} = v_0 t - \\frac{1}{2}gt^2 = 3(2) - 4.9(4) = 6 - 19.6 = -13.6$ m\n\n**You:** $y_{you} = 3t = 3(2) = 6$ m",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\nRelative distance = $y_{you} - y_{ball}$\n$= 6 - (-13.6)$\n$= 19.6$ m\n\nThe ball is 19.6 m below you after 2 seconds.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "You drop a ball from rest while in an elevator moving **upward** at constant $3$ m/s.\n\n**After 2 seconds, how far is the ball below you?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 19.6
+                },
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 20
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m",
+              "size": "normal",
+              "answerForms": ["decimal"],
+              "unit": "m"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_advanced"],
+      "order_in_exercise": 3,
+      "source": "OpenStax 2.7"
+    },
+    {
+      "question_id": "xkin1d020b6e7d1f4",
+      "sha": "b012345678901234567890123456789012b8901",
+      "exercise_id": "xkin1d_kinematic_eq",
+      "lesson_id": "xlesson_kinematic_equations",
+      "unit_id": "x6d90cb99physics01",
+      "course_id": "xphysics_hs_2024",
+      "problem_type": "numeric-input",
+      "skill_id": "kinematics-1d",
+      "difficulty": 0.6,
+      "tags": ["acceleration", "changing"],
+      "objective": "Calculate distance from velocity change",
+      "perseus_json": {
+        "data": {
+          "assessmentItem": {
+            "__typename": "AssessmentItemOrError",
+            "error": null,
+            "item": {
+              "__typename": "AssessmentItem",
+              "id": "xkin1d020b6e7d1f4",
+              "problemType": "Distance from velocity change",
+              "requiresScreenOrMouse": false
+            }
+          }
+        }
+      },
+      "answer_area": {
+        "calculator": true,
+        "options": {
+          "content": "",
+          "images": {},
+          "widgets": {}
+        },
+        "type": "multiple"
+      },
+      "hints": [
+        {
+          "content": "**Method 1:** Use equation [4] directly!\n\n$x = \\frac{1}{2}(v_0 + v)t$\n\nThis is the **fastest** approach when you have $v_0$, $v$, and $t$.",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "This equation equals **average velocity × time**:\n\n$x = \\frac{v_0 + v}{2} \\times t$\n\n$x = \\frac{10 + 30}{2} \\times 4$",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        },
+        {
+          "content": "**Solution:**\n\n$x = \\frac{1}{2}(10 + 30)(4)$\n\n$x = \\frac{1}{2}(40)(4)$\n\n$x = 80$ m",
+          "images": {},
+          "replace": false,
+          "widgets": {}
+        }
+      ],
+      "question": {
+        "content": "A car's velocity changes from $10$ m/s to $30$ m/s in $4$ seconds. Assuming constant acceleration:\n\n**What distance does it travel?**\n\n[[\u2603 numeric-input 1]]",
+        "images": {},
+        "widgets": {
+          "numeric-input 1": {
+            "graded": true,
+            "options": {
+              "answers": [
+                {
+                  "maxError": 0.5,
+                  "message": "",
+                  "simplify": "required",
+                  "status": "correct",
+                  "strict": false,
+                  "value": 80
+                }
+              ],
+              "coefficient": false,
+              "labelText": "m",
+              "size": "normal",
+              "answerForms": ["integer", "decimal"],
+              "unit": "m"
+            },
+            "type": "numeric-input",
+            "version": {
+              "major": 0,
+              "minor": 0
+            }
+          }
+        }
+      },
+      "requires_screen_or_mouse": false,
+      "appears_in_exercises": ["xkin1d_kinematic_eq"],
+      "order_in_exercise": 6,
+      "source": "OpenStax 2.5"
+    }
+  ]
+}

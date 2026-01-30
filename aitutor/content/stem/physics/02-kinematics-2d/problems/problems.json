@@ -1,0 +1,731 @@
+{
+  "skill_id": "kinematics-2d",
+  "subject": "physics",
+  "source": "OpenStax College Physics Ch 3",
+  "questions": [
+    {
+      "question_id": "kin2d_001",
+      "exercise_id": "kin2d_horizontal_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.3,
+      "type": "numeric",
+      "question": {
+        "content": "A stone is thrown horizontally at $8.0\\text{ m/s}$ from a bridge $20\\text{ m}$ above the water. How long does it take to hit the water?\n\n**Time:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.02,
+              "tolerance": 0.05,
+              "unit": "s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The horizontal velocity doesn't affect how long it takes to fall."},
+        {"content": "Use the vertical motion equation: $y = y_0 - \\frac{1}{2}gt^2$"},
+        {"content": "Solve $0 = 20 - \\frac{1}{2}(9.8)t^2$ for $t$."}
+      ],
+      "solution": {
+        "steps": [
+          "Identify: This is a horizontal projectile problem",
+          "The time to fall depends only on vertical motion",
+          "Use: $y = y_0 - \\frac{1}{2}gt^2$",
+          "At water level: $0 = 20 - \\frac{1}{2}(9.8)t^2$",
+          "Solve: $t^2 = \\frac{40}{9.8} = 4.08$",
+          "Therefore: $t = 2.02\\text{ s}$"
+        ],
+        "final_answer": {"value": 2.02, "unit": "s"}
+      }
+    },
+    {
+      "question_id": "kin2d_002",
+      "exercise_id": "kin2d_horizontal_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.3,
+      "type": "numeric",
+      "question": {
+        "content": "A stone is thrown horizontally at $8.0\\text{ m/s}$ from a bridge $20\\text{ m}$ above the water. How far from the base of the bridge does it land?\n\n**Horizontal distance:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 16.2,
+              "tolerance": 0.5,
+              "unit": "m",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "First find the time of flight using vertical motion."},
+        {"content": "Then use horizontal motion: $x = v_{0x} \\cdot t$"},
+        {"content": "Time of flight is $2.02\\text{ s}$. Multiply by horizontal velocity."}
+      ],
+      "solution": {
+        "steps": [
+          "From vertical motion: $t = 2.02\\text{ s}$",
+          "Horizontal motion: $x = v_{0x} \\cdot t$",
+          "Calculate: $x = 8.0 \\times 2.02 = 16.2\\text{ m}$"
+        ],
+        "final_answer": {"value": 16.2, "unit": "m"}
+      }
+    },
+    {
+      "question_id": "kin2d_003",
+      "exercise_id": "kin2d_angled_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.4,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is kicked at $25\\text{ m/s}$ at an angle of $37°$ above the horizontal. What is the initial vertical component of velocity?\n\n**Vertical component:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 15.0,
+              "tolerance": 0.3,
+              "unit": "m/s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Use the formula for the vertical component: $v_{0y} = v_0 \\sin(\\theta)$"},
+        {"content": "Remember: $\\sin(37°) \\approx 0.60$"},
+        {"content": "Calculate: $v_{0y} = 25 \\times 0.60$"}
+      ],
+      "solution": {
+        "steps": [
+          "Vertical component formula: $v_{0y} = v_0 \\sin(\\theta)$",
+          "Substitute: $v_{0y} = 25 \\times \\sin(37°)$",
+          "Calculate: $v_{0y} = 25 \\times 0.60 = 15.0\\text{ m/s}$"
+        ],
+        "final_answer": {"value": 15.0, "unit": "m/s"}
+      }
+    },
+    {
+      "question_id": "kin2d_004",
+      "exercise_id": "kin2d_angled_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.4,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is kicked at $25\\text{ m/s}$ at an angle of $37°$ above the horizontal. What is the initial horizontal component of velocity?\n\n**Horizontal component:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 20.0,
+              "tolerance": 0.3,
+              "unit": "m/s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Use the formula for the horizontal component: $v_{0x} = v_0 \\cos(\\theta)$"},
+        {"content": "Remember: $\\cos(37°) \\approx 0.80$"},
+        {"content": "Calculate: $v_{0x} = 25 \\times 0.80$"}
+      ],
+      "solution": {
+        "steps": [
+          "Horizontal component formula: $v_{0x} = v_0 \\cos(\\theta)$",
+          "Substitute: $v_{0x} = 25 \\times \\cos(37°)$",
+          "Calculate: $v_{0x} = 25 \\times 0.80 = 20.0\\text{ m/s}$"
+        ],
+        "final_answer": {"value": 20.0, "unit": "m/s"}
+      }
+    },
+    {
+      "question_id": "kin2d_005",
+      "exercise_id": "kin2d_angled_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is launched at $30\\text{ m/s}$ at $45°$ above horizontal from ground level. What is the maximum height reached?\n\n**Maximum height:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 22.95,
+              "tolerance": 0.5,
+              "unit": "m",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "At maximum height, vertical velocity is zero."},
+        {"content": "Use: $H = \\frac{v_0^2 \\sin^2(\\theta)}{2g}$"},
+        {"content": "With $\\sin(45°) = 0.707$: $H = \\frac{(30)^2 \\times (0.707)^2}{2 \\times 9.8}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Maximum height formula: $H = \\frac{v_0^2 \\sin^2(\\theta)}{2g}$",
+          "Find $v_{0y} = 30 \\times \\sin(45°) = 21.2\\text{ m/s}$",
+          "Calculate: $H = \\frac{(21.2)^2}{2 \\times 9.8} = \\frac{450}{19.6} = 22.95\\text{ m}$"
+        ],
+        "final_answer": {"value": 22.95, "unit": "m"}
+      }
+    },
+    {
+      "question_id": "kin2d_006",
+      "exercise_id": "kin2d_angled_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is launched at $30\\text{ m/s}$ at $45°$ above horizontal from ground level. What is the total time of flight?\n\n**Time of flight:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.33,
+              "tolerance": 0.1,
+              "unit": "s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Time of flight is the time to go up and come back down to the same height."},
+        {"content": "Use: $T = \\frac{2v_0 \\sin(\\theta)}{g}$"},
+        {"content": "With $v_{0y} = 21.2\\text{ m/s}$: $T = \\frac{2 \\times 21.2}{9.8}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Time of flight formula: $T = \\frac{2v_0 \\sin(\\theta)}{g}$",
+          "Find $v_{0y} = 30 \\times \\sin(45°) = 21.2\\text{ m/s}$",
+          "Calculate: $T = \\frac{2 \\times 21.2}{9.8} = 4.33\\text{ s}$"
+        ],
+        "final_answer": {"value": 4.33, "unit": "s"}
+      }
+    },
+    {
+      "question_id": "kin2d_007",
+      "exercise_id": "kin2d_angled_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is launched at $30\\text{ m/s}$ at $45°$ above horizontal from ground level. What is the range (horizontal distance)?\n\n**Range:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 91.8,
+              "tolerance": 2.0,
+              "unit": "m",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Range formula: $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$"},
+        {"content": "Note: $\\sin(90°) = 1$ for $\\theta = 45°$"},
+        {"content": "Calculate: $R = \\frac{(30)^2 \\times 1}{9.8}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Range formula: $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$",
+          "For $\\theta = 45°$: $\\sin(90°) = 1$",
+          "Calculate: $R = \\frac{900}{9.8} = 91.8\\text{ m}$"
+        ],
+        "final_answer": {"value": 91.8, "unit": "m"}
+      }
+    },
+    {
+      "question_id": "kin2d_008",
+      "exercise_id": "kin2d_cliff_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is thrown from a $50\\text{ m}$ high cliff at $12\\text{ m/s}$ at $30°$ above horizontal. How long until it hits the ground below?\n\n**Time:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 3.85,
+              "tolerance": 0.1,
+              "unit": "s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Set up vertical motion with $y_0 = 50\\text{ m}$ and final $y = 0$."},
+        {"content": "Use: $0 = 50 + v_{0y}t - \\frac{1}{2}gt^2$ where $v_{0y} = 12\\sin(30°) = 6\\text{ m/s}$"},
+        {"content": "Solve the quadratic: $4.9t^2 - 6t - 50 = 0$"}
+      ],
+      "solution": {
+        "steps": [
+          "Initial vertical velocity: $v_{0y} = 12 \\sin(30°) = 6\\text{ m/s}$",
+          "Vertical position equation: $y = y_0 + v_{0y}t - \\frac{1}{2}gt^2$",
+          "Set $y = 0$: $0 = 50 + 6t - 4.9t^2$",
+          "Rearrange: $4.9t^2 - 6t - 50 = 0$",
+          "Using quadratic formula: $t = \\frac{6 + \\sqrt{36 + 980}}{9.8} = \\frac{6 + 31.9}{9.8} = 3.85\\text{ s}$"
+        ],
+        "final_answer": {"value": 3.85, "unit": "s"}
+      }
+    },
+    {
+      "question_id": "kin2d_009",
+      "exercise_id": "kin2d_cliff_launch",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is thrown from a $50\\text{ m}$ high cliff at $12\\text{ m/s}$ at $30°$ above horizontal. How far from the base of the cliff does it land?\n\n**Horizontal distance:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 40.0,
+              "tolerance": 1.0,
+              "unit": "m",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Use the time of flight from the previous problem: $t = 3.85\\text{ s}$"},
+        {"content": "Find horizontal velocity: $v_{0x} = 12 \\cos(30°)$"},
+        {"content": "Calculate range: $x = v_{0x} \\times t$"}
+      ],
+      "solution": {
+        "steps": [
+          "Time of flight: $t = 3.85\\text{ s}$",
+          "Horizontal velocity: $v_{0x} = 12 \\cos(30°) = 10.4\\text{ m/s}$",
+          "Range: $x = v_{0x} \\times t = 10.4 \\times 3.85 = 40.0\\text{ m}$"
+        ],
+        "final_answer": {"value": 40.0, "unit": "m"}
+      }
+    },
+    {
+      "question_id": "kin2d_010",
+      "exercise_id": "kin2d_relative_velocity",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A boat can travel at $5\\text{ m/s}$ in still water. If it aims straight across a river that flows at $3\\text{ m/s}$, what is the boat's resultant speed relative to the shore?\n\n**Resultant speed:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5.83,
+              "tolerance": 0.1,
+              "unit": "m/s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The boat velocity and river velocity are perpendicular."},
+        {"content": "Use the Pythagorean theorem: $v = \\sqrt{v_{boat}^2 + v_{river}^2}$"},
+        {"content": "Calculate: $v = \\sqrt{5^2 + 3^2}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Velocities are perpendicular, use Pythagorean theorem",
+          "Resultant: $v = \\sqrt{v_{boat}^2 + v_{river}^2}$",
+          "Calculate: $v = \\sqrt{25 + 9} = \\sqrt{34} = 5.83\\text{ m/s}$"
+        ],
+        "final_answer": {"value": 5.83, "unit": "m/s"}
+      }
+    },
+    {
+      "question_id": "kin2d_011",
+      "exercise_id": "kin2d_relative_velocity",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A boat can travel at $5\\text{ m/s}$ in still water. The river is $80\\text{ m}$ wide and flows at $3\\text{ m/s}$. If the boat aims straight across, how far downstream will it drift?\n\n**Drift distance:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 48,
+              "tolerance": 1.0,
+              "unit": "m",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "First find the time to cross using the boat's speed perpendicular to the current."},
+        {"content": "Time to cross: $t = \\frac{width}{v_{boat}} = \\frac{80}{5}$"},
+        {"content": "Drift: $d = v_{river} \\times t$"}
+      ],
+      "solution": {
+        "steps": [
+          "Time to cross: $t = \\frac{80}{5} = 16\\text{ s}$",
+          "Drift distance: $d = v_{river} \\times t = 3 \\times 16 = 48\\text{ m}$"
+        ],
+        "final_answer": {"value": 48, "unit": "m"}
+      }
+    },
+    {
+      "question_id": "kin2d_012",
+      "exercise_id": "kin2d_relative_velocity",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "A plane flies at $200\\text{ km/h}$ relative to the air. There is a crosswind of $50\\text{ km/h}$ blowing from the west. If the plane aims directly north, what is its ground speed?\n\n**Ground speed:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 206,
+              "tolerance": 2.0,
+              "unit": "km/h",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The plane's velocity and wind velocity are perpendicular."},
+        {"content": "Use vector addition: $v_{ground} = \\sqrt{v_{plane}^2 + v_{wind}^2}$"},
+        {"content": "Calculate: $v = \\sqrt{200^2 + 50^2}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Velocities are perpendicular (north and east)",
+          "Ground speed: $v = \\sqrt{v_{plane}^2 + v_{wind}^2}$",
+          "Calculate: $v = \\sqrt{40000 + 2500} = \\sqrt{42500} = 206\\text{ km/h}$"
+        ],
+        "final_answer": {"value": 206, "unit": "km/h"}
+      }
+    },
+    {
+      "question_id": "kin2d_013",
+      "exercise_id": "kin2d_max_range",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.4,
+      "type": "radio",
+      "question": {
+        "content": "At what angle should a projectile be launched (from ground level) to achieve maximum range?\n\n[[☃ radio 1]]",
+        "widgets": {
+          "radio 1": {
+            "type": "radio",
+            "options": {
+              "choices": [
+                {"content": "$30°$", "correct": false},
+                {"content": "$45°$", "correct": true},
+                {"content": "$60°$", "correct": false},
+                {"content": "$90°$", "correct": false}
+              ],
+              "randomize": false
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The range formula is $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$."},
+        {"content": "Range is maximum when $\\sin(2\\theta)$ is maximum, which equals 1."},
+        {"content": "$\\sin(2\\theta) = 1$ when $2\\theta = 90°$, so $\\theta = 45°$."}
+      ],
+      "solution": {
+        "explanation": "Range is maximum when $\\sin(2\\theta) = 1$. This occurs when $2\\theta = 90°$, giving $\\theta = 45°$."
+      }
+    },
+    {
+      "question_id": "kin2d_014",
+      "exercise_id": "kin2d_conceptual",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.3,
+      "type": "radio",
+      "question": {
+        "content": "A bullet is fired horizontally from a rifle. At the same instant, a second bullet is dropped from the same height. Ignoring air resistance, which bullet hits the ground first?\n\n[[☃ radio 1]]",
+        "widgets": {
+          "radio 1": {
+            "type": "radio",
+            "options": {
+              "choices": [
+                {"content": "The fired bullet", "correct": false},
+                {"content": "The dropped bullet", "correct": false},
+                {"content": "They hit at the same time", "correct": true},
+                {"content": "It depends on the speed of the fired bullet", "correct": false}
+              ],
+              "randomize": false
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Consider horizontal and vertical motion separately."},
+        {"content": "Does horizontal velocity affect vertical acceleration?"},
+        {"content": "Both bullets experience the same gravitational acceleration."}
+      ],
+      "solution": {
+        "explanation": "Horizontal and vertical motions are independent. Both bullets fall with the same vertical acceleration (g), so they hit the ground at the same time regardless of horizontal velocity."
+      }
+    },
+    {
+      "question_id": "kin2d_015",
+      "exercise_id": "kin2d_conceptual",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.4,
+      "type": "radio",
+      "question": {
+        "content": "A projectile is launched at $60°$ above horizontal. Another is launched at $30°$ with the same initial speed. Which has the greater range (assuming both land at launch height)?\n\n[[☃ radio 1]]",
+        "widgets": {
+          "radio 1": {
+            "type": "radio",
+            "options": {
+              "choices": [
+                {"content": "The $60°$ projectile", "correct": false},
+                {"content": "The $30°$ projectile", "correct": false},
+                {"content": "They have the same range", "correct": true},
+                {"content": "Cannot be determined", "correct": false}
+              ],
+              "randomize": false
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The range formula involves $\\sin(2\\theta)$."},
+        {"content": "Calculate $\\sin(2 \\times 60°)$ and $\\sin(2 \\times 30°)$."},
+        {"content": "$\\sin(120°) = \\sin(60°)$ because of the sine function's symmetry."}
+      ],
+      "solution": {
+        "explanation": "Range $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$. For $60°$: $\\sin(120°) = 0.866$. For $30°$: $\\sin(60°) = 0.866$. Complementary angles give equal ranges."
+      }
+    },
+    {
+      "question_id": "kin2d_016",
+      "exercise_id": "kin2d_velocity_at_peak",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is launched at $40\\text{ m/s}$ at $53°$ above horizontal. What is the speed of the ball at the highest point of its trajectory?\n\n**Speed at peak:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 24.0,
+              "tolerance": 0.5,
+              "unit": "m/s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "At the highest point, what happens to vertical velocity?"},
+        {"content": "Vertical velocity is zero at the peak, but horizontal velocity is unchanged."},
+        {"content": "The speed at the peak equals the horizontal component: $v_{0x} = v_0 \\cos(53°)$"}
+      ],
+      "solution": {
+        "steps": [
+          "At the peak, vertical velocity = 0",
+          "Only horizontal velocity remains",
+          "Speed at peak: $v = v_{0x} = v_0 \\cos(53°)$",
+          "Calculate: $v = 40 \\times 0.60 = 24.0\\text{ m/s}$"
+        ],
+        "final_answer": {"value": 24.0, "unit": "m/s"}
+      }
+    },
+    {
+      "question_id": "kin2d_017",
+      "exercise_id": "kin2d_impact_velocity",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is thrown horizontally at $15\\text{ m/s}$ from a $30\\text{ m}$ high building. What is its speed just before hitting the ground?\n\n**Impact speed:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 28.3,
+              "tolerance": 0.5,
+              "unit": "m/s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "First find the vertical velocity at impact using $v_y^2 = v_{0y}^2 + 2g\\Delta y$"},
+        {"content": "Horizontal velocity remains $15\\text{ m/s}$"},
+        {"content": "Combine components: $v = \\sqrt{v_x^2 + v_y^2}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Find vertical velocity at impact: $v_y^2 = 0 + 2(9.8)(30) = 588$",
+          "So $v_y = 24.2\\text{ m/s}$",
+          "Horizontal velocity unchanged: $v_x = 15\\text{ m/s}$",
+          "Total speed: $v = \\sqrt{15^2 + 24.2^2} = \\sqrt{225 + 588} = 28.3\\text{ m/s}$"
+        ],
+        "final_answer": {"value": 28.3, "unit": "m/s"}
+      }
+    },
+    {
+      "question_id": "kin2d_018",
+      "exercise_id": "kin2d_impact_velocity",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "A ball is thrown horizontally at $15\\text{ m/s}$ from a $30\\text{ m}$ high building. At what angle below horizontal does it strike the ground?\n\n**Impact angle (degrees below horizontal):** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 58.2,
+              "tolerance": 1.0,
+              "unit": "degrees",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The angle is determined by the velocity components at impact."},
+        {"content": "Use: $\\tan(\\theta) = \\frac{v_y}{v_x}$"},
+        {"content": "From previous: $v_y = 24.2\\text{ m/s}$, $v_x = 15\\text{ m/s}$"}
+      ],
+      "solution": {
+        "steps": [
+          "At impact: $v_y = 24.2\\text{ m/s}$, $v_x = 15\\text{ m/s}$",
+          "Angle: $\\tan(\\theta) = \\frac{v_y}{v_x} = \\frac{24.2}{15} = 1.61$",
+          "Therefore: $\\theta = \\tan^{-1}(1.61) = 58.2°$"
+        ],
+        "final_answer": {"value": 58.2, "unit": "degrees"}
+      }
+    },
+    {
+      "question_id": "kin2d_019",
+      "exercise_id": "kin2d_challenge",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.7,
+      "type": "numeric",
+      "question": {
+        "content": "A basketball player shoots from $6\\text{ m}$ away, releasing the ball at a height of $2\\text{ m}$ at $45°$. The basket is $3\\text{ m}$ high. What initial speed is needed to make the shot?\n\n**Initial speed:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 8.6,
+              "tolerance": 0.2,
+              "unit": "m/s",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Set up coordinates: $\\Delta x = 6\\text{ m}$, $\\Delta y = 3 - 2 = 1\\text{ m}$"},
+        {"content": "From horizontal: $t = \\frac{6}{v_0 \\cos(45°)}$"},
+        {"content": "Substitute into vertical equation: $1 = v_0 \\sin(45°) \\cdot t - \\frac{1}{2}gt^2$"}
+      ],
+      "solution": {
+        "steps": [
+          "Horizontal: $6 = v_0 \\cos(45°) \\cdot t = 0.707 v_0 t$",
+          "So: $t = \\frac{6}{0.707 v_0} = \\frac{8.49}{v_0}$",
+          "Vertical: $1 = 0.707 v_0 t - 4.9t^2$",
+          "Substitute: $1 = 0.707 v_0 \\cdot \\frac{8.49}{v_0} - 4.9 \\cdot \\frac{72}{v_0^2}$",
+          "Simplify: $1 = 6 - \\frac{353}{v_0^2}$",
+          "Solve: $v_0^2 = \\frac{353}{5} = 70.6$",
+          "Therefore: $v_0 = 8.6\\text{ m/s}$"
+        ],
+        "final_answer": {"value": 8.6, "unit": "m/s"}
+      }
+    },
+    {
+      "question_id": "kin2d_020",
+      "exercise_id": "kin2d_challenge",
+      "skill_id": "kinematics-2d",
+      "course_id": "physics",
+      "unit_id": "kinematics",
+      "difficulty": 0.7,
+      "type": "numeric",
+      "question": {
+        "content": "A rescue plane drops a package to stranded hikers. The plane flies horizontally at $50\\text{ m/s}$ at an altitude of $200\\text{ m}$. How far before reaching the hikers (horizontal distance) should the pilot release the package?\n\n**Release distance:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 320,
+              "tolerance": 5.0,
+              "unit": "m",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Find the time for the package to fall $200\\text{ m}$."},
+        {"content": "Use: $t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{400}{9.8}}$"},
+        {"content": "The horizontal distance is $x = v \\cdot t$"}
+      ],
+      "solution": {
+        "steps": [
+          "Time to fall: $t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2 \\times 200}{9.8}} = 6.39\\text{ s}$",
+          "Horizontal distance: $x = v \\cdot t = 50 \\times 6.39 = 320\\text{ m}$",
+          "The package must be released $320\\text{ m}$ before the target."
+        ],
+        "final_answer": {"value": 320, "unit": "m"}
+      }
+    }
+  ]
+}

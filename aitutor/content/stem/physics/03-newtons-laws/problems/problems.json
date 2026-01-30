@@ -1,0 +1,726 @@
+{
+  "skill_id": "newtons-laws",
+  "subject": "physics",
+  "source": "OpenStax College Physics Ch 4",
+  "questions": [
+    {
+      "question_id": "newt_001",
+      "exercise_id": "newt_second_law_basic",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.3,
+      "type": "numeric",
+      "question": {
+        "content": "A $5\\text{ kg}$ object experiences a net force of $20\\text{ N}$. What is its acceleration?\n\n**Acceleration:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.0,
+              "tolerance": 0.1,
+              "unit": "m/s^2",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Use Newton's Second Law: $\\Sigma F = ma$"},
+        {"content": "Rearrange to solve for acceleration: $a = \\frac{\\Sigma F}{m}$"},
+        {"content": "Substitute: $a = \\frac{20}{5}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Apply Newton's Second Law: $\\Sigma F = ma$",
+          "Solve for acceleration: $a = \\frac{F}{m}$",
+          "Substitute values: $a = \\frac{20}{5} = 4.0\\text{ m/s}^2$"
+        ],
+        "final_answer": {"value": 4.0, "unit": "m/s^2"}
+      }
+    },
+    {
+      "question_id": "newt_002",
+      "exercise_id": "newt_second_law_basic",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.3,
+      "type": "numeric",
+      "question": {
+        "content": "What net force is needed to accelerate a $12\\text{ kg}$ object at $3\\text{ m/s}^2$?\n\n**Force:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 36,
+              "tolerance": 0.5,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Use Newton's Second Law: $F = ma$"},
+        {"content": "Substitute the given values"},
+        {"content": "$F = 12 \\times 3$"}
+      ],
+      "solution": {
+        "steps": [
+          "Apply Newton's Second Law: $F = ma$",
+          "Substitute: $F = 12 \\times 3 = 36\\text{ N}$"
+        ],
+        "final_answer": {"value": 36, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_003",
+      "exercise_id": "newt_second_law_basic",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.3,
+      "type": "numeric",
+      "question": {
+        "content": "A net force of $45\\text{ N}$ accelerates an object at $9\\text{ m/s}^2$. What is the object's mass?\n\n**Mass:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5.0,
+              "tolerance": 0.1,
+              "unit": "kg",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Use Newton's Second Law: $F = ma$"},
+        {"content": "Rearrange to solve for mass: $m = \\frac{F}{a}$"},
+        {"content": "$m = \\frac{45}{9}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Apply Newton's Second Law: $F = ma$",
+          "Solve for mass: $m = \\frac{F}{a}$",
+          "Substitute: $m = \\frac{45}{9} = 5.0\\text{ kg}$"
+        ],
+        "final_answer": {"value": 5.0, "unit": "kg"}
+      }
+    },
+    {
+      "question_id": "newt_004",
+      "exercise_id": "newt_weight",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.3,
+      "type": "numeric",
+      "question": {
+        "content": "What is the weight of a $25\\text{ kg}$ object on Earth? (Use $g = 9.8\\text{ m/s}^2$)\n\n**Weight:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 245,
+              "tolerance": 2.0,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Weight is the gravitational force on an object."},
+        {"content": "Use the formula: $W = mg$"},
+        {"content": "$W = 25 \\times 9.8$"}
+      ],
+      "solution": {
+        "steps": [
+          "Weight formula: $W = mg$",
+          "Substitute: $W = 25 \\times 9.8 = 245\\text{ N}$"
+        ],
+        "final_answer": {"value": 245, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_005",
+      "exercise_id": "newt_weight",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.4,
+      "type": "numeric",
+      "question": {
+        "content": "An astronaut weighs $800\\text{ N}$ on Earth. What is the astronaut's mass? (Use $g = 9.8\\text{ m/s}^2$)\n\n**Mass:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 81.6,
+              "tolerance": 1.0,
+              "unit": "kg",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Weight and mass are related by $W = mg$"},
+        {"content": "Solve for mass: $m = \\frac{W}{g}$"},
+        {"content": "$m = \\frac{800}{9.8}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Weight formula: $W = mg$",
+          "Solve for mass: $m = \\frac{W}{g}$",
+          "Substitute: $m = \\frac{800}{9.8} = 81.6\\text{ kg}$"
+        ],
+        "final_answer": {"value": 81.6, "unit": "kg"}
+      }
+    },
+    {
+      "question_id": "newt_006",
+      "exercise_id": "newt_elevator",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A $60\\text{ kg}$ person stands on a scale in an elevator accelerating upward at $2\\text{ m/s}^2$. What does the scale read?\n\n**Scale reading:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 708,
+              "tolerance": 5.0,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The scale reads the normal force N pushing up on the person."},
+        {"content": "Draw a free body diagram: N up, W = mg down."},
+        {"content": "Apply Newton's 2nd Law: $N - mg = ma$, so $N = m(g + a)$"}
+      ],
+      "solution": {
+        "steps": [
+          "Forces on person: Normal force N (up), Weight mg (down)",
+          "Net force equals ma (upward acceleration)",
+          "Newton's 2nd Law: $N - mg = ma$",
+          "Solve: $N = m(g + a) = 60(9.8 + 2) = 60 \\times 11.8 = 708\\text{ N}$"
+        ],
+        "final_answer": {"value": 708, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_007",
+      "exercise_id": "newt_elevator",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A $60\\text{ kg}$ person stands on a scale in an elevator accelerating downward at $2\\text{ m/s}^2$. What does the scale read?\n\n**Scale reading:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 468,
+              "tolerance": 5.0,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "When accelerating downward, the person feels lighter."},
+        {"content": "Take downward as positive: $mg - N = ma$"},
+        {"content": "Solve for N: $N = m(g - a)$"}
+      ],
+      "solution": {
+        "steps": [
+          "Forces: Normal force N (up), Weight mg (down)",
+          "Acceleration is downward, so take down as positive",
+          "Newton's 2nd Law: $mg - N = ma$",
+          "Solve: $N = m(g - a) = 60(9.8 - 2) = 60 \\times 7.8 = 468\\text{ N}$"
+        ],
+        "final_answer": {"value": 468, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_008",
+      "exercise_id": "newt_net_force",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.4,
+      "type": "numeric",
+      "question": {
+        "content": "Two forces act on an object: $30\\text{ N}$ to the right and $20\\text{ N}$ to the left. If the object has mass $5\\text{ kg}$, what is its acceleration?\n\n**Acceleration (positive = right):** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.0,
+              "tolerance": 0.1,
+              "unit": "m/s^2",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Find the net force first: $\\Sigma F = 30 - 20$"},
+        {"content": "Then apply $a = \\frac{\\Sigma F}{m}$"},
+        {"content": "$a = \\frac{10}{5}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Net force: $\\Sigma F = 30 - 20 = 10\\text{ N}$ (to the right)",
+          "Apply Newton's 2nd Law: $a = \\frac{\\Sigma F}{m}$",
+          "Calculate: $a = \\frac{10}{5} = 2.0\\text{ m/s}^2$ to the right"
+        ],
+        "final_answer": {"value": 2.0, "unit": "m/s^2"}
+      }
+    },
+    {
+      "question_id": "newt_009",
+      "exercise_id": "newt_net_force",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "Three horizontal forces act on a $4\\text{ kg}$ box: $15\\text{ N}$ east, $10\\text{ N}$ west, and $3\\text{ N}$ west. What is the magnitude of the acceleration?\n\n**Acceleration:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 0.5,
+              "tolerance": 0.05,
+              "unit": "m/s^2",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Add forces algebraically: take east as positive."},
+        {"content": "$\\Sigma F = 15 - 10 - 3 = 2\\text{ N}$ east"},
+        {"content": "$a = \\frac{2}{4}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Define east as positive",
+          "Net force: $\\Sigma F = 15 - 10 - 3 = 2\\text{ N}$",
+          "Acceleration: $a = \\frac{2}{4} = 0.5\\text{ m/s}^2$"
+        ],
+        "final_answer": {"value": 0.5, "unit": "m/s^2"}
+      }
+    },
+    {
+      "question_id": "newt_010",
+      "exercise_id": "newt_connected",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "Two blocks ($2\\text{ kg}$ and $3\\text{ kg}$) are in contact on a frictionless surface. A $25\\text{ N}$ force pushes the $2\\text{ kg}$ block. What is the acceleration of the system?\n\n**Acceleration:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5.0,
+              "tolerance": 0.1,
+              "unit": "m/s^2",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Treat the two blocks as a single system first."},
+        {"content": "Total mass: $m_{total} = 2 + 3 = 5\\text{ kg}$"},
+        {"content": "$a = \\frac{F}{m_{total}} = \\frac{25}{5}$"}
+      ],
+      "solution": {
+        "steps": [
+          "Treat both blocks as one system",
+          "Total mass: $m = 2 + 3 = 5\\text{ kg}$",
+          "Apply F = ma: $a = \\frac{25}{5} = 5.0\\text{ m/s}^2$"
+        ],
+        "final_answer": {"value": 5.0, "unit": "m/s^2"}
+      }
+    },
+    {
+      "question_id": "newt_011",
+      "exercise_id": "newt_connected",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "Two blocks ($2\\text{ kg}$ and $3\\text{ kg}$) are in contact on a frictionless surface. A $25\\text{ N}$ force pushes the $2\\text{ kg}$ block. What is the contact force between the blocks?\n\n**Contact force:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 15,
+              "tolerance": 0.5,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "First find the system acceleration: $a = 5\\text{ m/s}^2$"},
+        {"content": "Now analyze just the 3 kg block - what force accelerates it?"},
+        {"content": "The only horizontal force on the 3 kg block is the contact force: $F = ma = 3 \\times 5$"}
+      ],
+      "solution": {
+        "steps": [
+          "System acceleration: $a = 5.0\\text{ m/s}^2$",
+          "For the 3 kg block alone, only the contact force acts horizontally",
+          "Apply F = ma: $F_{contact} = 3 \\times 5 = 15\\text{ N}$"
+        ],
+        "final_answer": {"value": 15, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_012",
+      "exercise_id": "newt_equilibrium",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.4,
+      "type": "numeric",
+      "question": {
+        "content": "A $15\\text{ kg}$ box rests on a horizontal floor. What is the normal force from the floor?\n\n**Normal force:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 147,
+              "tolerance": 2.0,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The box is in equilibrium: $\\Sigma F = 0$"},
+        {"content": "In the vertical direction: $N - mg = 0$"},
+        {"content": "So $N = mg = 15 \\times 9.8$"}
+      ],
+      "solution": {
+        "steps": [
+          "Box is at rest, so $\\Sigma F_y = 0$",
+          "Forces: Normal force N (up), Weight mg (down)",
+          "Equilibrium: $N - mg = 0$",
+          "Therefore: $N = mg = 15 \\times 9.8 = 147\\text{ N}$"
+        ],
+        "final_answer": {"value": 147, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_013",
+      "exercise_id": "newt_equilibrium",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A $10\\text{ kg}$ box is pushed down with a $20\\text{ N}$ force while resting on a floor. What is the normal force?\n\n**Normal force:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 118,
+              "tolerance": 2.0,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The box is in equilibrium vertically: $\\Sigma F_y = 0$"},
+        {"content": "Forces down: weight (mg) and push (20 N). Force up: normal (N)"},
+        {"content": "$N = mg + 20 = 10(9.8) + 20$"}
+      ],
+      "solution": {
+        "steps": [
+          "Vertical equilibrium: $\\Sigma F_y = 0$",
+          "Forces: N (up), mg (down), 20 N push (down)",
+          "Balance: $N - mg - 20 = 0$",
+          "Solve: $N = mg + 20 = 98 + 20 = 118\\text{ N}$"
+        ],
+        "final_answer": {"value": 118, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_014",
+      "exercise_id": "newt_tension",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.5,
+      "type": "numeric",
+      "question": {
+        "content": "A $8\\text{ kg}$ object hangs from a rope attached to the ceiling. What is the tension in the rope?\n\n**Tension:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 78.4,
+              "tolerance": 1.0,
+              "unit": "N",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The object is in equilibrium: $\\Sigma F = 0$"},
+        {"content": "Forces: Tension T (up), Weight mg (down)"},
+        {"content": "$T = mg = 8 \\times 9.8$"}
+      ],
+      "solution": {
+        "steps": [
+          "Object in equilibrium: $\\Sigma F_y = 0$",
+          "Forces: T (up), mg (down)",
+          "Balance: $T - mg = 0$",
+          "Tension: $T = mg = 8 \\times 9.8 = 78.4\\text{ N}$"
+        ],
+        "final_answer": {"value": 78.4, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_015",
+      "exercise_id": "newt_tension",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.6,
+      "type": "numeric",
+      "question": {
+        "content": "A $5\\text{ kg}$ object is pulled upward by a rope with an acceleration of $3\\text{ m/s}^2$. What is the tension in the rope?\n\n**Tension:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 64,
+              "tolerance": 1.0,
+              "unit": "N",
+              "answerForms": ["decimal", "integer"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "The object is accelerating upward, so $\\Sigma F = ma$ (not zero)"},
+        {"content": "Taking up as positive: $T - mg = ma$"},
+        {"content": "Solve: $T = m(g + a) = 5(9.8 + 3)$"}
+      ],
+      "solution": {
+        "steps": [
+          "Object accelerating upward: apply Newton's 2nd Law",
+          "Forces: T (up), mg (down)",
+          "Net force: $T - mg = ma$",
+          "Solve: $T = m(g + a) = 5(9.8 + 3) = 5 \\times 12.8 = 64\\text{ N}$"
+        ],
+        "final_answer": {"value": 64, "unit": "N"}
+      }
+    },
+    {
+      "question_id": "newt_016",
+      "exercise_id": "newt_conceptual",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.3,
+      "type": "radio",
+      "question": {
+        "content": "A book sits at rest on a table. According to Newton's Third Law, the reaction to the weight of the book (Earth pulling the book down) is:\n\n[[☃ radio 1]]",
+        "widgets": {
+          "radio 1": {
+            "type": "radio",
+            "options": {
+              "choices": [
+                {"content": "The normal force from the table pushing up on the book", "correct": false},
+                {"content": "The book pulling up on the Earth", "correct": true},
+                {"content": "The table pushing down on the book", "correct": false},
+                {"content": "The friction force between the book and table", "correct": false}
+              ],
+              "randomize": false
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Action-reaction pairs always act on DIFFERENT objects."},
+        {"content": "The weight is Earth pulling on the book. What's the reaction?"},
+        {"content": "The reaction must be the book pulling on Earth."}
+      ],
+      "solution": {
+        "explanation": "Newton's Third Law pairs must act on different objects. Earth pulls down on the book (weight), so the book pulls up on Earth. The normal force from the table is NOT the reaction to weight - it's a separate force that happens to balance the weight."
+      }
+    },
+    {
+      "question_id": "newt_017",
+      "exercise_id": "newt_conceptual",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.4,
+      "type": "radio",
+      "question": {
+        "content": "A car accelerates from rest. What provides the force that accelerates the car forward?\n\n[[☃ radio 1]]",
+        "widgets": {
+          "radio 1": {
+            "type": "radio",
+            "options": {
+              "choices": [
+                {"content": "The engine pushing the car forward", "correct": false},
+                {"content": "The road pushing forward on the tires", "correct": true},
+                {"content": "The exhaust gases pushing backward", "correct": false},
+                {"content": "The driver pushing the steering wheel", "correct": false}
+              ],
+              "randomize": false
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "External forces cause acceleration. What external object contacts the car?"},
+        {"content": "The engine makes the wheels turn, but what actually pushes the car?"},
+        {"content": "Think about Newton's Third Law: tires push backward on road, road pushes forward on tires."}
+      ],
+      "solution": {
+        "explanation": "The engine causes the wheels to rotate and push backward on the road. By Newton's Third Law, the road pushes forward on the tires. This friction force from the road is the external force that accelerates the car."
+      }
+    },
+    {
+      "question_id": "newt_018",
+      "exercise_id": "newt_conceptual",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.4,
+      "type": "radio",
+      "question": {
+        "content": "An object moves at constant velocity. This means:\n\n[[☃ radio 1]]",
+        "widgets": {
+          "radio 1": {
+            "type": "radio",
+            "options": {
+              "choices": [
+                {"content": "There are no forces acting on it", "correct": false},
+                {"content": "The net force on it is zero", "correct": true},
+                {"content": "There is a constant force in the direction of motion", "correct": false},
+                {"content": "The force on it is decreasing", "correct": false}
+              ],
+              "randomize": false
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Constant velocity means zero acceleration."},
+        {"content": "By Newton's Second Law, what must the net force be if a = 0?"},
+        {"content": "Zero acceleration requires zero NET force (forces can exist but must cancel)."}
+      ],
+      "solution": {
+        "explanation": "Constant velocity means zero acceleration. By Newton's Second Law (F = ma), if a = 0, then the net force must be zero. There can still be forces acting, but they must sum to zero."
+      }
+    },
+    {
+      "question_id": "newt_019",
+      "exercise_id": "newt_atwood",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.7,
+      "type": "numeric",
+      "question": {
+        "content": "Two masses ($m_1 = 4\\text{ kg}$ and $m_2 = 6\\text{ kg}$) are connected by a rope over a frictionless pulley. What is the acceleration of the system?\n\n**Acceleration:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.96,
+              "tolerance": 0.1,
+              "unit": "m/s^2",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "This is an Atwood machine. The heavier mass accelerates down, lighter mass up."},
+        {"content": "For each mass, write Newton's 2nd Law. Let T = tension, a = acceleration."},
+        {"content": "For $m_2$ (going down): $m_2 g - T = m_2 a$. For $m_1$ (going up): $T - m_1 g = m_1 a$"}
+      ],
+      "solution": {
+        "steps": [
+          "For mass $m_2$ (heavier, going down): $m_2 g - T = m_2 a$",
+          "For mass $m_1$ (lighter, going up): $T - m_1 g = m_1 a$",
+          "Add equations: $m_2 g - m_1 g = (m_1 + m_2)a$",
+          "Solve: $a = \\frac{(m_2 - m_1)g}{m_1 + m_2} = \\frac{(6-4)(9.8)}{10} = \\frac{19.6}{10} = 1.96\\text{ m/s}^2$"
+        ],
+        "final_answer": {"value": 1.96, "unit": "m/s^2"}
+      }
+    },
+    {
+      "question_id": "newt_020",
+      "exercise_id": "newt_atwood",
+      "skill_id": "newtons-laws",
+      "course_id": "physics",
+      "unit_id": "dynamics",
+      "difficulty": 0.7,
+      "type": "numeric",
+      "question": {
+        "content": "Two masses ($m_1 = 4\\text{ kg}$ and $m_2 = 6\\text{ kg}$) are connected by a rope over a frictionless pulley. What is the tension in the rope?\n\n**Tension:** [[☃ numeric-input 1]]",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 47.0,
+              "tolerance": 1.0,
+              "unit": "N",
+              "answerForms": ["decimal"]
+            }
+          }
+        }
+      },
+      "hints": [
+        {"content": "Use the acceleration from the previous problem: $a = 1.96\\text{ m/s}^2$"},
+        {"content": "Apply Newton's 2nd Law to either mass."},
+        {"content": "For $m_1$: $T - m_1 g = m_1 a$, so $T = m_1(g + a)$"}
+      ],
+      "solution": {
+        "steps": [
+          "Acceleration: $a = 1.96\\text{ m/s}^2$",
+          "For mass $m_1$ (going up): $T - m_1 g = m_1 a$",
+          "Solve for tension: $T = m_1(g + a) = 4(9.8 + 1.96) = 4 \\times 11.76 = 47.0\\text{ N}$"
+        ],
+        "final_answer": {"value": 47.0, "unit": "N"}
+      }
+    }
+  ]
+}
