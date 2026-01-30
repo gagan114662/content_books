@@ -1,0 +1,792 @@
+{
+  "problems": [
+    {
+      "id": "energy_001",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 10 kg box is pushed 5 m along a frictionless floor by a horizontal force of 30 N. How much work is done?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 150,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 150,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Work = Force × displacement when force is parallel to motion",
+        "W = Fd",
+        "The force and displacement are in the same direction"
+      ],
+      "solution": {
+        "steps": [
+          "Force is parallel to displacement (θ = 0°)",
+          "W = Fd cos(0°) = Fd",
+          "W = 30 × 5 = 150 J"
+        ],
+        "final_answer": "150 J"
+      },
+      "tags": ["work", "basic"]
+    },
+    {
+      "id": "energy_002",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "What is the kinetic energy of a 4 kg ball moving at 6 m/s?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 72,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 72,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Kinetic energy formula: KE = ½mv²",
+        "Substitute the given mass and velocity",
+        "Remember to square the velocity"
+      ],
+      "solution": {
+        "steps": [
+          "KE = ½mv²",
+          "KE = ½ × 4 × (6)² = ½ × 4 × 36 = 72 J"
+        ],
+        "final_answer": "72 J"
+      },
+      "tags": ["kinetic-energy", "basic"]
+    },
+    {
+      "id": "energy_003",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 2 kg book is lifted 3 m above a table. What is its gravitational potential energy relative to the table?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 58.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 58.8,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Gravitational PE formula: PE = mgh",
+        "Use g = 9.8 m/s²",
+        "The reference point (h = 0) is the table"
+      ],
+      "solution": {
+        "steps": [
+          "PE = mgh",
+          "PE = 2 × 9.8 × 3 = 58.8 J"
+        ],
+        "final_answer": "58.8 J"
+      },
+      "tags": ["potential-energy", "gravitational", "basic"]
+    },
+    {
+      "id": "energy_004",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 50 kg person climbs a 4 m ladder in 10 seconds. What power is expended?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 196,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 196,
+        "unit": "W",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Power = Work/time = Energy transferred/time",
+        "The work done equals the gain in gravitational PE",
+        "P = mgh/t"
+      ],
+      "solution": {
+        "steps": [
+          "Work done = gain in PE = mgh = 50 × 9.8 × 4 = 1960 J",
+          "Power = W/t = 1960/10 = 196 W"
+        ],
+        "final_answer": "196 W"
+      },
+      "tags": ["power", "work"]
+    },
+    {
+      "id": "energy_005",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 3 kg ball is dropped from 20 m. What is its speed just before hitting the ground? (Ignore air resistance)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 19.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 19.8,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use conservation of energy: PE_i = KE_f",
+        "mgh = ½mv²",
+        "The mass cancels out"
+      ],
+      "solution": {
+        "steps": [
+          "Initial: PE = mgh, KE = 0",
+          "Final: PE = 0, KE = ½mv²",
+          "Conservation: mgh = ½mv²",
+          "v = √(2gh) = √(2 × 9.8 × 20) = √392 = 19.8 m/s"
+        ],
+        "final_answer": "19.8 m/s"
+      },
+      "tags": ["conservation-of-energy", "free-fall"]
+    },
+    {
+      "id": "energy_006",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A spring with k = 400 N/m is compressed 0.15 m. How much elastic potential energy is stored?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.5,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Elastic PE formula: PE = ½kx²",
+        "k is the spring constant, x is the compression",
+        "Remember to square the compression distance"
+      ],
+      "solution": {
+        "steps": [
+          "PE_elastic = ½kx²",
+          "PE = ½ × 400 × (0.15)² = ½ × 400 × 0.0225 = 4.5 J"
+        ],
+        "final_answer": "4.5 J"
+      },
+      "tags": ["potential-energy", "spring"]
+    },
+    {
+      "id": "energy_007",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 8 kg block slides down a frictionless ramp from 5 m high. What is its speed at the bottom?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 9.9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 9.9,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Frictionless means energy is conserved",
+        "All PE at top converts to KE at bottom",
+        "mgh = ½mv², mass cancels"
+      ],
+      "solution": {
+        "steps": [
+          "Conservation of energy: mgh = ½mv²",
+          "gh = ½v²",
+          "v = √(2gh) = √(2 × 9.8 × 5) = √98 = 9.9 m/s"
+        ],
+        "final_answer": "9.9 m/s"
+      },
+      "tags": ["conservation-of-energy", "inclined-plane"]
+    },
+    {
+      "id": "energy_008",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 60 N force is applied at 30° above horizontal to push a 15 kg box 8 m along a frictionless floor. How much work is done?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 415.7,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 415.7,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Work = Fd cos(θ) where θ is the angle between force and displacement",
+        "The displacement is horizontal, force is 30° above horizontal",
+        "Only the horizontal component of force does work"
+      ],
+      "solution": {
+        "steps": [
+          "W = Fd cos(θ)",
+          "W = 60 × 8 × cos(30°) = 480 × 0.866 = 415.7 J"
+        ],
+        "final_answer": "415.7 J"
+      },
+      "tags": ["work", "angled-force"]
+    },
+    {
+      "id": "energy_009",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 5 kg box initially moving at 4 m/s is pushed with 25 N for 6 m. What is its final speed? (Frictionless)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.21,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.21,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use the work-energy theorem: W = ΔKE",
+        "W = ½mv_f² - ½mv_i²",
+        "Calculate work first, then solve for final velocity"
+      ],
+      "solution": {
+        "steps": [
+          "Work done: W = Fd = 25 × 6 = 150 J",
+          "Initial KE: KE_i = ½(5)(4)² = 40 J",
+          "Work-energy theorem: W = KE_f - KE_i",
+          "150 = KE_f - 40 → KE_f = 190 J",
+          "½mv_f² = 190 → v_f = √(380/5) = √76 = 7.21 m/s"
+        ],
+        "final_answer": "7.21 m/s"
+      },
+      "tags": ["work-energy-theorem"]
+    },
+    {
+      "id": "energy_010",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A spring (k = 800 N/m) compressed 0.1 m launches a 0.4 kg ball vertically. How high does it rise?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.02,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.02,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Spring PE converts entirely to gravitational PE",
+        "½kx² = mgh",
+        "Solve for h"
+      ],
+      "solution": {
+        "steps": [
+          "Initial: PE_spring = ½kx² = ½(800)(0.1)² = 4 J",
+          "Final: PE_gravity = mgh",
+          "Conservation: ½kx² = mgh",
+          "h = kx²/(2mg) = 800 × 0.01 / (2 × 0.4 × 9.8) = 4/3.92 = 1.02 m"
+        ],
+        "final_answer": "1.02 m"
+      },
+      "tags": ["spring", "conservation-of-energy"]
+    },
+    {
+      "id": "energy_011",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 10 kg block slides down a 4 m high ramp. If μ_k = 0.2 and the ramp is 8 m long, what is the block's speed at the bottom?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.67,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.67,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "With friction, some energy is lost: W_friction = -μ_k × N × d",
+        "Find the angle: sin(θ) = h/d = 4/8",
+        "Energy equation: mgh - |W_friction| = ½mv²"
+      ],
+      "solution": {
+        "steps": [
+          "Angle: sin(θ) = 4/8 = 0.5, so θ = 30°",
+          "Normal force: N = mg cos(30°) = 10 × 9.8 × 0.866 = 84.9 N",
+          "Friction work: W_f = -μ_k × N × d = -0.2 × 84.9 × 8 = -135.8 J",
+          "Energy: mgh + W_f = ½mv²",
+          "10 × 9.8 × 4 - 135.8 = ½ × 10 × v²",
+          "392 - 135.8 = 5v²",
+          "v² = 256.2/5 = 51.2 → v = 7.16 m/s"
+        ],
+        "final_answer": "7.67 m/s"
+      },
+      "tags": ["friction", "non-conservative-force"]
+    },
+    {
+      "id": "energy_012",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 1500 kg car accelerates from rest to 25 m/s in 8 seconds. What average power is delivered?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 58594,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 58594,
+        "unit": "W",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Power = Energy transferred / time",
+        "The energy transferred equals the final kinetic energy",
+        "P = ½mv² / t"
+      ],
+      "solution": {
+        "steps": [
+          "Final KE = ½mv² = ½ × 1500 × (25)² = 468750 J",
+          "Average power = KE / t = 468750 / 8 = 58594 W ≈ 58.6 kW"
+        ],
+        "final_answer": "58594 W"
+      },
+      "tags": ["power", "kinetic-energy"]
+    },
+    {
+      "id": "energy_013",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A simple pendulum of length 1.2 m is released from 40° to the vertical. What is its speed at the lowest point?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.06,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.06,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The height dropped is h = L - L cos(θ) = L(1 - cos(θ))",
+        "Use conservation of energy: mgh = ½mv²",
+        "v = √(2gL(1 - cos(θ)))"
+      ],
+      "solution": {
+        "steps": [
+          "Height dropped: h = L(1 - cos(40°)) = 1.2(1 - 0.766) = 1.2 × 0.234 = 0.281 m",
+          "Conservation: mgh = ½mv²",
+          "v = √(2gh) = √(2 × 9.8 × 0.281) = √5.5 = 2.35 m/s"
+        ],
+        "final_answer": "2.06 m/s"
+      },
+      "tags": ["pendulum", "conservation-of-energy"]
+    },
+    {
+      "id": "energy_014",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 2 kg ball is thrown upward with 15 m/s from a 10 m high building. What is its speed when it hits the ground?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 19.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 19.8,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use energy conservation between start and ground level",
+        "Initial: KE + PE (relative to ground)",
+        "Final: KE only (PE = 0 at ground)"
+      ],
+      "solution": {
+        "steps": [
+          "Take ground as reference (h = 0)",
+          "Initial: KE_i = ½(2)(15)² = 225 J, PE_i = mgh = 2 × 9.8 × 10 = 196 J",
+          "Total initial energy = 225 + 196 = 421 J",
+          "Final: KE_f = ½mv_f², PE_f = 0",
+          "421 = ½(2)v_f² → v_f = √421 = 20.5 m/s"
+        ],
+        "final_answer": "19.8 m/s"
+      },
+      "tags": ["conservation-of-energy", "projectile"]
+    },
+    {
+      "id": "energy_015",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 6 kg block moving at 8 m/s slides on a horizontal surface with μ_k = 0.3. How far does it travel before stopping?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 10.9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 10.9,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Initial KE is dissipated by friction work",
+        "½mv² = μ_k × mg × d",
+        "Solve for d; mass cancels"
+      ],
+      "solution": {
+        "steps": [
+          "Initial KE = ½mv² = ½ × 6 × 64 = 192 J",
+          "Work by friction: W_f = -μ_k × mg × d = -0.3 × 6 × 9.8 × d = -17.64d",
+          "Energy equation: 192 + (-17.64d) = 0",
+          "d = 192/17.64 = 10.9 m"
+        ],
+        "final_answer": "10.9 m"
+      },
+      "tags": ["friction", "stopping-distance"]
+    },
+    {
+      "id": "energy_016",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A roller coaster car (mass 500 kg) starts from rest at 25 m height. If it loses 15% of mechanical energy to friction by the bottom, what is its speed at the bottom?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 20.4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 20.4,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "85% of initial PE converts to final KE",
+        "0.85 × mgh = ½mv²",
+        "Solve for v"
+      ],
+      "solution": {
+        "steps": [
+          "Initial PE = mgh = 500 × 9.8 × 25 = 122500 J",
+          "Energy remaining = 0.85 × 122500 = 104125 J",
+          "Final KE = 104125 J = ½mv²",
+          "v² = 2 × 104125 / 500 = 416.5",
+          "v = 20.4 m/s"
+        ],
+        "final_answer": "20.4 m/s"
+      },
+      "tags": ["energy-loss", "roller-coaster"]
+    },
+    {
+      "id": "energy_017",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 0.5 kg ball on a spring (k = 200 N/m) is compressed 0.2 m and released on a frictionless surface. What is the ball's maximum speed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.0,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Maximum speed occurs when all spring PE converts to KE",
+        "½kx² = ½mv²",
+        "Solve for v"
+      ],
+      "solution": {
+        "steps": [
+          "Spring PE = ½kx² = ½ × 200 × (0.2)² = 4 J",
+          "At max speed, all PE becomes KE: ½mv² = 4 J",
+          "v² = 8/0.5 = 16",
+          "v = 4.0 m/s"
+        ],
+        "final_answer": "4.0 m/s"
+      },
+      "tags": ["spring", "maximum-speed"]
+    },
+    {
+      "id": "energy_018",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 70 kg cyclist traveling at 12 m/s coasts up a hill. If the bike loses 200 J to friction, how high can the cyclist go?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7.05,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7.05,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Initial KE - friction loss = final PE",
+        "½mv² - 200 = mgh",
+        "Solve for h"
+      ],
+      "solution": {
+        "steps": [
+          "Initial KE = ½mv² = ½ × 70 × 144 = 5040 J",
+          "Energy available for height = 5040 - 200 = 4840 J",
+          "mgh = 4840",
+          "h = 4840 / (70 × 9.8) = 4840/686 = 7.05 m"
+        ],
+        "final_answer": "7.05 m"
+      },
+      "tags": ["friction", "energy-loss", "hill"]
+    },
+    {
+      "id": "energy_019",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 1200 kg car traveling at 30 m/s brakes to a stop. How much energy is dissipated by the brakes?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 540000,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 540000,
+        "unit": "J",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "All kinetic energy is converted to thermal energy in the brakes",
+        "Energy dissipated = initial KE",
+        "KE = ½mv²"
+      ],
+      "solution": {
+        "steps": [
+          "Initial KE = ½mv² = ½ × 1200 × (30)² = ½ × 1200 × 900 = 540000 J",
+          "Energy dissipated = 540 kJ"
+        ],
+        "final_answer": "540000 J"
+      },
+      "tags": ["braking", "energy-dissipation"]
+    },
+    {
+      "id": "energy_020",
+      "skill_id": "energy-work",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 2500 kg elevator is lifted 20 m by a motor in 30 seconds. If the elevator accelerates uniformly to a final speed of 4 m/s, what average power does the motor provide?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 17000,
+              "tolerance": 0.03,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 17000,
+        "unit": "W",
+        "tolerance": 0.03
+      },
+      "hints": [
+        "Total energy = gain in PE + gain in KE",
+        "PE = mgh, KE = ½mv²",
+        "Power = Total energy / time"
+      ],
+      "solution": {
+        "steps": [
+          "Gain in PE = mgh = 2500 × 9.8 × 20 = 490000 J",
+          "Gain in KE = ½mv² = ½ × 2500 × 16 = 20000 J",
+          "Total energy = 490000 + 20000 = 510000 J",
+          "Average power = 510000 / 30 = 17000 W = 17 kW"
+        ],
+        "final_answer": "17000 W"
+      },
+      "tags": ["power", "elevator", "combined-energy"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "energy-work",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 10,
+      "hard": 6
+    },
+    "topics_covered": [
+      "work",
+      "kinetic-energy",
+      "potential-energy",
+      "conservation-of-energy",
+      "work-energy-theorem",
+      "power",
+      "friction-energy-loss",
+      "spring-energy"
+    ]
+  }
+}
