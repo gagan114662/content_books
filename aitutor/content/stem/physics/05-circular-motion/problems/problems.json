@@ -1,0 +1,801 @@
+{
+  "problems": [
+    {
+      "id": "circ_001",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A car travels around a circular track of radius 100 m at a constant speed of 20 m/s. What is the centripetal acceleration?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.0,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.0,
+        "unit": "m/s²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Centripetal acceleration formula: a_c = v²/r",
+        "Substitute the given values: v = 20 m/s, r = 100 m",
+        "Calculate: a_c = (20)²/100"
+      ],
+      "solution": {
+        "steps": [
+          "Use the centripetal acceleration formula: a_c = v²/r",
+          "Substitute values: a_c = (20)²/100 = 400/100 = 4.0 m/s²"
+        ],
+        "final_answer": "4.0 m/s²"
+      },
+      "tags": ["centripetal-acceleration", "basic"]
+    },
+    {
+      "id": "circ_002",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.3,
+      "question": {
+        "content": "A 2 kg ball on a string moves in a horizontal circle of radius 0.5 m at 4 m/s. What is the tension in the string?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 64,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 64,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Tension provides the centripetal force",
+        "Use F_c = mv²/r",
+        "The mass, speed, and radius are all given"
+      ],
+      "solution": {
+        "steps": [
+          "Tension = centripetal force = mv²/r",
+          "T = 2 × (4)² / 0.5 = 2 × 16 / 0.5 = 32 / 0.5 = 64 N"
+        ],
+        "final_answer": "64 N"
+      },
+      "tags": ["centripetal-force", "tension", "horizontal-circle"]
+    },
+    {
+      "id": "circ_003",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A car completes one lap around a circular track of radius 200 m in 40 seconds. What is the car's speed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 31.4,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 31.4,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "One lap is the circumference of the circle: C = 2πr",
+        "Speed = distance/time = circumference/period",
+        "Use v = 2πr/T"
+      ],
+      "solution": {
+        "steps": [
+          "Circumference: C = 2πr = 2π × 200 = 1257 m",
+          "Speed: v = C/T = 1257/40 = 31.4 m/s",
+          "Or directly: v = 2πr/T = 2π × 200/40 = 31.4 m/s"
+        ],
+        "final_answer": "31.4 m/s"
+      },
+      "tags": ["period", "speed", "circumference"]
+    },
+    {
+      "id": "circ_004",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A 1200 kg car rounds a flat curve of radius 80 m. If the coefficient of static friction is 0.5, what is the maximum safe speed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 19.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 19.8,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Friction provides the centripetal force",
+        "Maximum friction: f_max = μ_s × mg",
+        "Set μ_s × mg = mv²/r and solve for v"
+      ],
+      "solution": {
+        "steps": [
+          "Maximum centripetal force = maximum friction = μ_s × mg",
+          "μ_s × mg = mv²/r",
+          "μ_s × g = v²/r (mass cancels)",
+          "v² = μ_s × g × r = 0.5 × 9.8 × 80 = 392",
+          "v = √392 = 19.8 m/s"
+        ],
+        "final_answer": "19.8 m/s"
+      },
+      "tags": ["friction", "maximum-speed", "flat-curve"]
+    },
+    {
+      "id": "circ_005",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 0.3 kg ball on a 0.8 m string swings in a vertical circle. What is the minimum speed at the top of the circle to maintain the circular path?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.8,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.8,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "At minimum speed, tension = 0",
+        "Only gravity provides centripetal force",
+        "mg = mv²/r, so v = √(gr)"
+      ],
+      "solution": {
+        "steps": [
+          "At the top, centripetal force = weight + tension",
+          "At minimum speed, T = 0, so mg = mv²/r",
+          "v² = gr = 9.8 × 0.8 = 7.84",
+          "v = √7.84 = 2.8 m/s"
+        ],
+        "final_answer": "2.8 m/s"
+      },
+      "tags": ["vertical-circle", "minimum-speed"]
+    },
+    {
+      "id": "circ_006",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 0.5 kg ball on a 1.0 m string moves in a vertical circle at 6 m/s at the bottom. What is the tension in the string at the bottom of the circle?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 22.9,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 22.9,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "At the bottom, tension points up, weight points down",
+        "Net force toward center: T - mg = mv²/r",
+        "Solve for tension: T = mg + mv²/r"
+      ],
+      "solution": {
+        "steps": [
+          "At bottom, centripetal force = T - mg (tension up, weight down)",
+          "T - mg = mv²/r",
+          "T = mg + mv²/r = m(g + v²/r)",
+          "T = 0.5(9.8 + 36/1.0) = 0.5(9.8 + 36) = 0.5 × 45.8 = 22.9 N"
+        ],
+        "final_answer": "22.9 N"
+      },
+      "tags": ["vertical-circle", "tension", "bottom"]
+    },
+    {
+      "id": "circ_007",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A roller coaster car goes over a hill of radius 15 m at 12 m/s. What is the apparent weight of a 60 kg rider at the top of the hill?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 12,
+              "tolerance": 0.05,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 12,
+        "unit": "N",
+        "tolerance": 0.05
+      },
+      "hints": [
+        "Apparent weight = normal force from the seat",
+        "At the top, weight and normal force both point toward center (down)",
+        "mg - N = mv²/r (if center is below)"
+      ],
+      "solution": {
+        "steps": [
+          "At the top of a hill, center is below, so down is positive",
+          "mg - N = mv²/r (both weight and normal contribute to centripetal force)",
+          "N = mg - mv²/r = m(g - v²/r)",
+          "N = 60(9.8 - 144/15) = 60(9.8 - 9.6) = 60 × 0.2 = 12 N"
+        ],
+        "final_answer": "12 N"
+      },
+      "tags": ["apparent-weight", "vertical-circle", "hill"]
+    },
+    {
+      "id": "circ_008",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A centrifuge rotates at 3000 rpm. If a test tube is 10 cm from the axis, what is the centripetal acceleration in terms of g? (Give answer as a multiple of g)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1006,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1006,
+        "unit": "g",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Convert rpm to rad/s: ω = 2π × (rpm/60)",
+        "Use a_c = ω²r",
+        "Divide by g = 9.8 m/s² to get the answer in terms of g"
+      ],
+      "solution": {
+        "steps": [
+          "Convert rpm to rad/s: ω = 2π × 3000/60 = 314.2 rad/s",
+          "Radius: r = 0.10 m",
+          "a_c = ω²r = (314.2)² × 0.10 = 9870 m/s²",
+          "In terms of g: a_c/g = 9870/9.8 = 1006 g"
+        ],
+        "final_answer": "1006 g"
+      },
+      "tags": ["centrifuge", "angular-velocity", "rpm"]
+    },
+    {
+      "id": "circ_009",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A conical pendulum consists of a 0.4 kg mass on a 0.6 m string that makes a 30° angle with the vertical. What is the tension in the string?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.53,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.53,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The vertical component of tension balances weight: T cos(θ) = mg",
+        "The horizontal component provides centripetal force: T sin(θ) = mv²/r",
+        "Solve for T from the vertical equation"
+      ],
+      "solution": {
+        "steps": [
+          "Vertical equilibrium: T cos(30°) = mg",
+          "T × 0.866 = 0.4 × 9.8 = 3.92 N",
+          "T = 3.92 / 0.866 = 4.53 N"
+        ],
+        "final_answer": "4.53 N"
+      },
+      "tags": ["conical-pendulum", "tension"]
+    },
+    {
+      "id": "circ_010",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A conical pendulum has a 0.5 kg mass on a 0.8 m string at 25° from vertical. What is the period of revolution?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.71,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.71,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The radius of the circle is r = L sin(θ)",
+        "From T cos(θ) = mg and T sin(θ) = mv²/r, you can find v² = gr tan(θ)",
+        "Period T = 2πr/v"
+      ],
+      "solution": {
+        "steps": [
+          "Radius: r = L sin(25°) = 0.8 × 0.423 = 0.338 m",
+          "From force analysis: v² = gr tan(θ) = 9.8 × 0.338 × tan(25°)",
+          "v² = 9.8 × 0.338 × 0.466 = 1.54",
+          "v = 1.24 m/s",
+          "Period: T = 2πr/v = 2π × 0.338/1.24 = 1.71 s"
+        ],
+        "final_answer": "1.71 s"
+      },
+      "tags": ["conical-pendulum", "period"]
+    },
+    {
+      "id": "circ_011",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A satellite orbits Earth at an altitude where g = 8.7 m/s². If the orbital radius is 7.0 × 10⁶ m, what is the orbital speed?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 7803,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 7803,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Gravity provides centripetal acceleration: g = v²/r",
+        "Solve for v: v = √(gr)",
+        "Use the given values of g and r"
+      ],
+      "solution": {
+        "steps": [
+          "Centripetal acceleration equals gravitational acceleration: a_c = g",
+          "v²/r = g",
+          "v = √(gr) = √(8.7 × 7.0 × 10⁶)",
+          "v = √(6.09 × 10⁷) = 7803 m/s"
+        ],
+        "final_answer": "7803 m/s"
+      },
+      "tags": ["satellite", "orbital-speed"]
+    },
+    {
+      "id": "circ_012",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "What is the orbital period of a satellite at altitude 400 km above Earth? (Earth radius = 6.37 × 10⁶ m, g at surface = 9.8 m/s²)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5540,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5540,
+        "unit": "s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Orbital radius: r = R_Earth + altitude",
+        "Find g at orbital altitude: g' = g(R_E/r)²",
+        "Use v = √(g'r) and T = 2πr/v"
+      ],
+      "solution": {
+        "steps": [
+          "Orbital radius: r = 6.37 × 10⁶ + 4 × 10⁵ = 6.77 × 10⁶ m",
+          "g at altitude: g' = 9.8 × (6.37/6.77)² = 9.8 × 0.886 = 8.68 m/s²",
+          "Orbital speed: v = √(g'r) = √(8.68 × 6.77 × 10⁶) = 7667 m/s",
+          "Period: T = 2πr/v = 2π × 6.77 × 10⁶ / 7667 = 5540 s ≈ 92 min"
+        ],
+        "final_answer": "5540 s"
+      },
+      "tags": ["satellite", "orbital-period"]
+    },
+    {
+      "id": "circ_013",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 1000 kg car travels at 25 m/s around a banked curve of radius 100 m. If no friction is needed, what is the banking angle?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 32.5,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 32.5,
+        "unit": "degrees",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "On a frictionless banked curve, the normal force provides centripetal force",
+        "Vertical: N cos(θ) = mg",
+        "Horizontal: N sin(θ) = mv²/r → tan(θ) = v²/(gr)"
+      ],
+      "solution": {
+        "steps": [
+          "For a frictionless banked curve: tan(θ) = v²/(gr)",
+          "tan(θ) = (25)²/(9.8 × 100) = 625/980 = 0.638",
+          "θ = arctan(0.638) = 32.5°"
+        ],
+        "final_answer": "32.5°"
+      },
+      "tags": ["banked-curve", "frictionless"]
+    },
+    {
+      "id": "circ_014",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.4,
+      "question": {
+        "content": "A record player rotates at 33⅓ rpm. What is the centripetal acceleration of a point 15 cm from the center?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 1.83,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 1.83,
+        "unit": "m/s²",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Convert 33⅓ rpm to rad/s: ω = 2π × (33.33/60)",
+        "Use a_c = ω²r",
+        "Remember to convert cm to m"
+      ],
+      "solution": {
+        "steps": [
+          "Angular velocity: ω = 2π × 33.33/60 = 3.49 rad/s",
+          "Radius: r = 0.15 m",
+          "a_c = ω²r = (3.49)² × 0.15 = 12.18 × 0.15 = 1.83 m/s²"
+        ],
+        "final_answer": "1.83 m/s²"
+      },
+      "tags": ["angular-velocity", "rpm", "record-player"]
+    },
+    {
+      "id": "circ_015",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A car goes over the top of a hill with radius 30 m. What maximum speed can the car have without leaving the ground?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 17.1,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 17.1,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "The car leaves the ground when the normal force becomes zero",
+        "At that point, gravity alone provides centripetal force",
+        "mg = mv²/r → v = √(gr)"
+      ],
+      "solution": {
+        "steps": [
+          "At the top of a hill, N + ? = centripetal direction",
+          "Car leaves ground when N = 0",
+          "mg = mv²/r (gravity alone provides centripetal force)",
+          "v = √(gr) = √(9.8 × 30) = √294 = 17.1 m/s"
+        ],
+        "final_answer": "17.1 m/s"
+      },
+      "tags": ["vertical-circle", "leaving-ground", "maximum-speed"]
+    },
+    {
+      "id": "circ_016",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A bucket of water is swung in a vertical circle of radius 0.9 m. What minimum speed at the top prevents water from spilling?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 2.97,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 2.97,
+        "unit": "m/s",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Water stays in if centripetal acceleration ≥ g",
+        "At minimum speed, a_c = g",
+        "v²/r = g → v = √(gr)"
+      ],
+      "solution": {
+        "steps": [
+          "Water stays in the bucket if a_c ≥ g",
+          "At minimum: v²/r = g",
+          "v = √(gr) = √(9.8 × 0.9) = √8.82 = 2.97 m/s"
+        ],
+        "final_answer": "2.97 m/s"
+      },
+      "tags": ["vertical-circle", "minimum-speed", "bucket"]
+    },
+    {
+      "id": "circ_017",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "A 0.2 kg ball on a 0.5 m string moves in a vertical circle with speed 5 m/s at the top. What is the tension at the top?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 8.04,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 8.04,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "At the top, both tension and weight point toward the center",
+        "T + mg = mv²/r",
+        "Solve for T"
+      ],
+      "solution": {
+        "steps": [
+          "At the top: T + mg = mv²/r (both point toward center)",
+          "T = mv²/r - mg = m(v²/r - g)",
+          "T = 0.2(25/0.5 - 9.8) = 0.2(50 - 9.8) = 0.2 × 40.2 = 8.04 N"
+        ],
+        "final_answer": "8.04 N"
+      },
+      "tags": ["vertical-circle", "tension", "top"]
+    },
+    {
+      "id": "circ_018",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A pilot in a jet performs a vertical loop of radius 500 m at 150 m/s. What is the pilot's apparent weight at the bottom of the loop if the pilot's mass is 80 kg?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4384,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4384,
+        "unit": "N",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "At the bottom, normal force points up (toward center), weight points down",
+        "N - mg = mv²/r",
+        "Apparent weight = normal force"
+      ],
+      "solution": {
+        "steps": [
+          "At the bottom: N - mg = mv²/r",
+          "N = m(g + v²/r) = 80(9.8 + 22500/500)",
+          "N = 80(9.8 + 45) = 80 × 54.8 = 4384 N",
+          "This is about 5.6g (5.6 times normal weight)"
+        ],
+        "final_answer": "4384 N"
+      },
+      "tags": ["vertical-circle", "apparent-weight", "loop"]
+    },
+    {
+      "id": "circ_019",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.5,
+      "question": {
+        "content": "What is the radius of a geostationary orbit? (Period = 24 hours, Earth mass = 5.97 × 10²⁴ kg, G = 6.67 × 10⁻¹¹ N·m²/kg²)",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 4.22e7,
+              "tolerance": 0.02,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 4.22e7,
+        "unit": "m",
+        "tolerance": 0.02
+      },
+      "hints": [
+        "Use T² = (4π²/GM) × r³ (Kepler's third law)",
+        "Solve for r: r³ = GMT²/(4π²)",
+        "Convert period to seconds: 24 hours = 86400 s"
+      ],
+      "solution": {
+        "steps": [
+          "Period: T = 24 × 3600 = 86400 s",
+          "From GMm/r² = mv²/r and v = 2πr/T:",
+          "r³ = GMT²/(4π²)",
+          "r³ = (6.67 × 10⁻¹¹ × 5.97 × 10²⁴ × (86400)²)/(4π²)",
+          "r³ = (3.98 × 10¹⁴ × 7.46 × 10⁹)/(39.48)",
+          "r³ = 7.53 × 10²² m³",
+          "r = 4.22 × 10⁷ m ≈ 42,200 km"
+        ],
+        "final_answer": "4.22 × 10⁷ m"
+      },
+      "tags": ["geostationary", "orbit", "keplers-law"]
+    },
+    {
+      "id": "circ_020",
+      "skill_id": "circular-motion",
+      "type": "numeric",
+      "difficulty": 0.6,
+      "question": {
+        "content": "A 1500 kg car travels at 20 m/s around a curve of radius 60 m banked at 15°. What friction force is needed (positive = up the bank, negative = down)?",
+        "widgets": {
+          "numeric-input 1": {
+            "type": "numeric-input",
+            "options": {
+              "value": 5640,
+              "tolerance": 0.03,
+              "inexact": true
+            }
+          }
+        }
+      },
+      "answer": {
+        "value": 5640,
+        "unit": "N",
+        "tolerance": 0.03
+      },
+      "hints": [
+        "The ideal speed for a 15° bank with r = 60 m is v = √(gr tan(θ))",
+        "If actual speed > ideal speed, friction points up the bank",
+        "Set up force equations parallel and perpendicular to the road surface"
+      ],
+      "solution": {
+        "steps": [
+          "Ideal speed: v_ideal = √(gr tan(15°)) = √(9.8 × 60 × 0.268) = 12.5 m/s",
+          "Since 20 m/s > 12.5 m/s, car tends to slide up, friction points down the bank",
+          "But let's solve precisely:",
+          "Horizontal: N sin(θ) + f cos(θ) = mv²/r",
+          "Vertical: N cos(θ) - f sin(θ) = mg",
+          "Solving: f = m[v²cos(θ)/r - g sin(θ)] / [cos²(θ)/cos(θ) + sin²(θ)/cos(θ)]",
+          "After algebra: f ≈ 5640 N pointing up the bank (outward component of friction provides extra centripetal force)"
+        ],
+        "final_answer": "5640 N (up the bank)"
+      },
+      "tags": ["banked-curve", "friction", "non-ideal-speed"]
+    }
+  ],
+  "metadata": {
+    "skill_id": "circular-motion",
+    "total_problems": 20,
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 10,
+      "hard": 6
+    },
+    "topics_covered": [
+      "centripetal-acceleration",
+      "centripetal-force",
+      "vertical-circles",
+      "horizontal-circles",
+      "conical-pendulum",
+      "banked-curves",
+      "satellites",
+      "orbital-mechanics"
+    ]
+  }
+}
